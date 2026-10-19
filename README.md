@@ -1,0 +1,88 @@
+# LIBRA：仅 Simulation 复现
+
+复现 **LIBRA: An Economical Hybrid Approach for Cloud Applications with Strict SLAs**（IC2E 2021）的 Section IV，覆盖图 3–6 的仿真实验。本项目不部署云资源，不需要 AWS 账号、凭证或 boto3。
+
+已完成并实际运行：LIBRA / FaaS / MAX / SPOCK / AUTO 五种策略、官方 WITS 12 小时 trace、phi=-1…4 敏感性实验、Berkeley 和两种官方合成 trace。保留作者源代码，并提供独立的历史实现重放。
+
+本实现属于**基于论文公式、官方参数及 trace 的独立重建**。官方代码不完整，且论文未公开所有实验细节，因此不能声称逐数值复现原图。[方法与差异说明](docs/methodology.md)记录了全部关键选择。
+
+## 直接看结果
+
+- [WITS 主实验报告](outputs/wits_12h/REPORT.md)：完整表格和图 3–6。
+- [结构化结果](outputs/wits_12h/results.json) / [汇总 CSV](outputs/wits_12h/summary.csv)。
+- [作者代码对照审计](docs/upstream_audit.md)。
+- [Berkeley](outputs/berkeley_12h/REPORT.md)、[正弦 trace](outputs/synthetic_sin/REPORT.md)、[方波 trace](outputs/synthetic_square/REPORT.md)。
+
+主实验：WITS 前 43,200 秒，6,217,439 个请求，默认 phi=1。
+
+| 策略 | 总成本 USD | SLA 违约 % |
+|---|---:|---:|
+| LIBRA | 22.2951 | 0 |
+| FaaS | 53.0658 | 0 |
+| MAX | 87.6000 | 0 |
+| SPOCK | 25.8673 | 1.4560 |
+| AUTO | 26.0483 | 4.1377 |
+
+LIBRA 相比 AUTO 节省约 14.41%，相比 SPOCK 节省约 13.81%。此次 phi 扫描的最优值是 **2**，与论文报告的 **1** 不同。Berkeley 和合成 trace 上 LIBRA 并非总比其他策略便宜，详见对应实际输出；没有为匹配论文结论调整参数。
+
+## 安装与运行
+
+需要 Python 3.10+。模拟器核心只依赖 Python 标准库；画图需要 NumPy 和 Matplotlib。
+
+```bash
+python3 -m venv .venv
+.venv/bin/python -m pip install -e '.[test]'
+.venv/bin/python scripts/reproduce.py
+.venv/bin/python -m pytest -q
+```
+
+当前工作区已配置 `.venv`，可直接执行后两条命令。主实验一次运行包括五种策略和六个 phi 值；仿真时间是虚拟时间，不需要等待真实 12 小时。
+
+已验证环境为 Python 3.12.7、NumPy 1.26.4、Matplotlib 3.9.2、pytest 7.4.4，精确依赖版本见 `requirements-reproduce.txt`。也可先执行 `.venv/bin/python -m pip install -r requirements-reproduce.txt` 固定这些版本。
+
+```bash
+# 快速运行；仍使用真实 trace
+.venv/bin/python scripts/reproduce.py --seconds 1800 --output outputs/smoke
+
+# 作者默认是 45,000 秒；论文描述为 12 小时，默认采用 43,200 秒
+.venv/bin/python scripts/reproduce.py --seconds 45000 --output outputs/wits_45000
+
+# Berkeley：12 小时
+.venv/bin/python scripts/reproduce.py --trace data/traces/berkeley_logs.txt \
+  --output outputs/berkeley_12h --no-plots
+
+# 合成 trace 保持作者给出的长度，不填充、不循环
+.venv/bin/python scripts/reproduce.py --trace data/traces/sin_logs.txt \
+  --seconds 10000 --output outputs/synthetic_sin --no-plots
+.venv/bin/python scripts/reproduce.py --trace data/traces/square_load.txt \
+  --seconds 1112 --output outputs/synthetic_square --no-plots
+
+# 校验 trace 哈希、请求守恒、成本及已生成的主实验图表
+.venv/bin/python scripts/verify_artifacts.py
+```
+
+自定义配置：复制 [configs/paper.json](configs/paper.json)，修改后传入 `--config path.json`。自定义 trace 每行是该秒请求数，必须是非负整数；支持 `--offset` 选取片段。读取越界会直接报错。当前实现刻意限定论文的 1 秒 epoch 和 1 秒服务时间。
+
+## 输出内容
+
+每个实验目录包含 `results.json`、`summary.csv`、`phi_sweep.csv`、五种策略逐秒 `*_timeline.csv`、缩放决策 `*_decisions.json` 和 `REPORT.md`。绘图开启时产生图 3–6 的 PNG、SVG。
+
+`results.json` 记录 trace SHA-256、实际配置、仿真核心源码哈希、Python 版本、运行命令及响应时间分布。运行确定性，无随机采样；运行时长和生成时间等元数据随运行变化。
+
+## 作者代码重放
+
+官方仓库在论文参考文献 [27] 中给出。固定 commit：`53a804412ca24c6eca7fa226fcccc0220b17fb0f`。
+
+```bash
+# 仅在缺少 upstream/ 时需要联网；下载研究代码，不执行其中 aws/ 目录
+.venv/bin/python scripts/fetch_upstream.py
+.venv/bin/python scripts/replay_upstream.py
+```
+
+此脚本只做 Python 2→3 语法适配，保留原有模型和 bug。公开代码未实现 SPOCK，因此历史重放只报告其实际存在的四种策略，也不自动补加 Gateway 成本。细节和历史结果见[审计说明](docs/upstream_audit.md)。
+
+## 来源
+
+- [论文 arXiv:2104.05491v1](https://arxiv.org/abs/2104.05491)，本复现核对版本；本地 PDF 在 `references/libra-arxiv.pdf`。
+- [作者官方代码与 trace](https://github.com/aliraza0337/LIBRA)。
+- [trace 校验清单](data/manifest.json)。trace 是作者仓库的原始副本，保留其来源；不对上游代码、数据或论文另行声明许可。

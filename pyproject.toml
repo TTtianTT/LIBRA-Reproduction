@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "libra-simulation-reproduction"
+version = "0.1.0"
+description = "Local simulation reproduction of LIBRA (IC2E 2021)"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24,<3", "matplotlib>=3.7,<4"]
+
+[project.optional-dependencies]
+test = ["pytest>=7,<10"]
+
+[tool.setuptools.packages.find]
+include = ["libra_sim*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

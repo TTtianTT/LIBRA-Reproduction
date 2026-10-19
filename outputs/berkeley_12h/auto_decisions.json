@@ -1,0 +1,37 @@
+[
+  {
+    "time_s": 185,
+    "target_vms": 20,
+    "utilization": 0.7083333333333334
+  },
+  {
+    "time_s": 26060,
+    "target_vms": 30,
+    "utilization": 0.7005208333333334
+  },
+  {
+    "time_s": 29079,
+    "target_vms": 20,
+    "utilization": 0.2996527777777778
+  },
+  {
+    "time_s": 29525,
+    "target_vms": 30,
+    "utilization": 0.7015625
+  },
+  {
+    "time_s": 32672,
+    "target_vms": 20,
+    "utilization": 0.2996527777777778
+  },
+  {
+    "time_s": 33545,
+    "target_vms": 30,
+    "utilization": 0.7010416666666667
+  },
+  {
+    "time_s": 34800,
+    "target_vms": 20,
+    "utilization": 0.2996527777777778
+  }
+]

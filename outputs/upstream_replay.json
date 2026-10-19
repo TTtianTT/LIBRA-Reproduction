@@ -1,0 +1,77 @@
+{
+  "upstream_commit": "53a804412ca24c6eca7fa226fcccc0220b17fb0f",
+  "source_sha256": {
+    "configuration": "ed62c733508cee3e7c1f426877aa4c4702c2c0153c93cf346e5c6e7d492a4235",
+    "traffic_generator": "ec5d93abe40e438184d7542b21d902c3c9a1dc8c8acbd4f3a5ee764f0dd41c7c",
+    "vm_cloud": "d29bb6f0591dfcb16ec068a70ec48a457691576cd9dd3a4fc8babb9268e6f445",
+    "serverless_cloud": "8502b311ee92df90ac633c4c8a2e96805c91e962ce4d226aaee75ce27b8f55bc",
+    "manager": "0f0e17a406b241449a4b075927314e2460739b5c2914f4d5dc3b8e3ea467c301",
+    "simulator": "cd5d57af4208155d05e1a0308744aaea7bd2264067d664cf586117e668e3d7ec"
+  },
+  "trace": {
+    "path": "/Users/tianzl/PycharmProjects/LIBRA-Reproduction/data/traces/wits_logs.txt",
+    "sha256": "2c098873d49b6db5e1c2dc94896c2c4f05ff4ce3286f3a87c5f4d702459bed74",
+    "available_seconds": 45000,
+    "offset_seconds": 0,
+    "duration_seconds": 43200,
+    "total_requests": 6217439,
+    "peak_requests_per_second": 1168
+  },
+  "port_changes": [
+    "print statements to print()",
+    "iterator .next to .__next__"
+  ],
+  "experiment_overrides": [
+    "end_time=selected duration",
+    "absolute trace path",
+    "policy and vm_auto_scaling",
+    "MAX instance count=ceil(trace peak/16)"
+  ],
+  "caveat": "Historical bugs retained; gateway cost not added; MAX starts cold; Spock unavailable",
+  "policies": {
+    "hybrid": {
+      "total_requests": 6217439,
+      "vm_requests": 5431375,
+      "faas_requests": 786064,
+      "sla_violation_percent": 0.0,
+      "vm_cost_usd": 15.15000000000001,
+      "faas_cost_usd": 6.709056240000271,
+      "total_cost_without_gateway_usd": 21.859056240000278,
+      "vm_uptime_seconds": 545400,
+      "request_conservation_ok": true
+    },
+    "serverless": {
+      "total_requests": 6217439,
+      "vm_requests": 0,
+      "faas_requests": 6217439,
+      "sla_violation_percent": 0.0,
+      "vm_cost_usd": 0.0,
+      "faas_cost_usd": 53.06584186499987,
+      "total_cost_without_gateway_usd": 53.06584186499987,
+      "vm_uptime_seconds": 0,
+      "request_conservation_ok": true
+    },
+    "vm_cloud_max": {
+      "total_requests": 6217439,
+      "vm_requests": 6217439,
+      "faas_requests": 0,
+      "sla_violation_percent": 0.4056815032684679,
+      "vm_cost_usd": 87.60000000000012,
+      "faas_cost_usd": 0.0,
+      "total_cost_without_gateway_usd": 87.60000000000012,
+      "vm_uptime_seconds": 3153600,
+      "request_conservation_ok": true
+    },
+    "vm_cloud": {
+      "total_requests": 6217439,
+      "vm_requests": 6217439,
+      "faas_requests": 0,
+      "sla_violation_percent": 2.4585363845145887,
+      "vm_cost_usd": 33.924166666666665,
+      "faas_cost_usd": 0.0,
+      "total_cost_without_gateway_usd": 33.924166666666665,
+      "vm_uptime_seconds": 1221270,
+      "request_conservation_ok": true
+    }
+  }
+}

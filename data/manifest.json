@@ -1,0 +1,22 @@
+{
+  "source": "https://github.com/aliraza0337/LIBRA",
+  "commit": "53a804412ca24c6eca7fa226fcccc0220b17fb0f",
+  "files": {
+    "berkeley_logs.txt": {
+      "sha256": "62cf2d975f268f6170dac09c2883fac0ea7bf83a20cb34dfcea17a17da006db7",
+      "seconds": 45000
+    },
+    "sin_logs.txt": {
+      "sha256": "0144bcf4d6511f2e6c7d551d77b2826502694118136458ae043d8d7ad24ef842",
+      "seconds": 10000
+    },
+    "square_load.txt": {
+      "sha256": "91efbc99e0d079342555d9d983ae9a847ad9ac06fe0d01f2939686d6aa118966",
+      "seconds": 1112
+    },
+    "wits_logs.txt": {
+      "sha256": "2c098873d49b6db5e1c2dc94896c2c4f05ff4ce3286f3a87c5f4d702459bed74",
+      "seconds": 45000
+    }
+  }
+}

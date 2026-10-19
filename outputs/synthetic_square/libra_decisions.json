@@ -1,0 +1,30 @@
+[
+  {
+    "time_s": 0,
+    "target_vms": 4,
+    "avg": 50.0,
+    "deviation": 0,
+    "estimate": 50.0
+  },
+  {
+    "time_s": 300,
+    "target_vms": 4,
+    "avg": 49.70485209505,
+    "deviation": 1.3576803670817288,
+    "estimate": 51.06253246213173
+  },
+  {
+    "time_s": 600,
+    "target_vms": 4,
+    "avg": 49.99782219285341,
+    "deviation": 0.019600264351217644,
+    "estimate": 50.01742245720463
+  },
+  {
+    "time_s": 900,
+    "target_vms": 0,
+    "avg": 0.36891881209376154,
+    "deviation": 1.6233873976366566,
+    "estimate": 0.0
+  }
+]

@@ -1,0 +1,227 @@
+[
+  {
+    "time_s": 185,
+    "target_vms": 20,
+    "utilization": 0.7079166666666666
+  },
+  {
+    "time_s": 2735,
+    "target_vms": 30,
+    "utilization": 0.7015364583333333
+  },
+  {
+    "time_s": 5666,
+    "target_vms": 40,
+    "utilization": 0.70515625
+  },
+  {
+    "time_s": 5964,
+    "target_vms": 30,
+    "utilization": 0.2993619791666667
+  },
+  {
+    "time_s": 6919,
+    "target_vms": 40,
+    "utilization": 0.7015798611111111
+  },
+  {
+    "time_s": 7553,
+    "target_vms": 30,
+    "utilization": 0.2995703125
+  },
+  {
+    "time_s": 10682,
+    "target_vms": 20,
+    "utilization": 0.29986111111111113
+  },
+  {
+    "time_s": 16405,
+    "target_vms": 30,
+    "utilization": 0.70171875
+  },
+  {
+    "time_s": 16535,
+    "target_vms": 20,
+    "utilization": 0.2986284722222222
+  },
+  {
+    "time_s": 18522,
+    "target_vms": 10,
+    "utilization": 0.2990625
+  },
+  {
+    "time_s": 18677,
+    "target_vms": 20,
+    "utilization": 0.7030729166666667
+  },
+  {
+    "time_s": 21680,
+    "target_vms": 10,
+    "utilization": 0.299609375
+  },
+  {
+    "time_s": 21937,
+    "target_vms": 20,
+    "utilization": 0.7019791666666666
+  },
+  {
+    "time_s": 22261,
+    "target_vms": 10,
+    "utilization": 0.29966145833333335
+  },
+  {
+    "time_s": 22720,
+    "target_vms": 20,
+    "utilization": 0.7015625
+  },
+  {
+    "time_s": 23058,
+    "target_vms": 10,
+    "utilization": 0.29859375
+  },
+  {
+    "time_s": 23178,
+    "target_vms": 20,
+    "utilization": 0.70421875
+  },
+  {
+    "time_s": 25119,
+    "target_vms": 10,
+    "utilization": 0.2983333333333333
+  },
+  {
+    "time_s": 25394,
+    "target_vms": 20,
+    "utilization": 0.7013020833333333
+  },
+  {
+    "time_s": 25821,
+    "target_vms": 10,
+    "utilization": 0.29856770833333335
+  },
+  {
+    "time_s": 26237,
+    "target_vms": 20,
+    "utilization": 0.7021354166666666
+  },
+  {
+    "time_s": 26460,
+    "target_vms": 10,
+    "utilization": 0.2993229166666667
+  },
+  {
+    "time_s": 26590,
+    "target_vms": 20,
+    "utilization": 0.7011458333333334
+  },
+  {
+    "time_s": 27048,
+    "target_vms": 10,
+    "utilization": 0.29820312499999996
+  },
+  {
+    "time_s": 27222,
+    "target_vms": 20,
+    "utilization": 0.7013020833333333
+  },
+  {
+    "time_s": 27428,
+    "target_vms": 10,
+    "utilization": 0.2994791666666667
+  },
+  {
+    "time_s": 27602,
+    "target_vms": 20,
+    "utilization": 0.70171875
+  },
+  {
+    "time_s": 29579,
+    "target_vms": 10,
+    "utilization": 0.29692708333333334
+  },
+  {
+    "time_s": 29699,
+    "target_vms": 20,
+    "utilization": 0.8079166666666667
+  },
+  {
+    "time_s": 30522,
+    "target_vms": 10,
+    "utilization": 0.2989322916666667
+  },
+  {
+    "time_s": 30642,
+    "target_vms": 20,
+    "utilization": 0.7480208333333334
+  },
+  {
+    "time_s": 30782,
+    "target_vms": 10,
+    "utilization": 0.2994791666666667
+  },
+  {
+    "time_s": 30902,
+    "target_vms": 20,
+    "utilization": 0.7448437499999999
+  },
+  {
+    "time_s": 31108,
+    "target_vms": 10,
+    "utilization": 0.2993229166666667
+  },
+  {
+    "time_s": 31228,
+    "target_vms": 20,
+    "utilization": 0.7153645833333333
+  },
+  {
+    "time_s": 37013,
+    "target_vms": 10,
+    "utilization": 0.2986197916666667
+  },
+  {
+    "time_s": 37198,
+    "target_vms": 20,
+    "utilization": 0.7006770833333333
+  },
+  {
+    "time_s": 37358,
+    "target_vms": 10,
+    "utilization": 0.2992708333333333
+  },
+  {
+    "time_s": 37499,
+    "target_vms": 20,
+    "utilization": 0.70125
+  },
+  {
+    "time_s": 38517,
+    "target_vms": 10,
+    "utilization": 0.299609375
+  },
+  {
+    "time_s": 38637,
+    "target_vms": 20,
+    "utilization": 0.7030729166666667
+  },
+  {
+    "time_s": 41127,
+    "target_vms": 10,
+    "utilization": 0.299765625
+  },
+  {
+    "time_s": 41247,
+    "target_vms": 20,
+    "utilization": 0.7032291666666667
+  },
+  {
+    "time_s": 41464,
+    "target_vms": 10,
+    "utilization": 0.2993229166666667
+  },
+  {
+    "time_s": 41789,
+    "target_vms": 20,
+    "utilization": 0.700625
+  }
+]
