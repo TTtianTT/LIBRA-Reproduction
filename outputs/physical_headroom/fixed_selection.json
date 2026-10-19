@@ -1,0 +1,53 @@
+{
+  "fingerprint": "484512f556244657d3661e729aa811fc1b62aafc56a7f29705d5b16683249f9c",
+  "selected": {
+    "0.5": {
+      "service_seconds": 0.5,
+      "action": 18,
+      "split": "train",
+      "summary": {
+        "total_cost_usd": 39.64658610024762,
+        "vm_cost_usd": 30.93931897524762,
+        "faas_cost_usd": 6.282867125,
+        "gateway_cost_usd": 2.4244,
+        "requests": 20436766,
+        "vm_requests": 18998216,
+        "faas_requests": 1438550,
+        "violations": 9975,
+        "vm_seconds": 1113600.0,
+        "drain_vm_seconds": 83.87320546782009,
+        "terminal_drain_vm_seconds": 131.60990344647144,
+        "starting_vm_seconds": 51060.0,
+        "waited_requests": 3044978,
+        "response_seconds": 9812610.364242494,
+        "violation_rate": 0.0004880909239749577,
+        "max_response_seconds": 1.4930902204437189
+      }
+    },
+    "0.7": {
+      "service_seconds": 0.7,
+      "action": 21,
+      "split": "train",
+      "summary": {
+        "total_cost_usd": 70.89122532235912,
+        "vm_cost_usd": 60.65018660985912,
+        "faas_cost_usd": 7.8166387125,
+        "gateway_cost_usd": 2.4244,
+        "requests": 20436766,
+        "vm_requests": 19141441,
+        "faas_requests": 1295325,
+        "violations": 15255,
+        "vm_seconds": 2182860.0,
+        "drain_vm_seconds": 199.10788895270565,
+        "terminal_drain_vm_seconds": 347.6100659754852,
+        "starting_vm_seconds": 95500.0,
+        "waited_requests": 595234,
+        "response_seconds": 13456364.841292936,
+        "violation_rate": 0.0007464488265902736,
+        "max_response_seconds": 1.4160054504982327
+      }
+    }
+  },
+  "frozen_utc": "2026-10-19T16:08:26.050280+00:00",
+  "selection_split": "train"
+}

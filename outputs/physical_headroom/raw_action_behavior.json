@@ -1,0 +1,10 @@
+{
+  "source_sha256": "a83ec5a5912698693fafab2be798b9ddf0624346fd2bd944c4497b7c5673c02f",
+  "delta_counts": {
+    "-8": 39,
+    "4": 2788,
+    "8": 53
+  },
+  "decisions": 2880,
+  "meaning": "deterministic greedy replay of the historical failed raw-action seed; high entropy alone does not prove a training root cause"
+}

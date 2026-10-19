@@ -8,7 +8,10 @@
 
 ## 直接看结果
 
-- [PPO 固定预算实验：RL-1–4](outputs/rl_study/REPORT.md)：85 次真实训练、5 种子、843 条测试与泛化/消融；当前结果不支持 PPO 稳定优于强分位数规则。
+- [课程报告：先修正基线与物理模型](outputs/physical_headroom/COURSE_REPORT.md)：PPO 常数动作复核、跨秒 M/D/16 队列、错峰负载、训练集调参的预测规则和带上下界的全未来对照。
+- [物理模型核查明细](outputs/physical_headroom/REPORT.md)：因果配额、排空计费、同一动作域、源码指纹与逐计划重放；当前未继续 PPO。
+- [固定动作复核](outputs/constant_action_audit/REPORT.md)：15/15 个高预算 PPO 结果可由固定偏移解释；补扫 δ=−1 后，固定规则优于 PPO 五种子均值。
+- [PPO 早期训练探索记录](outputs/rl_study/REPORT.md)：85 次 8k–16k 步训练；训练预算不足，旧 v2 排队近似不能用于物理 SLA 结论。
 - [RL-0：DP 成本下限与 Gymnasium 环境](outputs/rl0/REPORT.md)：v1 精确 DP、60 秒启动状态、一致性校验与 v2 排队敏感性；尚未训练 PPO。
 - [Azure Functions 2021 两周独立验证](outputs/ml_azure2021/REPORT.md)：前 7 天训练、后 7 天测试，原始/64 倍负载对照；本次 GBDT 未超过强规则。
 - [LIBRA-ML 改进报告](outputs/ml/REPORT.md)：用学到的 τ=0.797 需求分位数替代 avg+φ·std，跨 trace 与时间切分共 6 折评估。
@@ -101,7 +104,7 @@ Azure 对照保持固定服务时间，不重放实际 duration；64 倍场景�
 
 第 1 步的 v1/v2 环境与 DP 已完成，并继续运行了 PPO 主实验、基线调参、泛化和消融。主实验采用明确的 Azure 16 倍调用量复制；1–9 天训练、10–11 天验证、12–14 天冻结测试，另外评估原始 Azure、WITS、Berkeley 和 Sin。每个配置 5 个随机种子，所有实际样本数、训练耗时、checkpoint 选择和 95% 区间均保留。
 
-这是预先固定本地预算的一轮实验，不能声称已收敛或具有严格等计算调参预算。0.5 秒服务下 PPO 满足 SLA，但没有可靠超过强规则；0.7 秒下所选 PPO 的测试均值违约率超过 0.1%。完整方法、AUTO/SPOCK 适配边界与历史测试集暴露见 [运行说明](docs/rl_study.md)和[实际报告](outputs/rl_study/REPORT.md)。
+这 85 次训练每次仅 8k–16k 步，现归档为早期探索，不能用于判断 PPO 收敛或泛化。旧 v2 的排队公式高估固定服务时间下的延迟，其‘满足 SLA’等判断已撤回。完整历史记录、AUTO/SPOCK 适配边界与测试集暴露见 [运行说明](docs/rl_study.md)和[实际报告](outputs/rl_study/REPORT.md)。
 
 ```bash
 .venv/bin/python -m pip install -r requirements-rl.txt
@@ -121,6 +124,25 @@ Azure 对照保持固定服务时间，不重放实际 duration；64 倍场景�
 .venv/bin/python scripts/rl_diagnostics.py --stage all --workers 4
 .venv/bin/python scripts/summarize_rl_diagnostics.py
 .venv/bin/python scripts/verify_rl_diagnostics.py --require-models
+```
+
+## 修正后的物理模型与收益上限
+
+固定动作复核解释了 15/15 个高预算 PPO 选中结果。新增的跨秒 M/D/16 事件队列保留积压、计入排空费用，并用分区内错峰副本替代同步乘 16；训练和验证统一使用 1,800 秒因果历史。旧仿真核心及数值保留为历史记录。
+
+修正模型上，0.7s 的因果经济分位数规则比最佳固定残差便宜 29.53%。训练集选出的最强因果规则，与全未来精确最优解相比，费用改善上限为 7.31%（0.5s）和 14.31%（0.7s）。20 个预设组合均取得最优性证书；这些数值限于两个开发验证小时和共同的有限动作域，不是在线 RL 的可实现收益。详见 [课程报告](outputs/physical_headroom/COURSE_REPORT.md)。本轮未继续 PPO。
+
+以下流程不依赖 Torch 或 stable-baselines3；Gymnasium 只用于读取历史诊断中的固定动作对照。
+
+```bash
+.venv/bin/python -m pip install -r requirements-physical.txt
+.venv/bin/python scripts/audit_constant_actions.py
+.venv/bin/python scripts/audit_reward_signal.py
+.venv/bin/python scripts/physical_headroom.py --stage all
+.venv/bin/python scripts/forecast_rule_controls.py
+.venv/bin/python scripts/refine_physical_bounds.py
+.venv/bin/python scripts/summarize_physical_headroom.py
+.venv/bin/python scripts/verify_physical_headroom.py
 ```
 
 ## 作者代码重放

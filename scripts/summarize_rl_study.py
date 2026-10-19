@@ -13,6 +13,7 @@ sys.path.insert(0, str(ROOT))
 import numpy as np
 from libra_rl.training import confidence_interval
 from libra_sim.plotting import plt
+from report_corrections import corrected_report
 
 OUT = ROOT / "outputs/rl_study"
 
@@ -367,7 +368,7 @@ def main():
               "SB3 的 [PPO](https://stable-baselines3.readthedocs.io/en/master/modules/ppo.html) 与 "
               "[向量环境/终止语义](https://stable-baselines3.readthedocs.io/en/master/guide/vec_envs.html)"
               "使用官方接口；环境与排队模型的推导见 [RL-0 说明](../../docs/rl0.md)。", ""]
-    (OUT / "REPORT.md").write_text("\n".join(lines))
+    (OUT / "REPORT.md").write_text(corrected_report("\n".join(lines),"study"))
     plot_pareto(agg, rows)
     plot_pareto(agg, rows, "WITS")
     plot_pareto(agg, rows, "Berkeley")

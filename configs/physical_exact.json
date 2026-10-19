@@ -1,0 +1,7 @@
+{
+  "max_seconds_per_window": 10.0,
+  "max_expansions_per_window": 10000,
+  "max_frontier_entries": 50000,
+  "windows": "all twenty predeclared physical validation service/arrival/window combinations",
+  "algorithm": "admissible queue-state branch-and-bound with Pareto dominance; no beam pruning"
+}

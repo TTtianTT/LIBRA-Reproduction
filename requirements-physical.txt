@@ -1,0 +1,7 @@
+# Tested Python 3.12 environment. Torch/SB3 are not needed for these controls.
+numpy==1.26.4
+matplotlib==3.9.2
+numba==0.60.0
+# Historical action/reward audits import Gymnasium and causal-feature helpers.
+gymnasium==1.4.0
+scipy==1.17.1

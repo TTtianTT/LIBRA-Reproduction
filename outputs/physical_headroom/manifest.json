@@ -1,0 +1,97 @@
+{
+  "fingerprint": "484512f556244657d3661e729aa811fc1b62aafc56a7f29705d5b16683249f9c",
+  "source_sha256": {
+    "scripts/physical_headroom.py": "af5dca94c885bde355e80b13ca76df395f2c5df164cce92204332f19df5b9e95",
+    "configs/physical_headroom.json": "a88c275eb9685952a7349931d013182d72ce69cfcfff1efdbcba8ac93a73d3bb",
+    "libra_rl/physical.py": "d31d0a469df248e714cf261422f5fcb3084c09c3a083e4f8cac1cac8f4038f8b",
+    "libra_rl/physical_lookup.py": "fd2bbef2be274c940f30db9845f1ec86114667dec28e21c08f7fe885f3640b9b",
+    "libra_rl/physical_planning.py": "5ba7cf57a25cea9bb87dc64b682e61f80901b5812182d33e6fb6ba21995a50b9",
+    "libra_rl/model.py": "0d4767922204bfea478ddb226667565131b2dba26154266e93e5c5b377f64da0",
+    "libra_rl/data.py": "1aab6fd1db504c06e8e34c83a96f5a3dbdb65252295cf33fa10e86bd470a6a48",
+    "libra_rl/queue_validation.py": "0c87ea773031d285df6efed397bed2d011c9d4302b11c29345a24c288f54eb49",
+    "libra_sim/__init__.py": "531f7200cae60dabf9095908b7fa6855bcacca40c2d5de6f4b48e82069d61aad",
+    "libra_sim/config.py": "7f051de5a742f4e4714b9b8db0f57017caada832355b45c97128271667885791",
+    "libra_sim/engine.py": "a37f4c0f7913fda36a07c9f803ae716c5ee9df3d15747316c9a57ed2d8c22023",
+    "libra_sim/plotting.py": "682ad94dce3f808f28ec84cbb42009133d50f23940181ffdc8c7a41a8dcd9c40",
+    "libra_sim/traces.py": "9a3c9d72f7ef673ad61539dea262f7fc1b14dd09f66b29e27781bf22d2d1c3b9"
+  },
+  "protocol": {
+    "version": "transient-md16-v3.1",
+    "observation_timing": "only fully completed seconds before decision t",
+    "admission": "causal arrival-order per-second quota; no thinning using the complete second's future arrivals",
+    "services_seconds": [
+      0.5,
+      0.7
+    ],
+    "decision_seconds": 60,
+    "cold_start_seconds": 100,
+    "sla_seconds": 1.0,
+    "epsilon": 0.001,
+    "history_seconds": 1800,
+    "episode_seconds": 3600,
+    "offsets_seconds": [
+      0,
+      137,
+      509,
+      1061,
+      1879,
+      2797,
+      3907,
+      5279,
+      6899,
+      8513,
+      10457,
+      12647,
+      15031,
+      17657,
+      19997,
+      21600
+    ],
+    "training_arrival_seed": 10000,
+    "validation_arrival_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "validation_starts_after_staggering_seconds": [
+      1800,
+      109800
+    ],
+    "beam_width": 8,
+    "beam_sensitivity_width": 16,
+    "beam_sensitivity": "first validation window, arrival seed 0, retain primary beam plan as incumbent",
+    "lookup_extra_utilizations": [
+      0.95,
+      0.975,
+      0.99
+    ],
+    "lookup_extra_warmup_requests": 200000,
+    "lookup_extra_measured_requests": 1000000,
+    "max_vms": 512,
+    "small_headroom_upper_fraction": 0.05,
+    "new_ppo": {
+      "enabled": false,
+      "entry_conditions": [
+        "physical model and causal forecast baseline frozen",
+        "state-dependent causal baseline improves over best train-selected fixed action",
+        "independent evaluation data available"
+      ],
+      "minimum_samples_if_enabled": 1000000,
+      "parallel_envs_if_enabled": 16,
+      "entropy_coefficient_if_enabled": 0.001,
+      "reward_normalization_if_enabled": true,
+      "baseline_if_enabled": "input-dependent critic; future exogenous inputs only during training, never in actor observations"
+    },
+    "scope": "one-hour development windows; not a new blind test or a full Azure benchmark"
+  },
+  "created_utc": "2026-10-19T16:07:50.993117+00:00",
+  "azure_aggregate_sha256": "b35396b7f7a57431e2179f806d2b4220ffd581c4378a5b056e0b11f295a0f7b0",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "python": "3.12.7",
+  "numpy": "1.26.4",
+  "accelerator": "numba",
+  "test_evaluated": false,
+  "ppo_trained": false
+}

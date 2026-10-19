@@ -1,0 +1,138 @@
+{
+  "rows": [
+    {
+      "case": "v1",
+      "split": "train",
+      "penalty": 0.0,
+      "steps": 12960,
+      "cost_normalizer_usd": 0.01,
+      "teacher_cost_std": 1.1707592364602442,
+      "perfect_immediate_gain_mean": 0.06783429320987655,
+      "perfect_immediate_gain_median": 0.0,
+      "teacher_actual_reward_std": 1.1707592364602442,
+      "cost_only_gain_mean": 0.06783429320987655,
+      "cost_only_gain_median": 0.0,
+      "gain_to_cost_std_ratio": 0.0579404296778999,
+      "critic_value_loss_range": [
+        29.67926092147827,
+        3214.737438964844
+      ],
+      "critic_explained_variance_range": [
+        -0.0012012720108032227,
+        0.9716136604547501
+      ]
+    },
+    {
+      "case": "v2_s05",
+      "split": "train",
+      "penalty": 0.0001,
+      "steps": 12960,
+      "cost_normalizer_usd": 0.01,
+      "teacher_cost_std": 0.66972497487289,
+      "perfect_immediate_gain_mean": 0.08601536061262502,
+      "perfect_immediate_gain_median": 0.035563480567794625,
+      "teacher_actual_reward_std": 0.6555603557757728,
+      "cost_only_gain_mean": 0.1666683141975309,
+      "cost_only_gain_median": 0.1493685,
+      "gain_to_cost_std_ratio": 0.12843385544782804,
+      "critic_value_loss_range": [
+        18.17471628189087,
+        4705.153112792968
+      ],
+      "critic_explained_variance_range": [
+        -0.0012966394424438477,
+        0.9514920897781849
+      ]
+    },
+    {
+      "case": "v2_s07",
+      "split": "train",
+      "penalty": 0.0001,
+      "steps": 12960,
+      "cost_normalizer_usd": 0.01,
+      "teacher_cost_std": 0.9999594366857972,
+      "perfect_immediate_gain_mean": 0.1401513902142312,
+      "perfect_immediate_gain_median": 0.07329646535617403,
+      "teacher_actual_reward_std": 0.9978277194350116,
+      "cost_only_gain_mean": 0.28762795237139915,
+      "cost_only_gain_median": 0.2572986333333333,
+      "gain_to_cost_std_ratio": 0.14015707544972042,
+      "critic_value_loss_range": [
+        47.791687202453616,
+        6644.749975585937
+      ],
+      "critic_explained_variance_range": [
+        -0.001287221908569336,
+        0.9550779685378075
+      ]
+    },
+    {
+      "case": "v1",
+      "split": "validation",
+      "penalty": 0.0,
+      "steps": 2880,
+      "cost_normalizer_usd": 0.01,
+      "teacher_cost_std": 1.5502940086376327,
+      "perfect_immediate_gain_mean": 0.07892591111111111,
+      "perfect_immediate_gain_median": 0.0,
+      "teacher_actual_reward_std": 1.5502940086376327,
+      "cost_only_gain_mean": 0.07892591111111111,
+      "cost_only_gain_median": 0.0,
+      "gain_to_cost_std_ratio": 0.05091028583698754,
+      "critic_value_loss_range": [
+        29.67926092147827,
+        3214.737438964844
+      ],
+      "critic_explained_variance_range": [
+        -0.0012012720108032227,
+        0.9716136604547501
+      ]
+    },
+    {
+      "case": "v2_s05",
+      "split": "validation",
+      "penalty": 0.0001,
+      "steps": 2880,
+      "cost_normalizer_usd": 0.01,
+      "teacher_cost_std": 0.8725200257996523,
+      "perfect_immediate_gain_mean": 0.09481476284833965,
+      "perfect_immediate_gain_median": 0.03598916641674836,
+      "teacher_actual_reward_std": 0.8575911237354047,
+      "cost_only_gain_mean": 0.17635638388310187,
+      "cost_only_gain_median": 0.14832316666666662,
+      "gain_to_cost_std_ratio": 0.10866772113504587,
+      "critic_value_loss_range": [
+        18.17471628189087,
+        4705.153112792968
+      ],
+      "critic_explained_variance_range": [
+        -0.0012966394424438477,
+        0.9514920897781849
+      ]
+    },
+    {
+      "case": "v2_s07",
+      "split": "validation",
+      "penalty": 0.0001,
+      "steps": 2880,
+      "cost_normalizer_usd": 0.01,
+      "teacher_cost_std": 1.303199991708288,
+      "perfect_immediate_gain_mean": 0.15359080707076916,
+      "perfect_immediate_gain_median": 0.07216701488186456,
+      "teacher_actual_reward_std": 1.3001609599898976,
+      "cost_only_gain_mean": 0.3019909867708333,
+      "cost_only_gain_median": 0.2536779333333333,
+      "gain_to_cost_std_ratio": 0.11785666670350116,
+      "critic_value_loss_range": [
+        47.791687202453616,
+        6644.749975585937
+      ],
+      "critic_explained_variance_range": [
+        -0.001287221908569336,
+        0.9550779685378075
+      ]
+    }
+  ],
+  "source_sha256": "f432767d3dc3163e0b6d29e58cba8a176215dbd6605d2c6fd5d32000640b33c0",
+  "meaning": "immediate counterfactual on teacher trajectory, cost-only and actual reward both reported; no continuation value, not a policy upper bound or an advantage-variance proof"
+}

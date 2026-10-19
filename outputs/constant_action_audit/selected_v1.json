@@ -1,0 +1,27 @@
+{
+  "split": "train",
+  "selected": {
+    "action": 3,
+    "delta": 0,
+    "rho": 1.0,
+    "all_faas": false,
+    "summary": {
+      "total_cost_usd": 108.03246309333333,
+      "vm_cost_usd": 55.90833333333334,
+      "faas_cost_usd": 49.61852976,
+      "gateway_cost_usd": 2.5056,
+      "requests": 21309072,
+      "vm_requests": 15495536.0,
+      "faas_requests": 5813536.0,
+      "expected_violations": 0.0,
+      "vm_seconds": 2012700,
+      "starting_vm_seconds": 194940,
+      "cancelled_startup_vm_seconds": 55500,
+      "unfinished_startup_vm_seconds": 240,
+      "violation_rate": 0.0,
+      "episodes": 36,
+      "max_target_vms": 44
+    }
+  },
+  "historical_source_fingerprint": "655e6db154cb44da389f50b96a567ff833e3e218a91d50b7416af2fee2f9567b"
+}

@@ -2,9 +2,11 @@ from dataclasses import replace
 from itertools import product
 import math
 
-from gymnasium.utils.env_checker import check_env
 import numpy as np
 import pytest
+
+pytest.importorskip("gymnasium")
+from gymnasium.utils.env_checker import check_env
 
 from libra_ml.features import newsvendor_tau
 from libra_ml.policies import window_quantile_estimator

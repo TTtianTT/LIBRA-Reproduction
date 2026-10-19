@@ -13,6 +13,7 @@ import numpy as np
 from libra_rl.diagnostics import write_json
 from libra_rl.training import confidence_interval
 from libra_sim.plotting import plt
+from report_corrections import corrected_report
 
 
 def csv_write(path,rows):
@@ -278,7 +279,7 @@ def summarize(output,partial=False):
             "本轮仍不足以支持 RL 稳定优于强规则。以下保留全部种子、失败结果、置信区间及适用边界，不能把费用更低但违约的结果计作受约束改进。", ""]
         pivot = lines.index("## 动作范围和已知未来的上限")
         lines[pivot:pivot] = overview
-    (output/"REPORT.md").write_text("\n".join(lines)+"\n")
+    (output/"REPORT.md").write_text(corrected_report("\n".join(lines)+"\n","diagnostics"))
     print(f"Summarized {len(main)} main runs, {len(toys)} toy runs; test_evaluated=False")
 
 

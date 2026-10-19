@@ -1,5 +1,13 @@
 # PPO 本地有限预算实验：RL-1–4
 
+<!-- research-correction:start -->
+**本报告改列早期训练探索记录：85 次运行各只有 8k–16k 步，不能据此评价 PPO 的收敛性能或 RL-1–4 的有效性。**
+
+[固定动作复核](../constant_action_audit/REPORT.md)给出了全部训练网格、动作直方图和逐种子匹配。
+旧 v2 使用的混合等待尾不构成有效的 M/D/16 SLA 模型；下文违约数仅保留为旧近似的历史数值，撤回物理 SLA 解读。
+查表与跨秒事件队列修复、以及进一步 RL 门槛另见 [物理模型核查](../physical_headroom/REPORT.md)。
+<!-- research-correction:end -->
+
 本报告由真实 SB3 PPO 训练、训练集基线扫描和冻结后的测试批次生成。未把规则或随机策略当成训练结果。
 
 ## 先看主结论

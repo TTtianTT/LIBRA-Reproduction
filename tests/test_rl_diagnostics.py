@@ -4,6 +4,8 @@ import math
 import numpy as np
 import pytest
 
+pytest.importorskip("gymnasium")
+
 from libra_rl.diagnostic_env import DiagnosticEnv, base_targets, initialize_rule_prior
 from libra_rl.evaluation import evaluate_targets
 from libra_rl.model import CostModel
@@ -14,7 +16,8 @@ from libra_rl.training import ObservationTransform
 
 
 def test_nested_budgets_are_one_training_trajectory(tmp_path):
-    import torch
+    torch = pytest.importorskip("torch")
+    pytest.importorskip("stable_baselines3")
     from libra_rl.diagnostics import train_nested
     torch.set_num_threads(1)
     protocol = dict(network=[8,8], ppo=dict(n_steps=128,batch_size=64,n_epochs=1),
@@ -90,8 +93,8 @@ def test_teacher_and_full_faas_replay_exact_accounting(service,rho):
 
 
 def test_rule_logit_prior_is_exact_greedy_teacher():
+    torch = pytest.importorskip("torch")
     sb3 = pytest.importorskip("stable_baselines3")
-    import torch
     torch.set_num_threads(1)
     env = ObservationTransform(DiagnosticEnv([32]*300,episode_seconds=None))
     agent = sb3.PPO("MlpPolicy",env,n_steps=8,batch_size=8,seed=0,device="cpu")

@@ -1,0 +1,6 @@
+{
+  "recorded_utc": "2026-10-19T18:12:19.893951+00:00",
+  "numpy": "1.26.4",
+  "accelerator": "numba",
+  "numba": "0.60.0"
+}

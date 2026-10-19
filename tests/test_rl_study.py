@@ -4,6 +4,8 @@ import json
 import numpy as np
 import pytest
 
+pytest.importorskip("gymnasium")
+
 from libra_rl.dp import solve_dp
 from libra_rl.fast_dp import optimal_bound
 from libra_rl.env import LibraEnv
@@ -80,8 +82,8 @@ def test_finite_horizon_no_bootstrap_and_fixed_observation_transform():
 
 
 def test_sb3_checkpoint_reloads_selected_updated_policy(tmp_path):
+    torch = pytest.importorskip("torch")
     sb3 = pytest.importorskip("stable_baselines3")
-    import torch
     from libra_rl.study import train_agent, evaluate_agent
     torch.set_num_threads(1)
     protocol = {"episode_seconds": 600, "epsilon": 0.001, "cost_normalizer_usd": 0.01,

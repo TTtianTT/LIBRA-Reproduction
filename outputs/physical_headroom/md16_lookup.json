@@ -1,0 +1,1215 @@
+{
+  "fingerprint": "484512f556244657d3661e729aa811fc1b62aafc56a7f29705d5b16683249f9c",
+  "source_queue_calibration_sha256": "9cf99dd5f08a453a8934f66ae9653bc82f4d88b2029634fb9eb842bf4dab4134",
+  "tables": {
+    "0.5": [
+      {
+        "utilization": 0.0,
+        "raw_mean": 0.0,
+        "monotone_estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "utilization": 0.5,
+        "raw_mean": 0.0,
+        "monotone_estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "utilization": 0.6,
+        "raw_mean": 0.0,
+        "monotone_estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "utilization": 0.7,
+        "raw_mean": 5.199999999999999e-06,
+        "monotone_estimate": 5.199999999999999e-06,
+        "ci95": [
+          -6.657728660266481e-06,
+          1.705772866026648e-05
+        ]
+      },
+      {
+        "utilization": 0.8,
+        "raw_mean": 0.00038200000000000007,
+        "monotone_estimate": 0.00038200000000000007,
+        "ci95": [
+          0.00024661876012176733,
+          0.0005173812398782329
+        ]
+      },
+      {
+        "utilization": 0.9,
+        "raw_mean": 0.0236196,
+        "monotone_estimate": 0.0236196,
+        "ci95": [
+          0.018204061326720568,
+          0.029035138673279434
+        ]
+      },
+      {
+        "utilization": 0.95,
+        "raw_mean": 0.1618182,
+        "monotone_estimate": 0.1618182,
+        "ci95": [
+          0.15116107828710607,
+          0.17247532171289393
+        ]
+      },
+      {
+        "utilization": 0.975,
+        "raw_mean": 0.40180540000000003,
+        "monotone_estimate": 0.40180540000000003,
+        "ci95": [
+          0.3815651940853376,
+          0.42204560591466245
+        ]
+      },
+      {
+        "utilization": 0.99,
+        "raw_mean": 0.6932003999999999,
+        "monotone_estimate": 0.6932003999999999,
+        "ci95": [
+          0.6732545004403809,
+          0.713146299559619
+        ]
+      }
+    ],
+    "0.7": [
+      {
+        "utilization": 0.0,
+        "raw_mean": 0.0,
+        "monotone_estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "utilization": 0.5,
+        "raw_mean": 2.2e-05,
+        "monotone_estimate": 2.2e-05,
+        "ci95": [
+          6.792783862083615e-06,
+          3.720721613791639e-05
+        ]
+      },
+      {
+        "utilization": 0.6,
+        "raw_mean": 0.0002728,
+        "monotone_estimate": 0.0002728,
+        "ci95": [
+          0.0001897364834073037,
+          0.00035586351659269635
+        ]
+      },
+      {
+        "utilization": 0.7,
+        "raw_mean": 0.0026816,
+        "monotone_estimate": 0.0026816,
+        "ci95": [
+          0.002266466581502076,
+          0.003096733418497924
+        ]
+      },
+      {
+        "utilization": 0.8,
+        "raw_mean": 0.022155199999999996,
+        "monotone_estimate": 0.022155199999999996,
+        "ci95": [
+          0.020012334271769964,
+          0.02429806572823003
+        ]
+      },
+      {
+        "utilization": 0.9,
+        "raw_mean": 0.1613664,
+        "monotone_estimate": 0.1613664,
+        "ci95": [
+          0.1522930335709745,
+          0.17043976642902547
+        ]
+      },
+      {
+        "utilization": 0.95,
+        "raw_mean": 0.4045832000000001,
+        "monotone_estimate": 0.4045832000000001,
+        "ci95": [
+          0.3943465606665032,
+          0.414819839333497
+        ]
+      },
+      {
+        "utilization": 0.975,
+        "raw_mean": 0.6382893999999999,
+        "monotone_estimate": 0.6382893999999999,
+        "ci95": [
+          0.6281099162195488,
+          0.648468883780451
+        ]
+      },
+      {
+        "utilization": 0.99,
+        "raw_mean": 0.833939,
+        "monotone_estimate": 0.833939,
+        "ci95": [
+          0.8227294724275238,
+          0.8451485275724762
+        ]
+      }
+    ]
+  },
+  "rows": [
+    {
+      "utilization": 0.5,
+      "service_seconds": 0.5,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 0,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 0,
+      "violation_rate": 0.0,
+      "wait_probability": 0.008194,
+      "mean_response_seconds": 0.5003945989525266
+    },
+    {
+      "utilization": 0.5,
+      "service_seconds": 0.5,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 1,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 0,
+      "violation_rate": 0.0,
+      "wait_probability": 0.008852,
+      "mean_response_seconds": 0.5004353338189124
+    },
+    {
+      "utilization": 0.5,
+      "service_seconds": 0.5,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 2,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 0,
+      "violation_rate": 0.0,
+      "wait_probability": 0.008092,
+      "mean_response_seconds": 0.5003797531078417
+    },
+    {
+      "utilization": 0.5,
+      "service_seconds": 0.5,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 3,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 0,
+      "violation_rate": 0.0,
+      "wait_probability": 0.007774,
+      "mean_response_seconds": 0.5003801389841014
+    },
+    {
+      "utilization": 0.5,
+      "service_seconds": 0.5,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 4,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 0,
+      "violation_rate": 0.0,
+      "wait_probability": 0.008222,
+      "mean_response_seconds": 0.5003926647011377
+    },
+    {
+      "utilization": 0.6,
+      "service_seconds": 0.5,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 0,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 0,
+      "violation_rate": 0.0,
+      "wait_probability": 0.038866,
+      "mean_response_seconds": 0.502148119431422
+    },
+    {
+      "utilization": 0.6,
+      "service_seconds": 0.5,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 1,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 0,
+      "violation_rate": 0.0,
+      "wait_probability": 0.039326,
+      "mean_response_seconds": 0.5022480096535269
+    },
+    {
+      "utilization": 0.6,
+      "service_seconds": 0.5,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 2,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 0,
+      "violation_rate": 0.0,
+      "wait_probability": 0.036924,
+      "mean_response_seconds": 0.5020447679185266
+    },
+    {
+      "utilization": 0.6,
+      "service_seconds": 0.5,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 3,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 0,
+      "violation_rate": 0.0,
+      "wait_probability": 0.036926,
+      "mean_response_seconds": 0.5020433367360885
+    },
+    {
+      "utilization": 0.6,
+      "service_seconds": 0.5,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 4,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 0,
+      "violation_rate": 0.0,
+      "wait_probability": 0.03774,
+      "mean_response_seconds": 0.5021000481393177
+    },
+    {
+      "utilization": 0.7,
+      "service_seconds": 0.5,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 0,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 0,
+      "violation_rate": 0.0,
+      "wait_probability": 0.120024,
+      "mean_response_seconds": 0.5081453297617009
+    },
+    {
+      "utilization": 0.7,
+      "service_seconds": 0.5,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 1,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 2,
+      "violation_rate": 4e-06,
+      "wait_probability": 0.120436,
+      "mean_response_seconds": 0.5084084465391097
+    },
+    {
+      "utilization": 0.7,
+      "service_seconds": 0.5,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 2,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 0,
+      "violation_rate": 0.0,
+      "wait_probability": 0.115582,
+      "mean_response_seconds": 0.5077710222595265
+    },
+    {
+      "utilization": 0.7,
+      "service_seconds": 0.5,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 3,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 11,
+      "violation_rate": 2.2e-05,
+      "wait_probability": 0.115646,
+      "mean_response_seconds": 0.5078307880221382
+    },
+    {
+      "utilization": 0.7,
+      "service_seconds": 0.5,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 4,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 0,
+      "violation_rate": 0.0,
+      "wait_probability": 0.117646,
+      "mean_response_seconds": 0.5080111295327611
+    },
+    {
+      "utilization": 0.8,
+      "service_seconds": 0.5,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 0,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 154,
+      "violation_rate": 0.000308,
+      "wait_probability": 0.285878,
+      "mean_response_seconds": 0.5264598152445309
+    },
+    {
+      "utilization": 0.8,
+      "service_seconds": 0.5,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 1,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 222,
+      "violation_rate": 0.000444,
+      "wait_probability": 0.288214,
+      "mean_response_seconds": 0.5275347779335832
+    },
+    {
+      "utilization": 0.8,
+      "service_seconds": 0.5,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 2,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 252,
+      "violation_rate": 0.000504,
+      "wait_probability": 0.281194,
+      "mean_response_seconds": 0.52603979085903
+    },
+    {
+      "utilization": 0.8,
+      "service_seconds": 0.5,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 3,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 210,
+      "violation_rate": 0.00042,
+      "wait_probability": 0.277252,
+      "mean_response_seconds": 0.525479531629826
+    },
+    {
+      "utilization": 0.8,
+      "service_seconds": 0.5,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 4,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 117,
+      "violation_rate": 0.000234,
+      "wait_probability": 0.280898,
+      "mean_response_seconds": 0.5260302973017346
+    },
+    {
+      "utilization": 0.9,
+      "service_seconds": 0.5,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 0,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 11161,
+      "violation_rate": 0.022322,
+      "wait_probability": 0.571828,
+      "mean_response_seconds": 0.5975908348071162
+    },
+    {
+      "utilization": 0.9,
+      "service_seconds": 0.5,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 1,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 14019,
+      "violation_rate": 0.028038,
+      "wait_probability": 0.578914,
+      "mean_response_seconds": 0.6035437921304646
+    },
+    {
+      "utilization": 0.9,
+      "service_seconds": 0.5,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 2,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 14223,
+      "violation_rate": 0.028446,
+      "wait_probability": 0.563092,
+      "mean_response_seconds": 0.598073441809054
+    },
+    {
+      "utilization": 0.9,
+      "service_seconds": 0.5,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 3,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 9784,
+      "violation_rate": 0.019568,
+      "wait_probability": 0.557768,
+      "mean_response_seconds": 0.5927313337883258
+    },
+    {
+      "utilization": 0.9,
+      "service_seconds": 0.5,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 4,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 9862,
+      "violation_rate": 0.019724,
+      "wait_probability": 0.561702,
+      "mean_response_seconds": 0.5924456671273743
+    },
+    {
+      "utilization": 0.5,
+      "service_seconds": 0.7,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 0,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 19,
+      "violation_rate": 3.8e-05,
+      "wait_probability": 0.008194,
+      "mean_response_seconds": 0.7005524385399874
+    },
+    {
+      "utilization": 0.5,
+      "service_seconds": 0.7,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 1,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 8,
+      "violation_rate": 1.6e-05,
+      "wait_probability": 0.008852,
+      "mean_response_seconds": 0.7006094673529274
+    },
+    {
+      "utilization": 0.5,
+      "service_seconds": 0.7,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 2,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 7,
+      "violation_rate": 1.4e-05,
+      "wait_probability": 0.008092,
+      "mean_response_seconds": 0.7005316543574295
+    },
+    {
+      "utilization": 0.5,
+      "service_seconds": 0.7,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 3,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 16,
+      "violation_rate": 3.2e-05,
+      "wait_probability": 0.007774,
+      "mean_response_seconds": 0.7005321945841966
+    },
+    {
+      "utilization": 0.5,
+      "service_seconds": 0.7,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 4,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 5,
+      "violation_rate": 1e-05,
+      "wait_probability": 0.008222,
+      "mean_response_seconds": 0.7005497305880354
+    },
+    {
+      "utilization": 0.6,
+      "service_seconds": 0.7,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 0,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 137,
+      "violation_rate": 0.000274,
+      "wait_probability": 0.038866,
+      "mean_response_seconds": 0.7030073672102556
+    },
+    {
+      "utilization": 0.6,
+      "service_seconds": 0.7,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 1,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 181,
+      "violation_rate": 0.000362,
+      "wait_probability": 0.039326,
+      "mean_response_seconds": 0.7031472135212038
+    },
+    {
+      "utilization": 0.6,
+      "service_seconds": 0.7,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 2,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 105,
+      "violation_rate": 0.00021,
+      "wait_probability": 0.036924,
+      "mean_response_seconds": 0.7028626750922207
+    },
+    {
+      "utilization": 0.6,
+      "service_seconds": 0.7,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 3,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 156,
+      "violation_rate": 0.000312,
+      "wait_probability": 0.036926,
+      "mean_response_seconds": 0.7028606714368069
+    },
+    {
+      "utilization": 0.6,
+      "service_seconds": 0.7,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 4,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 103,
+      "violation_rate": 0.000206,
+      "wait_probability": 0.03774,
+      "mean_response_seconds": 0.7029400674013253
+    },
+    {
+      "utilization": 0.7,
+      "service_seconds": 0.7,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 0,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 1264,
+      "violation_rate": 0.002528,
+      "wait_probability": 0.120024,
+      "mean_response_seconds": 0.7114034616723036
+    },
+    {
+      "utilization": 0.7,
+      "service_seconds": 0.7,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 1,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 1618,
+      "violation_rate": 0.003236,
+      "wait_probability": 0.120436,
+      "mean_response_seconds": 0.7117718251606939
+    },
+    {
+      "utilization": 0.7,
+      "service_seconds": 0.7,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 2,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 1176,
+      "violation_rate": 0.002352,
+      "wait_probability": 0.115582,
+      "mean_response_seconds": 0.7108794311692894
+    },
+    {
+      "utilization": 0.7,
+      "service_seconds": 0.7,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 3,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 1298,
+      "violation_rate": 0.002596,
+      "wait_probability": 0.115646,
+      "mean_response_seconds": 0.7109631032369309
+    },
+    {
+      "utilization": 0.7,
+      "service_seconds": 0.7,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 4,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 1348,
+      "violation_rate": 0.002696,
+      "wait_probability": 0.117646,
+      "mean_response_seconds": 0.7112155813517895
+    },
+    {
+      "utilization": 0.8,
+      "service_seconds": 0.7,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 0,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 10735,
+      "violation_rate": 0.02147,
+      "wait_probability": 0.285878,
+      "mean_response_seconds": 0.7370437413476602
+    },
+    {
+      "utilization": 0.8,
+      "service_seconds": 0.7,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 1,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 12548,
+      "violation_rate": 0.025096,
+      "wait_probability": 0.288214,
+      "mean_response_seconds": 0.7385486891122623
+    },
+    {
+      "utilization": 0.8,
+      "service_seconds": 0.7,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 2,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 10981,
+      "violation_rate": 0.021962,
+      "wait_probability": 0.281194,
+      "mean_response_seconds": 0.7364557072078967
+    },
+    {
+      "utilization": 0.8,
+      "service_seconds": 0.7,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 3,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 10281,
+      "violation_rate": 0.020562,
+      "wait_probability": 0.277252,
+      "mean_response_seconds": 0.7356713442871229
+    },
+    {
+      "utilization": 0.8,
+      "service_seconds": 0.7,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 4,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 10843,
+      "violation_rate": 0.021686,
+      "wait_probability": 0.280898,
+      "mean_response_seconds": 0.7364424162277489
+    },
+    {
+      "utilization": 0.9,
+      "service_seconds": 0.7,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 0,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 82534,
+      "violation_rate": 0.165068,
+      "wait_probability": 0.571828,
+      "mean_response_seconds": 0.8366271687350193
+    },
+    {
+      "utilization": 0.9,
+      "service_seconds": 0.7,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 1,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 85823,
+      "violation_rate": 0.171646,
+      "wait_probability": 0.578914,
+      "mean_response_seconds": 0.8449613089875204
+    },
+    {
+      "utilization": 0.9,
+      "service_seconds": 0.7,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 2,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 80451,
+      "violation_rate": 0.160902,
+      "wait_probability": 0.563092,
+      "mean_response_seconds": 0.8373028185373852
+    },
+    {
+      "utilization": 0.9,
+      "service_seconds": 0.7,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 3,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 77880,
+      "violation_rate": 0.15576,
+      "wait_probability": 0.557768,
+      "mean_response_seconds": 0.829823867308507
+    },
+    {
+      "utilization": 0.9,
+      "service_seconds": 0.7,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 4,
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "violations": 76728,
+      "violation_rate": 0.153456,
+      "wait_probability": 0.561702,
+      "mean_response_seconds": 0.8294239339829761
+    },
+    {
+      "utilization": 0.95,
+      "service_seconds": 0.5,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 0,
+      "warmup_requests": 200000,
+      "measured_requests": 1000000,
+      "violations": 155186,
+      "violation_rate": 0.155186,
+      "wait_probability": 0.759057,
+      "mean_response_seconds": 0.7433877984768603
+    },
+    {
+      "utilization": 0.95,
+      "service_seconds": 0.5,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 1,
+      "warmup_requests": 200000,
+      "measured_requests": 1000000,
+      "violations": 174577,
+      "violation_rate": 0.174577,
+      "wait_probability": 0.765395,
+      "mean_response_seconds": 0.7644144160713112
+    },
+    {
+      "utilization": 0.95,
+      "service_seconds": 0.5,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 2,
+      "warmup_requests": 200000,
+      "measured_requests": 1000000,
+      "violations": 161500,
+      "violation_rate": 0.1615,
+      "wait_probability": 0.761598,
+      "mean_response_seconds": 0.7501664310443517
+    },
+    {
+      "utilization": 0.95,
+      "service_seconds": 0.5,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 3,
+      "warmup_requests": 200000,
+      "measured_requests": 1000000,
+      "violations": 164869,
+      "violation_rate": 0.164869,
+      "wait_probability": 0.762009,
+      "mean_response_seconds": 0.752748351303675
+    },
+    {
+      "utilization": 0.95,
+      "service_seconds": 0.5,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 4,
+      "warmup_requests": 200000,
+      "measured_requests": 1000000,
+      "violations": 152959,
+      "violation_rate": 0.152959,
+      "wait_probability": 0.759999,
+      "mean_response_seconds": 0.7375693013739699
+    },
+    {
+      "utilization": 0.975,
+      "service_seconds": 0.5,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 0,
+      "warmup_requests": 200000,
+      "measured_requests": 1000000,
+      "violations": 394032,
+      "violation_rate": 0.394032,
+      "wait_probability": 0.872959,
+      "mean_response_seconds": 1.032117041153217
+    },
+    {
+      "utilization": 0.975,
+      "service_seconds": 0.5,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 1,
+      "warmup_requests": 200000,
+      "measured_requests": 1000000,
+      "violations": 426348,
+      "violation_rate": 0.426348,
+      "wait_probability": 0.878883,
+      "mean_response_seconds": 1.1015091744313028
+    },
+    {
+      "utilization": 0.975,
+      "service_seconds": 0.5,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 2,
+      "warmup_requests": 200000,
+      "measured_requests": 1000000,
+      "violations": 388999,
+      "violation_rate": 0.388999,
+      "wait_probability": 0.87471,
+      "mean_response_seconds": 1.0497297939859247
+    },
+    {
+      "utilization": 0.975,
+      "service_seconds": 0.5,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 3,
+      "warmup_requests": 200000,
+      "measured_requests": 1000000,
+      "violations": 410507,
+      "violation_rate": 0.410507,
+      "wait_probability": 0.875659,
+      "mean_response_seconds": 1.0539818778707684
+    },
+    {
+      "utilization": 0.975,
+      "service_seconds": 0.5,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 4,
+      "warmup_requests": 200000,
+      "measured_requests": 1000000,
+      "violations": 389141,
+      "violation_rate": 0.389141,
+      "wait_probability": 0.873709,
+      "mean_response_seconds": 1.0193285107002519
+    },
+    {
+      "utilization": 0.99,
+      "service_seconds": 0.5,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 0,
+      "warmup_requests": 200000,
+      "measured_requests": 1000000,
+      "violations": 684324,
+      "violation_rate": 0.684324,
+      "wait_probability": 0.945122,
+      "mean_response_seconds": 1.9181338105950407
+    },
+    {
+      "utilization": 0.99,
+      "service_seconds": 0.5,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 1,
+      "warmup_requests": 200000,
+      "measured_requests": 1000000,
+      "violations": 714992,
+      "violation_rate": 0.714992,
+      "wait_probability": 0.952651,
+      "mean_response_seconds": 2.0183954816356264
+    },
+    {
+      "utilization": 0.99,
+      "service_seconds": 0.5,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 2,
+      "warmup_requests": 200000,
+      "measured_requests": 1000000,
+      "violations": 680943,
+      "violation_rate": 0.680943,
+      "wait_probability": 0.947752,
+      "mean_response_seconds": 1.8397382633836745
+    },
+    {
+      "utilization": 0.99,
+      "service_seconds": 0.5,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 3,
+      "warmup_requests": 200000,
+      "measured_requests": 1000000,
+      "violations": 705679,
+      "violation_rate": 0.705679,
+      "wait_probability": 0.949,
+      "mean_response_seconds": 2.026202127351189
+    },
+    {
+      "utilization": 0.99,
+      "service_seconds": 0.5,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 4,
+      "warmup_requests": 200000,
+      "measured_requests": 1000000,
+      "violations": 680064,
+      "violation_rate": 0.680064,
+      "wait_probability": 0.947084,
+      "mean_response_seconds": 1.7821899333064943
+    },
+    {
+      "utilization": 0.95,
+      "service_seconds": 0.7,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 0,
+      "warmup_requests": 200000,
+      "measured_requests": 1000000,
+      "violations": 396791,
+      "violation_rate": 0.396791,
+      "wait_probability": 0.759057,
+      "mean_response_seconds": 1.0407429178506087
+    },
+    {
+      "utilization": 0.95,
+      "service_seconds": 0.7,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 1,
+      "warmup_requests": 200000,
+      "measured_requests": 1000000,
+      "violations": 416116,
+      "violation_rate": 0.416116,
+      "wait_probability": 0.765395,
+      "mean_response_seconds": 1.0701801824819244
+    },
+    {
+      "utilization": 0.95,
+      "service_seconds": 0.7,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 2,
+      "warmup_requests": 200000,
+      "measured_requests": 1000000,
+      "violations": 399755,
+      "violation_rate": 0.399755,
+      "wait_probability": 0.761598,
+      "mean_response_seconds": 1.050233003442571
+    },
+    {
+      "utilization": 0.95,
+      "service_seconds": 0.7,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 3,
+      "warmup_requests": 200000,
+      "measured_requests": 1000000,
+      "violations": 410335,
+      "violation_rate": 0.410335,
+      "wait_probability": 0.762009,
+      "mean_response_seconds": 1.0538476918070996
+    },
+    {
+      "utilization": 0.95,
+      "service_seconds": 0.7,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 4,
+      "warmup_requests": 200000,
+      "measured_requests": 1000000,
+      "violations": 399919,
+      "violation_rate": 0.399919,
+      "wait_probability": 0.759999,
+      "mean_response_seconds": 1.0325970219054454
+    },
+    {
+      "utilization": 0.975,
+      "service_seconds": 0.7,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 0,
+      "warmup_requests": 200000,
+      "measured_requests": 1000000,
+      "violations": 633212,
+      "violation_rate": 0.633212,
+      "wait_probability": 0.872959,
+      "mean_response_seconds": 1.4449638575745294
+    },
+    {
+      "utilization": 0.975,
+      "service_seconds": 0.7,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 1,
+      "warmup_requests": 200000,
+      "measured_requests": 1000000,
+      "violations": 650525,
+      "violation_rate": 0.650525,
+      "wait_probability": 0.878883,
+      "mean_response_seconds": 1.5421128441597218
+    },
+    {
+      "utilization": 0.975,
+      "service_seconds": 0.7,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 2,
+      "warmup_requests": 200000,
+      "measured_requests": 1000000,
+      "violations": 631861,
+      "violation_rate": 0.631861,
+      "wait_probability": 0.87471,
+      "mean_response_seconds": 1.4696217115273422
+    },
+    {
+      "utilization": 0.975,
+      "service_seconds": 0.7,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 3,
+      "warmup_requests": 200000,
+      "measured_requests": 1000000,
+      "violations": 643012,
+      "violation_rate": 0.643012,
+      "wait_probability": 0.875659,
+      "mean_response_seconds": 1.475574628961692
+    },
+    {
+      "utilization": 0.975,
+      "service_seconds": 0.7,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 4,
+      "warmup_requests": 200000,
+      "measured_requests": 1000000,
+      "violations": 632837,
+      "violation_rate": 0.632837,
+      "wait_probability": 0.873709,
+      "mean_response_seconds": 1.427059914929937
+    },
+    {
+      "utilization": 0.99,
+      "service_seconds": 0.7,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 0,
+      "warmup_requests": 200000,
+      "measured_requests": 1000000,
+      "violations": 823921,
+      "violation_rate": 0.823921,
+      "wait_probability": 0.945122,
+      "mean_response_seconds": 2.685387334693889
+    },
+    {
+      "utilization": 0.99,
+      "service_seconds": 0.7,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 1,
+      "warmup_requests": 200000,
+      "measured_requests": 1000000,
+      "violations": 847044,
+      "violation_rate": 0.847044,
+      "wait_probability": 0.952651,
+      "mean_response_seconds": 2.8257536741191767
+    },
+    {
+      "utilization": 0.99,
+      "service_seconds": 0.7,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 2,
+      "warmup_requests": 200000,
+      "measured_requests": 1000000,
+      "violations": 830532,
+      "violation_rate": 0.830532,
+      "wait_probability": 0.947752,
+      "mean_response_seconds": 2.575633568429382
+    },
+    {
+      "utilization": 0.99,
+      "service_seconds": 0.7,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 3,
+      "warmup_requests": 200000,
+      "measured_requests": 1000000,
+      "violations": 838695,
+      "violation_rate": 0.838695,
+      "wait_probability": 0.949,
+      "mean_response_seconds": 2.8366829778163116
+    },
+    {
+      "utilization": 0.99,
+      "service_seconds": 0.7,
+      "distribution": "deterministic",
+      "servers": 16,
+      "seed": 4,
+      "warmup_requests": 200000,
+      "measured_requests": 1000000,
+      "violations": 829503,
+      "violation_rate": 0.829503,
+      "wait_probability": 0.947084,
+      "mean_response_seconds": 2.4950659064562655
+    }
+  ],
+  "scope": "steady M/D/16 reference only; u>=1 has no stationary table, use transient queues"
+}

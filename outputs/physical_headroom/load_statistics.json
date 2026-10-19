@@ -1,0 +1,31 @@
+{
+  "fingerprint": "484512f556244657d3661e729aa811fc1b62aafc56a7f29705d5b16683249f9c",
+  "rows": [
+    {
+      "split": "train",
+      "seconds": 756000,
+      "staggered_requests": 20588252,
+      "synchronous_requests": 20937552,
+      "staggered_mean": 27.233137566137565,
+      "synchronous_mean": 27.695174603174603,
+      "staggered_cv": 0.9373269955499901,
+      "synchronous_cv": 1.9214562383406586,
+      "staggered_peak": 241,
+      "synchronous_peak": 3040,
+      "meaning": "time-shifted replicas are correlated copies, not sixteen statistically independent users"
+    },
+    {
+      "split": "validation",
+      "seconds": 151200,
+      "staggered_requests": 3712620,
+      "synchronous_requests": 3794704,
+      "staggered_mean": 24.55436507936508,
+      "synchronous_mean": 25.09724867724868,
+      "staggered_cv": 0.7322700170418796,
+      "synchronous_cv": 2.1694406111721185,
+      "staggered_peak": 167,
+      "synchronous_peak": 1184,
+      "meaning": "time-shifted replicas are correlated copies, not sixteen statistically independent users"
+    }
+  ]
+}
