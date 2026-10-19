@@ -1,0 +1,11 @@
+{
+  "fingerprint": "655e6db154cb44da389f50b96a567ff833e3e218a91d50b7416af2fee2f9567b",
+  "penalties": {
+    "v1": 0.0,
+    "v2_s05": 0.0001,
+    "v2_s07": 0.0001
+  },
+  "split": "validation",
+  "criterion": "cheapest validation-feasible teacher-centered DP plan; otherwise least violating plan",
+  "clairvoyant_selection": true
+}

@@ -12,3 +12,4 @@ data/azure2021/raw/
 outputs/rl_*/models/
 outputs/rl_pilot/
 outputs/rl_study_attempt1/
+outputs/rl_diagnostics_attempt1/

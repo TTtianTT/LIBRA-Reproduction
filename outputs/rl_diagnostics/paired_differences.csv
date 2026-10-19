@@ -1,0 +1,13 @@
+case,comparison,seeds,cost_difference_usd,lo,hi,meaning
+v1,budget_random,5,-0.7635269493333418,-1.7939998347346626,0.266945936067979,"later minus earlier, or rule_prior minus random"
+v1,budget_rule_prior,5,0.0,0.0,0.0,"later minus earlier, or rule_prior minus random"
+v1,initialization_65536,5,-0.7635269493333418,-1.7939998347346626,0.266945936067979,"later minus earlier, or rule_prior minus random"
+v1,initialization_262144,5,0.0,0.0,0.0,"later minus earlier, or rule_prior minus random"
+v2_s05,budget_random,5,-0.1342628093333314,-0.3682097365923239,0.09968411792566115,"later minus earlier, or rule_prior minus random"
+v2_s05,budget_rule_prior,5,0.0,0.0,0.0,"later minus earlier, or rule_prior minus random"
+v2_s05,initialization_65536,5,-0.3649791816667019,-2.5700914090289997,1.8401330456955958,"later minus earlier, or rule_prior minus random"
+v2_s05,initialization_262144,5,-0.2307163723333705,-2.524029384843512,2.062596640176771,"later minus earlier, or rule_prior minus random"
+v2_s07,budget_random,5,0.16604661256667655,-0.17790863694734796,0.5100018620807011,"later minus earlier, or rule_prior minus random"
+v2_s07,budget_rule_prior,5,0.0,0.0,0.0,"later minus earlier, or rule_prior minus random"
+v2_s07,initialization_65536,5,1.3364046269999748,-0.11076557503715789,2.783574829037107,"later minus earlier, or rule_prior minus random"
+v2_s07,initialization_262144,5,1.1703580144332981,-0.23128506319486375,2.57200109206146,"later minus earlier, or rule_prior minus random"

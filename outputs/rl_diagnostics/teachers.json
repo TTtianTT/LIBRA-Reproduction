@@ -1,0 +1,72 @@
+{
+  "teachers": {
+    "v1": {
+      "rho": 1.0,
+      "window": 300,
+      "selection_split": "train",
+      "training_summary": {
+        "total_cost_usd": 108.03246309333333,
+        "vm_cost_usd": 55.90833333333334,
+        "faas_cost_usd": 49.61852976,
+        "gateway_cost_usd": 2.5056,
+        "requests": 21309072,
+        "vm_requests": 15495536.0,
+        "faas_requests": 5813536.0,
+        "expected_violations": 0.0,
+        "vm_seconds": 2012700,
+        "starting_vm_seconds": 194940,
+        "cancelled_startup_vm_seconds": 55500,
+        "unfinished_startup_vm_seconds": 240,
+        "violation_rate": 0.0,
+        "episodes": 36,
+        "max_target_vms": 44
+      }
+    },
+    "v2_s05": {
+      "rho": 0.7,
+      "window": 300,
+      "selection_split": "train",
+      "training_summary": {
+        "total_cost_usd": 71.94764064,
+        "vm_cost_usd": 48.525000000000006,
+        "faas_cost_usd": 20.91704064,
+        "gateway_cost_usd": 2.5056,
+        "requests": 21309072,
+        "vm_requests": 16519824.0,
+        "faas_requests": 4789248.0,
+        "expected_violations": 5945.120560109856,
+        "vm_seconds": 1746900,
+        "starting_vm_seconds": 154220,
+        "cancelled_startup_vm_seconds": 40680,
+        "unfinished_startup_vm_seconds": 240,
+        "violation_rate": 0.0002789948131063547,
+        "episodes": 36,
+        "max_target_vms": 32
+      }
+    },
+    "v2_s07": {
+      "rho": 0.6,
+      "window": 300,
+      "selection_split": "train",
+      "training_summary": {
+        "total_cost_usd": 108.26710771916667,
+        "vm_cost_usd": 75.40166666666667,
+        "faas_cost_usd": 30.3598410525,
+        "gateway_cost_usd": 2.5056,
+        "requests": 21309072,
+        "vm_requests": 16278027.0,
+        "faas_requests": 5031045.0,
+        "expected_violations": 17269.347804753237,
+        "vm_seconds": 2714460,
+        "starting_vm_seconds": 231980,
+        "cancelled_startup_vm_seconds": 64140,
+        "unfinished_startup_vm_seconds": 240,
+        "violation_rate": 0.0008104223311439013,
+        "episodes": 36,
+        "max_target_vms": 52
+      }
+    }
+  },
+  "max_vms": 512,
+  "selection_split": "train"
+}

@@ -113,6 +113,16 @@ Azure 对照保持固定服务时间，不重放实际 duration；64 倍场景�
 
 本地可用 `scripts/rl_study_parallel.py --workers 3` 并行运行独立种子。模型权重由 Git 忽略；新 clone 应传 `--output outputs/rl_study_replay` 使用新目录重训，汇总和校验同样传该目录，避免覆盖已发布的历史记录。
 
+## RL 诊断：动作范围、物理模型与训练预算
+
+在既有 PPO 研究之后，新增同动作域 DP、全 FaaS 动作、教师规则先验、独立连续时间排队校准及两档训练预算诊断。新实验只使用训练和验证分区，原测试结果不重新当作盲测。运行协议见 [诊断说明](docs/rl_diagnostics.md)，实际测量见 [诊断报告](outputs/rl_diagnostics/REPORT.md)。
+
+```bash
+.venv/bin/python scripts/rl_diagnostics.py --stage all --workers 4
+.venv/bin/python scripts/summarize_rl_diagnostics.py
+.venv/bin/python scripts/verify_rl_diagnostics.py --require-models
+```
+
 ## 作者代码重放
 
 官方仓库在论文参考文献 [27] 中给出。固定 commit：`53a804412ca24c6eca7fa226fcccc0220b17fb0f`。

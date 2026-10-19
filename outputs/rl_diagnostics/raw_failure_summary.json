@@ -1,0 +1,66 @@
+{
+  "fingerprint": "655e6db154cb44da389f50b96a567ff833e3e218a91d50b7416af2fee2f9567b",
+  "rows": [
+    {
+      "seed": 0,
+      "summary": {
+        "total_cost_usd": 28.231692864000006,
+        "vm_cost_usd": 0.0,
+        "faas_cost_usd": 27.67489286400001,
+        "gateway_cost_usd": 0.5567999999999971,
+        "requests": 4586112.0,
+        "vm_requests": 0.0,
+        "faas_requests": 4586112.0,
+        "expected_violations": 0.0,
+        "vm_seconds": 0.0,
+        "starting_vm_seconds": 0.0,
+        "cancelled_startup_vm_seconds": 0.0,
+        "unfinished_startup_vm_seconds": 0.0,
+        "violation_rate": 0.0,
+        "episodes": 8,
+        "max_target_vms": 0
+      },
+      "checkpoint": "outputs/rl_study/models/v2_s07_raw_actions_l0.01_seed0.zip",
+      "checkpoint_sha256": "8a65b0434b87a565a580bed0563de91318cbb8b1fd3a9562cebce13ede62aec2",
+      "positive_delta_fraction": 0.0,
+      "at_vm_cap_fraction": 0.0,
+      "mean_entropy": 3.802492536769973,
+      "value_rmse": 62.243464901078696,
+      "value_explained_variance": -0.0002498091953127002,
+      "source_record_sha256": "7b28c7e972ac17ceb458cdfbf15af920453251743d7cea6c9af73cb08691f3f7",
+      "split": "validation",
+      "steps": 2880
+    },
+    {
+      "seed": 1,
+      "summary": {
+        "total_cost_usd": 1970.7523181999934,
+        "vm_cost_usd": 1969.8599999999933,
+        "faas_cost_usd": 0.33551819999999993,
+        "gateway_cost_usd": 0.5567999999999971,
+        "requests": 4586112.0,
+        "vm_requests": 4530512.0,
+        "faas_requests": 55600.0,
+        "expected_violations": 54.00809320752697,
+        "vm_seconds": 70914960.0,
+        "starting_vm_seconds": 428640.0,
+        "cancelled_startup_vm_seconds": 18240.0,
+        "unfinished_startup_vm_seconds": 0.0,
+        "violation_rate": 1.1776444449574492e-05,
+        "episodes": 8,
+        "max_target_vms": 512
+      },
+      "checkpoint": "outputs/rl_study/models/v2_s07_raw_actions_l0.01_seed1.zip",
+      "checkpoint_sha256": "24b95f8d1dd074d76b6569440eb51a95ac4bc926ab6a294745ac7045f160e1a2",
+      "positive_delta_fraction": 0.9864583333333333,
+      "at_vm_cap_fraction": 0.625,
+      "mean_entropy": 3.7821656583084002,
+      "value_rmse": 5848.175103381367,
+      "value_explained_variance": 2.5998933311788264e-06,
+      "source_record_sha256": "83b615ad75982a16bd61516d588943f31145a0a9aa93d7c4df48c42b0d11df4a",
+      "split": "validation",
+      "steps": 2880
+    }
+  ],
+  "test_evaluated": false
+}

@@ -1,0 +1,157 @@
+{
+  "fingerprint": "655e6db154cb44da389f50b96a567ff833e3e218a91d50b7416af2fee2f9567b",
+  "source_sha256": {
+    "scripts/rl_diagnostics.py": "ff6892054775630e8b1e748d45919022de8689e607c21283679fe4e3ac59e0d0",
+    "configs/rl_diagnostics.json": "87237570b5c3f7e8568c3e450a12ef0d3e0edb96d884b4785bb41d947f51a127",
+    "requirements-rl.txt": "7a59c7af396362c04681735400cdbca677dc0bec1318ddf46f2a5b7fc0bc5845",
+    "outputs/rl_study/baseline_training_grid.json": "6160d7c781e49ff8c36f41354e6371de165cf7e9b5e5c8385ac0eda165caf3e3",
+    "libra_rl/__init__.py": "ec35c9c6de3edbc2c098ac4ac69a8fed5c60adf874fc9cd89ff6681a2f2577ed",
+    "libra_rl/baselines.py": "9a366b4c11eb8cd3cd49ac1b8c4428d7d2c148c9f6307a6cf06025e91ec3d408",
+    "libra_rl/data.py": "1aab6fd1db504c06e8e34c83a96f5a3dbdb65252295cf33fa10e86bd470a6a48",
+    "libra_rl/diagnostic_env.py": "b39cdd22dcc6fb6fce0e12f8b8b7c5d079a4d28c64c6ef004a5c6c36205a7593",
+    "libra_rl/diagnostics.py": "2128962d969468b9ba9f74ad6eaa86841aad8cc8b0feb95604f1dcfd47885b62",
+    "libra_rl/dp.py": "29d3214c9b1c008dfeb9aae8f5123da79140544e0c73a1f671c389bc2f3e9d43",
+    "libra_rl/env.py": "510d9db23d35948078ba39fccf4f9eb5985877e60a7bce8f1b4a08c23f65885f",
+    "libra_rl/evaluation.py": "b110f53325bee6ccf9f39c6834ef999bf8e785fee796c08d12cb1808444a3159",
+    "libra_rl/fast_dp.py": "d12059f2adcc91caaa394499b0e2a16ca74b6b40fe517e83ace2784c4240f84f",
+    "libra_rl/model.py": "0d4767922204bfea478ddb226667565131b2dba26154266e93e5c5b377f64da0",
+    "libra_rl/queue_validation.py": "0c87ea773031d285df6efed397bed2d011c9d4302b11c29345a24c288f54eb49",
+    "libra_rl/queueing.py": "3985d8993ccc26bb02154cc61197336229164ffb906b1ba061e190145d54fda2",
+    "libra_rl/restricted_dp.py": "b4a38c721410b854811919316970e8189ef58c286114d621530b268bd1d526dc",
+    "libra_rl/study.py": "78cf36a8dea906769fcf5a27ef76c7799b0284d1eee6167e96c76655c24ad03b",
+    "libra_rl/training.py": "2612ada7c22585d3747e739ea13a03b52b04c3ecce7765f7f04badd88f8ef47c",
+    "libra_ml/__init__.py": "050b96deb0b24ea4063d357ccf560e50a208450ad3ff726bbe2fb8721640d509",
+    "libra_ml/features.py": "63626a58a0a1f088edb855a052d22e83f6183c84b09abcdc2dd02c068d1cb4db",
+    "libra_ml/models.py": "ee92b21333f9e80b632cf5555bd97506f6615af50e155b4b2ef2bd36be2fdef4",
+    "libra_ml/policies.py": "0dbece50e15757ab8a96a9b3b074c6aebe4387af2b4014305497f37d368c2288",
+    "libra_sim/__init__.py": "531f7200cae60dabf9095908b7fa6855bcacca40c2d5de6f4b48e82069d61aad",
+    "libra_sim/config.py": "7f051de5a742f4e4714b9b8db0f57017caada832355b45c97128271667885791",
+    "libra_sim/engine.py": "a37f4c0f7913fda36a07c9f803ae716c5ee9df3d15747316c9a57ed2d8c22023",
+    "libra_sim/plotting.py": "682ad94dce3f808f28ec84cbb42009133d50f23940181ffdc8c7a41a8dcd9c40",
+    "libra_sim/traces.py": "9a3c9d72f7ef673ad61539dea262f7fc1b14dd09f66b29e27781bf22d2d1c3b9"
+  },
+  "protocol": {
+    "study": "action-domain, queue calibration, and PPO learning diagnostics v1",
+    "train_days": [
+      1,
+      9
+    ],
+    "validation_days": [
+      10,
+      11
+    ],
+    "test_evaluation": false,
+    "azure_replication": 16,
+    "decision_seconds": 60,
+    "episode_seconds": 21600,
+    "epsilon": 0.001,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "budgets": [
+      65536,
+      262144
+    ],
+    "checkpoints": [
+      16384,
+      32768,
+      49152,
+      65536,
+      131072,
+      196608,
+      262144
+    ],
+    "initializations": [
+      "random",
+      "rule_prior"
+    ],
+    "rule_prior_probability": 0.9,
+    "teacher_selection": "cheapest train-feasible Quantile candidate in the frozen previous 12-candidate grid",
+    "lambda_grid_for_dp": [
+      0.0,
+      1e-05,
+      3e-05,
+      0.0001,
+      0.0003,
+      0.001,
+      0.003,
+      0.01
+    ],
+    "lambda_selection": "cheapest validation-feasible teacher-centered DP plan; otherwise least violating plan",
+    "ppo": {
+      "learning_rate": 0.0003,
+      "n_steps": 512,
+      "batch_size": 128,
+      "n_epochs": 5,
+      "gamma": 0.99,
+      "gae_lambda": 0.95,
+      "ent_coef": 0.01,
+      "clip_range": 0.2
+    },
+    "network": [
+      64,
+      64
+    ],
+    "cost_normalizer_usd": 0.01,
+    "toy": {
+      "demand_rps": 32,
+      "episode_seconds": 3600,
+      "samples": 65536,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "gate_max_mean_regret_fraction": 0.01
+    },
+    "queue": {
+      "servers": 16,
+      "services": [
+        0.5,
+        0.7
+      ],
+      "utilizations": [
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9
+      ],
+      "service_distributions": [
+        "deterministic",
+        "exponential"
+      ],
+      "warmup_requests": 50000,
+      "measured_requests": 500000,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "main_training_latency": "historical wait_budget approximation; learning diagnosis, not a calibrated cloud-SLA claim",
+    "validation_use": "development diagnostics; no new held-out generalization claim",
+    "test_exposure": "old test results informed the proposed diagnosis; never re-use them as a fresh blind test"
+  },
+  "azure_aggregate_sha256": "b35396b7f7a57431e2179f806d2b4220ffd581c4378a5b056e0b11f295a0f7b0",
+  "created_utc": "2026-10-19T14:17:58.425843+00:00",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "python": "3.12.7",
+  "versions": {
+    "numpy": "1.26.4",
+    "torch": "2.13.0",
+    "scipy": "1.17.1",
+    "sklearn": "1.5.2",
+    "gymnasium": "1.4.0",
+    "stable_baselines3": "2.9.0"
+  },
+  "test_evaluated": false
+}

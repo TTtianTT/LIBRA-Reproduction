@@ -1,0 +1,6 @@
+{
+  "sha256": "dcc9178f4c5f860ace936c23b2a662f66b1c6178cb0e5ed892072aa0025df2c5",
+  "training_split": "train",
+  "rows": 77730,
+  "tau": 0.7986116865062924
+}

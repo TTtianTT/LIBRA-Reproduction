@@ -1,0 +1,15 @@
+{
+  "fingerprint": "655e6db154cb44da389f50b96a567ff833e3e218a91d50b7416af2fee2f9567b",
+  "regrets": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "mean_regret_fraction": 0.0,
+  "passed": true,
+  "threshold": 0.01,
+  "split": "validation",
+  "samples": 327680
+}
