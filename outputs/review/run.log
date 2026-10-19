@@ -1,0 +1,75 @@
+
+[E1] WITS: LIBRA (paper config) cost=22.295 SLA=0.00%
+  AUTO  SLA<=   5%: cost=22.080 (SLA 4.636%) out=0.8 in=0.3 group=5 window=30 min=5
+  AUTO  SLA<=   2%: cost=30.906 (SLA 1.978%) out=0.6 in=0.2 group=10 window=30 min=10
+  AUTO  SLA<=   1%: no setting in grid
+  AUTO  SLA<= 0.5%: no setting in grid
+  AUTO  SLA<= 0.1%: no setting in grid
+  SPOCK SLA<=   5%: cost=22.159 (SLA 0.939%) out=0.8 in=0.3 group=5 window=30 min=10
+  SPOCK SLA<=   2%: cost=22.159 (SLA 0.939%) out=0.8 in=0.3 group=5 window=30 min=10
+  SPOCK SLA<=   1%: cost=22.159 (SLA 0.939%) out=0.8 in=0.3 group=5 window=30 min=10
+  SPOCK SLA<= 0.5%: cost=25.585 (SLA 0.420%) out=0.6 in=0.3 group=5 window=30 min=10
+  SPOCK SLA<= 0.1%: cost=43.639 (SLA 0.083%) out=0.7 in=0.1 group=20 window=30 min=10
+
+[E1] Berkeley: LIBRA (paper config) cost=27.586 SLA=0.00%
+  AUTO  SLA<=   5%: cost=23.849 (SLA 2.118%) out=0.8 in=0.1 group=5 window=120 min=5
+  AUTO  SLA<=   2%: cost=23.893 (SLA 1.970%) out=0.8 in=0.3 group=5 window=30 min=10
+  AUTO  SLA<=   1%: cost=27.258 (SLA 0.929%) out=0.6 in=0.3 group=5 window=60 min=10
+  AUTO  SLA<= 0.5%: cost=41.630 (SLA 0.492%) out=0.4 in=0.2 group=10 window=30 min=10
+  AUTO  SLA<= 0.1%: no setting in grid
+  SPOCK SLA<=   5%: cost=23.424 (SLA 1.404%) out=0.8 in=0.1 group=5 window=120 min=10
+  SPOCK SLA<=   2%: cost=23.424 (SLA 1.404%) out=0.8 in=0.1 group=5 window=120 min=10
+  SPOCK SLA<=   1%: cost=25.624 (SLA 0.857%) out=0.7 in=0.3 group=5 window=120 min=10
+  SPOCK SLA<= 0.5%: cost=27.353 (SLA 0.283%) out=0.6 in=0.3 group=5 window=60 min=10
+  SPOCK SLA<= 0.1%: cost=33.659 (SLA 0.090%) out=0.6 in=0.2 group=10 window=30 min=5
+
+[E2] WITS phi/rho coupling
+  rho=0.8: best phi=2.0 cost=21.701; phi=1 -> 22.295 (+2.7%)
+  rho=0.9: best phi=1.25 cost=19.874; phi=1 -> 19.956 (+0.4%)
+  rho=1.0: best phi=0.75 cost=18.328; phi=1 -> 18.372 (+0.2%)
+
+[E3] WITS
+  paper rho*estimate   alpha=0.2   phi=1 cost=22.295 SLA=0.00% FaaS=14.0%
+  paper rho*estimate   alpha=0.02  phi=1 cost=21.801 SLA=0.00% FaaS=13.9%
+  paper rho*estimate   alpha=0.005 phi=1 cost=21.636 SLA=0.00% FaaS=13.8%
+  rho*capacity         alpha=0.2   phi=1 cost=21.279 SLA=0.00% FaaS=12.1%
+  rho*capacity         alpha=0.02  phi=1 cost=20.820 SLA=0.00% FaaS=12.0%
+  rho*capacity         alpha=0.005 phi=1 cost=20.676 SLA=0.00% FaaS=12.0%
+  fill ready capacity  alpha=0.2   phi=1 cost=17.772 SLA=0.00% FaaS=5.5%
+  fill ready capacity  alpha=0.02  phi=1 cost=17.245 SLA=0.00% FaaS=5.3%
+  fill ready capacity  alpha=0.005 phi=1 cost=17.100 SLA=0.00% FaaS=5.3%
+
+[E3] Berkeley
+  paper rho*estimate   alpha=0.2   phi=1 cost=27.586 SLA=0.00% FaaS=20.2%
+  paper rho*estimate   alpha=0.02  phi=1 cost=25.809 SLA=0.00% FaaS=15.9%
+  paper rho*estimate   alpha=0.005 phi=1 cost=25.538 SLA=0.00% FaaS=15.3%
+  rho*capacity         alpha=0.2   phi=1 cost=26.420 SLA=0.00% FaaS=18.2%
+  rho*capacity         alpha=0.02  phi=1 cost=24.922 SLA=0.00% FaaS=14.4%
+  rho*capacity         alpha=0.005 phi=1 cost=24.723 SLA=0.00% FaaS=13.9%
+  fill ready capacity  alpha=0.2   phi=1 cost=21.474 SLA=0.00% FaaS=9.7%
+  fill ready capacity  alpha=0.02  phi=1 cost=20.455 SLA=0.00% FaaS=6.7%
+  fill ready capacity  alpha=0.005 phi=1 cost=20.326 SLA=0.00% FaaS=6.4%
+
+[E3] Sin
+  paper rho*estimate   alpha=0.2   phi=1 cost=7.296 SLA=0.00% FaaS=32.8%
+  paper rho*estimate   alpha=0.02  phi=1 cost=7.407 SLA=0.00% FaaS=32.0%
+  paper rho*estimate   alpha=0.005 phi=1 cost=7.741 SLA=0.00% FaaS=30.0%
+  rho*capacity         alpha=0.2   phi=1 cost=6.987 SLA=0.00% FaaS=30.5%
+  rho*capacity         alpha=0.02  phi=1 cost=7.152 SLA=0.00% FaaS=30.1%
+  rho*capacity         alpha=0.005 phi=1 cost=7.454 SLA=0.00% FaaS=27.9%
+  fill ready capacity  alpha=0.2   phi=1 cost=5.567 SLA=0.00% FaaS=19.9%
+  fill ready capacity  alpha=0.02  phi=1 cost=5.827 SLA=0.00% FaaS=20.2%
+  fill ready capacity  alpha=0.005 phi=1 cost=6.291 SLA=0.00% FaaS=19.2%
+
+[E3] Square
+  paper rho*estimate   alpha=0.2   phi=1 cost=0.165 SLA=0.00% FaaS=40.0%
+  paper rho*estimate   alpha=0.02  phi=1 cost=0.166 SLA=0.00% FaaS=34.5%
+  paper rho*estimate   alpha=0.005 phi=1 cost=0.161 SLA=0.00% FaaS=36.5%
+  rho*capacity         alpha=0.2   phi=1 cost=0.142 SLA=0.00% FaaS=25.0%
+  rho*capacity         alpha=0.02  phi=1 cost=0.149 SLA=0.00% FaaS=23.4%
+  rho*capacity         alpha=0.005 phi=1 cost=0.149 SLA=0.00% FaaS=29.0%
+  fill ready capacity  alpha=0.2   phi=1 cost=0.142 SLA=0.00% FaaS=25.0%
+  fill ready capacity  alpha=0.02  phi=1 cost=0.135 SLA=0.00% FaaS=14.3%
+  fill ready capacity  alpha=0.005 phi=1 cost=0.128 SLA=0.00% FaaS=15.3%
+
+CSV written to /Users/tianzl/PycharmProjects/LIBRA-Reproduction/outputs/review

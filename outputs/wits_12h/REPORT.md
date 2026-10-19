@@ -2,7 +2,7 @@
 
 仅运行本地仿真；未调用 AWS。
 
-Trace: `/Users/tianzl/PycharmProjects/LIBRA-Reproduction/data/traces/wits_logs.txt`；时长 43200 秒；总请求 6,217,439；峰值 1168 req/s。
+Trace: `data/traces/wits_logs.txt`；时长 43200 秒；总请求 6,217,439；峰值 1168 req/s。
 
 | 策略 | 总成本 USD | 相对 LIBRA | SLA 违约 % | VM 小时 | FaaS 请求占比 % |
 |---|---:|---:|---:|---:|---:|

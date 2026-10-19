@@ -38,6 +38,7 @@ def main():
     args = parser.parse_args()
     c = Config.read(args.config)
     counts, trace_meta = load_trace(args.trace, args.seconds, args.offset)
+    trace_meta["path"] = str(Path(trace_meta["path"]).resolve().relative_to(ROOT)) if Path(trace_meta["path"]).resolve().is_relative_to(ROOT) else trace_meta["path"]
     args.output.mkdir(parents=True, exist_ok=True)
     started = time.perf_counter()
     results = {}

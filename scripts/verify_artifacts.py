@@ -28,7 +28,7 @@ def main():
         results = json.loads((out / "results.json").read_text())
         metadata = results["metadata"]
         assert source_hash.hexdigest() == metadata["simulator_source_sha256"], "Rerun after source changes"
-        trace_path = Path(metadata["trace"]["path"])
+        trace_path = ROOT / "data/traces" / Path(metadata["trace"]["path"]).name
         assert hashlib.sha256(trace_path.read_bytes()).hexdigest() == metadata["trace"]["sha256"]
         counts = [int(n) for n in trace_path.read_text().splitlines()]
         offset = metadata["trace"]["offset_seconds"]

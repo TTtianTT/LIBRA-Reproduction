@@ -50,11 +50,14 @@ def libra_target(avg, deviation, config):
     return math.ceil(estimate / config.vm_capacity), estimate
 
 
-def simulate(counts, policy="LIBRA", config=None, *, deviation_update="updated_mean"):
+def simulate(counts, policy="LIBRA", config=None, *, deviation_update="updated_mean",
+             routing="estimate"):
     c = config or Config()
     policy = policy.upper()
     if policy not in POLICIES:
         raise ValueError(f"Unknown policy: {policy}")
+    if routing not in ("estimate", "capacity"):
+        raise ValueError("routing must be 'estimate' (paper: rho*vm_reqs) or 'capacity' (rho*ready capacity)")
     counts = list(counts)
     if not counts or any(not isinstance(n, int) or isinstance(n, bool) or n < 0 for n in counts):
         raise ValueError("Trace must contain nonnegative integer request counts")
@@ -116,7 +119,10 @@ def simulate(counts, policy="LIBRA", config=None, *, deviation_update="updated_m
         if policy == "FAAS":
             faas = demand
         elif policy == "LIBRA":
-            budget = min(capacity, math.floor(c.rho * routing_estimate))
+            if routing == "estimate":   # paper Sec. III: LB sends rho*vm_reqs to VMs
+                budget = min(capacity, math.floor(c.rho * routing_estimate))
+            else:                       # variant: rho caps utilization of ready VM capacity
+                budget = math.floor(c.rho * capacity)
             faas = max(0, demand - budget)
         elif policy == "SPOCK" and starting:
             # Existing FIFO backlog is kept on VMs. FaaS only absorbs new overflow

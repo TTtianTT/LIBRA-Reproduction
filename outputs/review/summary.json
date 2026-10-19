@@ -1,0 +1,490 @@
+{
+  "row_counts": {
+    "e1": 1080,
+    "e2": 39,
+    "e3": 144
+  },
+  "best_baselines_by_sla_budget": [
+    {
+      "trace": "WITS",
+      "policy": "AUTO",
+      "sla_budget_percent": 0,
+      "best": null
+    },
+    {
+      "trace": "WITS",
+      "policy": "AUTO",
+      "sla_budget_percent": 0.1,
+      "best": null
+    },
+    {
+      "trace": "WITS",
+      "policy": "AUTO",
+      "sla_budget_percent": 0.5,
+      "best": null
+    },
+    {
+      "trace": "WITS",
+      "policy": "AUTO",
+      "sla_budget_percent": 1,
+      "best": null
+    },
+    {
+      "trace": "WITS",
+      "policy": "AUTO",
+      "sla_budget_percent": 2,
+      "best": {
+        "trace": "WITS",
+        "policy": "AUTO",
+        "scale_out": 0.6,
+        "scale_in": 0.2,
+        "group": 10.0,
+        "window": 30.0,
+        "min_vms": 10.0,
+        "cost": 30.905555555555555,
+        "sla_pct": 1.9778239883012925,
+        "faas_pct": 0.0,
+        "vm_hours": 309.05555555555554
+      }
+    },
+    {
+      "trace": "WITS",
+      "policy": "AUTO",
+      "sla_budget_percent": 5,
+      "best": {
+        "trace": "WITS",
+        "policy": "AUTO",
+        "scale_out": 0.8,
+        "scale_in": 0.3,
+        "group": 5.0,
+        "window": 30.0,
+        "min_vms": 5.0,
+        "cost": 22.079722222222223,
+        "sla_pct": 4.635960240221094,
+        "faas_pct": 0.0,
+        "vm_hours": 220.79722222222222
+      }
+    },
+    {
+      "trace": "WITS",
+      "policy": "SPOCK",
+      "sla_budget_percent": 0,
+      "best": null
+    },
+    {
+      "trace": "WITS",
+      "policy": "SPOCK",
+      "sla_budget_percent": 0.1,
+      "best": {
+        "trace": "WITS",
+        "policy": "SPOCK",
+        "scale_out": 0.7,
+        "scale_in": 0.1,
+        "group": 20.0,
+        "window": 30.0,
+        "min_vms": 10.0,
+        "cost": 43.639142945555555,
+        "sla_pct": 0.08268677826995971,
+        "faas_pct": 0.44960634113177467,
+        "vm_hours": 434.00555555555553
+      }
+    },
+    {
+      "trace": "WITS",
+      "policy": "SPOCK",
+      "sla_budget_percent": 0.5,
+      "best": {
+        "trace": "WITS",
+        "policy": "SPOCK",
+        "scale_out": 0.6,
+        "scale_in": 0.3,
+        "group": 5.0,
+        "window": 30.0,
+        "min_vms": 10.0,
+        "cost": 25.584762138333332,
+        "sla_pct": 0.4199799949786399,
+        "faas_pct": 0.7965176658749687,
+        "vm_hours": 251.62083333333334
+      }
+    },
+    {
+      "trace": "WITS",
+      "policy": "SPOCK",
+      "sla_budget_percent": 1,
+      "best": {
+        "trace": "WITS",
+        "policy": "SPOCK",
+        "scale_out": 0.8,
+        "scale_in": 0.3,
+        "group": 5.0,
+        "window": 30.0,
+        "min_vms": 10.0,
+        "cost": 22.15934538222222,
+        "sla_pct": 0.93934174504969,
+        "faas_pct": 0.8166706581278883,
+        "vm_hours": 217.25972222222222
+      }
+    },
+    {
+      "trace": "WITS",
+      "policy": "SPOCK",
+      "sla_budget_percent": 2,
+      "best": {
+        "trace": "WITS",
+        "policy": "SPOCK",
+        "scale_out": 0.8,
+        "scale_in": 0.3,
+        "group": 5.0,
+        "window": 30.0,
+        "min_vms": 10.0,
+        "cost": 22.15934538222222,
+        "sla_pct": 0.93934174504969,
+        "faas_pct": 0.8166706581278883,
+        "vm_hours": 217.25972222222222
+      }
+    },
+    {
+      "trace": "WITS",
+      "policy": "SPOCK",
+      "sla_budget_percent": 5,
+      "best": {
+        "trace": "WITS",
+        "policy": "SPOCK",
+        "scale_out": 0.8,
+        "scale_in": 0.3,
+        "group": 5.0,
+        "window": 30.0,
+        "min_vms": 10.0,
+        "cost": 22.15934538222222,
+        "sla_pct": 0.93934174504969,
+        "faas_pct": 0.8166706581278883,
+        "vm_hours": 217.25972222222222
+      }
+    },
+    {
+      "trace": "Berkeley",
+      "policy": "AUTO",
+      "sla_budget_percent": 0,
+      "best": null
+    },
+    {
+      "trace": "Berkeley",
+      "policy": "AUTO",
+      "sla_budget_percent": 0.1,
+      "best": null
+    },
+    {
+      "trace": "Berkeley",
+      "policy": "AUTO",
+      "sla_budget_percent": 0.5,
+      "best": {
+        "trace": "Berkeley",
+        "policy": "AUTO",
+        "scale_out": 0.4,
+        "scale_in": 0.2,
+        "group": 10.0,
+        "window": 30.0,
+        "min_vms": 10.0,
+        "cost": 41.62972222222222,
+        "sla_pct": 0.4915682992674841,
+        "faas_pct": 0.0,
+        "vm_hours": 416.2972222222222
+      }
+    },
+    {
+      "trace": "Berkeley",
+      "policy": "AUTO",
+      "sla_budget_percent": 1,
+      "best": {
+        "trace": "Berkeley",
+        "policy": "AUTO",
+        "scale_out": 0.6,
+        "scale_in": 0.3,
+        "group": 5.0,
+        "window": 60.0,
+        "min_vms": 10.0,
+        "cost": 27.257916666666667,
+        "sla_pct": 0.9294949773268886,
+        "faas_pct": 0.0,
+        "vm_hours": 272.57916666666665
+      }
+    },
+    {
+      "trace": "Berkeley",
+      "policy": "AUTO",
+      "sla_budget_percent": 2,
+      "best": {
+        "trace": "Berkeley",
+        "policy": "AUTO",
+        "scale_out": 0.8,
+        "scale_in": 0.3,
+        "group": 5.0,
+        "window": 30.0,
+        "min_vms": 10.0,
+        "cost": 23.892777777777777,
+        "sla_pct": 1.9697906804278433,
+        "faas_pct": 0.0,
+        "vm_hours": 238.92777777777778
+      }
+    },
+    {
+      "trace": "Berkeley",
+      "policy": "AUTO",
+      "sla_budget_percent": 5,
+      "best": {
+        "trace": "Berkeley",
+        "policy": "AUTO",
+        "scale_out": 0.8,
+        "scale_in": 0.1,
+        "group": 5.0,
+        "window": 120.0,
+        "min_vms": 5.0,
+        "cost": 23.849166666666665,
+        "sla_pct": 2.1178181050730904,
+        "faas_pct": 0.0,
+        "vm_hours": 238.49166666666667
+      }
+    },
+    {
+      "trace": "Berkeley",
+      "policy": "SPOCK",
+      "sla_budget_percent": 0,
+      "best": null
+    },
+    {
+      "trace": "Berkeley",
+      "policy": "SPOCK",
+      "sla_budget_percent": 0.1,
+      "best": {
+        "trace": "Berkeley",
+        "policy": "SPOCK",
+        "scale_out": 0.6,
+        "scale_in": 0.2,
+        "group": 10.0,
+        "window": 30.0,
+        "min_vms": 5.0,
+        "cost": 33.65943835555556,
+        "sla_pct": 0.08998894923978391,
+        "faas_pct": 0.29429610761154085,
+        "vm_hours": 334.88055555555553
+      }
+    },
+    {
+      "trace": "Berkeley",
+      "policy": "SPOCK",
+      "sla_budget_percent": 0.5,
+      "best": {
+        "trace": "Berkeley",
+        "policy": "SPOCK",
+        "scale_out": 0.6,
+        "scale_in": 0.3,
+        "group": 5.0,
+        "window": 60.0,
+        "min_vms": 10.0,
+        "cost": 27.3528813,
+        "sla_pct": 0.28257116308518465,
+        "faas_pct": 0.2517931837034996,
+        "vm_hours": 272.0625
+      }
+    },
+    {
+      "trace": "Berkeley",
+      "policy": "SPOCK",
+      "sla_budget_percent": 1,
+      "best": {
+        "trace": "Berkeley",
+        "policy": "SPOCK",
+        "scale_out": 0.7,
+        "scale_in": 0.3,
+        "group": 5.0,
+        "window": 120.0,
+        "min_vms": 10.0,
+        "cost": 25.62350841111111,
+        "sla_pct": 0.85680032126348,
+        "faas_pct": 0.21661835012443098,
+        "vm_hours": 254.9736111111111
+      }
+    },
+    {
+      "trace": "Berkeley",
+      "policy": "SPOCK",
+      "sla_budget_percent": 2,
+      "best": {
+        "trace": "Berkeley",
+        "policy": "SPOCK",
+        "scale_out": 0.8,
+        "scale_in": 0.1,
+        "group": 5.0,
+        "window": 120.0,
+        "min_vms": 10.0,
+        "cost": 23.423575155555557,
+        "sla_pct": 1.404355230644315,
+        "faas_pct": 0.213393990379683,
+        "vm_hours": 232.99305555555554
+      }
+    },
+    {
+      "trace": "Berkeley",
+      "policy": "SPOCK",
+      "sla_budget_percent": 5,
+      "best": {
+        "trace": "Berkeley",
+        "policy": "SPOCK",
+        "scale_out": 0.8,
+        "scale_in": 0.1,
+        "group": 5.0,
+        "window": 120.0,
+        "min_vms": 10.0,
+        "cost": 23.423575155555557,
+        "sla_pct": 1.404355230644315,
+        "faas_pct": 0.213393990379683,
+        "vm_hours": 232.99305555555554
+      }
+    }
+  ],
+  "best_phi_by_rho": [
+    {
+      "rho": 0.8,
+      "phi": 2.0,
+      "cost": 21.701137911666667
+    },
+    {
+      "rho": 0.9,
+      "phi": 1.25,
+      "cost": 19.874276408333333
+    },
+    {
+      "rho": 1.0,
+      "phi": 0.75,
+      "cost": 18.327511833333332
+    }
+  ],
+  "best_variants_in_grid": [
+    {
+      "trace": "WITS",
+      "variant": "paper rho*estimate",
+      "alpha": 0.005,
+      "phi": 2.0,
+      "cost": 20.88007868,
+      "sla_pct": 0.0,
+      "faas_pct": 7.614839486161424,
+      "vm_hours": 167.0
+    },
+    {
+      "trace": "WITS",
+      "variant": "rho*capacity",
+      "alpha": 0.005,
+      "phi": 2.0,
+      "cost": 20.404926694999997,
+      "sla_pct": 0.0,
+      "faas_pct": 6.7194386627677405,
+      "vm_hours": 167.0
+    },
+    {
+      "trace": "WITS",
+      "variant": "fill ready capacity",
+      "alpha": 0.005,
+      "phi": 1.0,
+      "cost": 17.099645286666664,
+      "sla_pct": 0.0,
+      "faas_pct": 5.264740032029265,
+      "vm_hours": 141.66666666666666
+    },
+    {
+      "trace": "Berkeley",
+      "variant": "paper rho*estimate",
+      "alpha": 0.005,
+      "phi": 2.0,
+      "cost": 24.906276204999998,
+      "sla_pct": 0.0,
+      "faas_pct": 7.1985736604983686,
+      "vm_hours": 205.75
+    },
+    {
+      "trace": "Berkeley",
+      "variant": "rho*capacity",
+      "alpha": 0.005,
+      "phi": 2.0,
+      "cost": 24.470231589999997,
+      "sla_pct": 0.0,
+      "faas_pct": 6.449804046864603,
+      "vm_hours": 205.75
+    },
+    {
+      "trace": "Berkeley",
+      "variant": "fill ready capacity",
+      "alpha": 0.005,
+      "phi": 1.0,
+      "cost": 20.32603736,
+      "sla_pct": 0.0,
+      "faas_pct": 6.373914343417763,
+      "vm_hours": 164.75
+    },
+    {
+      "trace": "Sin",
+      "variant": "paper rho*estimate",
+      "alpha": 0.02,
+      "phi": 3.0,
+      "cost": 6.968555654999999,
+      "sla_pct": 0.0,
+      "faas_pct": 25.323625474059817,
+      "vm_hours": 35.52777777777778
+    },
+    {
+      "trace": "Sin",
+      "variant": "rho*capacity",
+      "alpha": 0.02,
+      "phi": 3.0,
+      "cost": 6.7385117999999995,
+      "sla_pct": 0.0,
+      "faas_pct": 23.601902818775482,
+      "vm_hours": 35.52777777777778
+    },
+    {
+      "trace": "Sin",
+      "variant": "fill ready capacity",
+      "alpha": 0.02,
+      "phi": 3.0,
+      "cost": 5.4310266149999995,
+      "sla_pct": 0.0,
+      "faas_pct": 13.816260579111537,
+      "vm_hours": 35.52777777777778
+    },
+    {
+      "trace": "Square",
+      "variant": "paper rho*estimate",
+      "alpha": 0.005,
+      "phi": 1.0,
+      "cost": 0.16067513111111112,
+      "sla_pct": 0.0,
+      "faas_pct": 36.51111111111111,
+      "vm_hours": 1.01
+    },
+    {
+      "trace": "Square",
+      "variant": "rho*capacity",
+      "alpha": 0.2,
+      "phi": 0.0,
+      "cost": 0.14199061111111114,
+      "sla_pct": 0.0,
+      "faas_pct": 25.0,
+      "vm_hours": 1.0
+    },
+    {
+      "trace": "Square",
+      "variant": "fill ready capacity",
+      "alpha": 0.005,
+      "phi": 1.0,
+      "cost": 0.1280202211111111,
+      "sla_pct": 0.0,
+      "faas_pct": 15.255555555555556,
+      "vm_hours": 1.01
+    }
+  ],
+  "default_metrics_unchanged": {
+    "WITS": true,
+    "Berkeley": true,
+    "Sin": true,
+    "Square": true
+  }
+}

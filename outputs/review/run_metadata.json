@@ -1,0 +1,61 @@
+{
+  "started_utc": "2026-10-19T08:02:28.683396+00:00",
+  "git_head": "e9ea223f35e41dcaba38cc24de366c94d96b43a2",
+  "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 08:22:19) [Clang 14.0.6 ]",
+  "commands": [
+    ".venv/bin/python -u scripts/review_experiments.py",
+    ".venv/bin/python scripts/reproduce.py",
+    ".venv/bin/python scripts/validate_reproduction.py"
+  ],
+  "source_sha256": {
+    "libra_sim/engine.py": "05a9830f0c52e4a26ab665db7b34b32238fcaeebec74906d9db9b4e80718b98e",
+    "scripts/review_experiments.py": "f069c986fc013cce6d500c25e2b15417181f68db690447b29b3a3081b372760b",
+    "scripts/reproduce.py": "819e0001a7561701d4d94df1868c96f12049bc9a53fd138889113fbe52a4b007",
+    "scripts/validate_reproduction.py": "fae7fabcc95fe41ac500848d51ed743a864945012c1144a5dcdb6de5d167f2b9",
+    "configs/paper.json": "d14ebc2e2e59009b067079c59e52c11d05cfbfea7ef54f080d552fc5da9446e4",
+    "libra_review.patch": "946350876b8c8c6a98476f3f179ced4f2d686624049cf46d13913811dd6fe137"
+  },
+  "trace_manifest": {
+    "source": "https://github.com/aliraza0337/LIBRA",
+    "commit": "53a804412ca24c6eca7fa226fcccc0220b17fb0f",
+    "files": {
+      "berkeley_logs.txt": {
+        "sha256": "62cf2d975f268f6170dac09c2883fac0ea7bf83a20cb34dfcea17a17da006db7",
+        "seconds": 45000
+      },
+      "sin_logs.txt": {
+        "sha256": "0144bcf4d6511f2e6c7d551d77b2826502694118136458ae043d8d7ad24ef842",
+        "seconds": 10000
+      },
+      "square_load.txt": {
+        "sha256": "91efbc99e0d079342555d9d983ae9a847ad9ac06fe0d01f2939686d6aa118966",
+        "seconds": 1112
+      },
+      "wits_logs.txt": {
+        "sha256": "2c098873d49b6db5e1c2dc94896c2c4f05ff4ce3286f3a87c5f4d702459bed74",
+        "seconds": 45000
+      }
+    }
+  },
+  "note": "User patch preserved; default estimate routing retained. Full E1/E2/E3 requested.",
+  "completed_utc": "2026-10-19T08:06:05.600531+00:00",
+  "review_case_count": 1263,
+  "output_checks_passed": true,
+  "default_metrics_unchanged": {
+    "WITS": true,
+    "Berkeley": true,
+    "Sin": true,
+    "Square": true
+  },
+  "output_sha256": {
+    "e1_baseline_sweep.csv": "117fc7a5d050ec264e80ef20b075f8672a04484e9ab12d8f1a813500bcee2d54",
+    "e2_phi_rho.csv": "da93e6d7c213460537d999091bc37862adf6099ace92ef32a25c17f5087069a0",
+    "e3_libra_variants.csv": "6ee665a581767687740f5cd963864502fd1c9d85139cf50acdd759ecf91e15c5"
+  },
+  "summary_script_sha256": "ab7ab7e742edd0605c510a2f649317742ca493331098971dfd087a9be928615d",
+  "verification": {
+    "pytest": "29 passed",
+    "original_artifact_checks": "passed: four primary experiments and P0/P1/P2",
+    "review_artifact_checks": "passed: 1080+39+144 cases, grid dimensions, costs and source fingerprints"
+  }
+}

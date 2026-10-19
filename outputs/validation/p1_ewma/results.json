@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "created_utc": "2026-10-19T07:30:49.327483+00:00",
+    "created_utc": "2026-10-19T08:02:33.420526+00:00",
     "trace": {
       "path": "/Users/tianzl/PycharmProjects/LIBRA-Reproduction/data/traces/wits_logs.txt",
       "sha256": "2c098873d49b6db5e1c2dc94896c2c4f05ff4ce3286f3a87c5f4d702459bed74",
@@ -34,7 +34,7 @@
       "auto_scale_in_threshold": 0.3,
       "auto_window_seconds": 120
     },
-    "validation_source_sha256": "a189aeaac739c40179e31a4b071dcecaa5b58128c3b4840574d704acab36aba5",
+    "validation_source_sha256": "c3ef0126b4de6069e02878e1f70aebd110c5fbc2f07ba009e0199146a4ec9050",
     "runner_sha256": "fae7fabcc95fe41ac500848d51ed743a864945012c1144a5dcdb6de5d167f2b9",
     "upstream_commit": "53a804412ca24c6eca7fa226fcccc0220b17fb0f"
   },

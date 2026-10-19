@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "created_utc": "2026-10-19T07:30:46.905714+00:00",
+    "created_utc": "2026-10-19T08:02:30.823577+00:00",
     "python": "3.12.7",
     "platform": "macOS-27.0.1-arm64-arm-64bit",
     "trace": {
-      "path": "/Users/tianzl/PycharmProjects/LIBRA-Reproduction/data/traces/wits_logs.txt",
+      "path": "data/traces/wits_logs.txt",
       "sha256": "2c098873d49b6db5e1c2dc94896c2c4f05ff4ce3286f3a87c5f4d702459bed74",
       "available_seconds": 45000,
       "offset_seconds": 0,
@@ -38,12 +38,12 @@
     },
     "price_derived_cip": 3.254572674607824,
     "upstream_commit": "53a804412ca24c6eca7fa226fcccc0220b17fb0f",
-    "simulator_source_sha256": "06ebb2461510161260c831adef6895eeb3a37773c761ac3ed22f017216412314",
+    "simulator_source_sha256": "487b4565be1a6f3efbccd3a07a6040d232c49d198b9e06a661fbf66c149812a7",
     "command": [
       "scripts/reproduce.py"
     ],
     "deterministic": true,
-    "elapsed_seconds": 2.1514222910045646,
+    "elapsed_seconds": 2.0137887080200016,
     "model": "paper-equations reconstruction; see docs/methodology.md"
   },
   "policies": {

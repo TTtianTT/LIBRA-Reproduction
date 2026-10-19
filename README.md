@@ -8,6 +8,7 @@
 
 ## 直接看结果
 
+- [补丁后 E1–E3 重跑报告](outputs/review/REPORT.md)：完整基线扫描、phi/rho 联合扫描和路由/EWMA 变体，共 1,263 次仿真。
 - [P0–P2 验证报告](outputs/validation/REPORT.md)：MAX 区间/价格审计、EWMA 单变量消融、AUTO 三项修复的全部八种组合。
 - [WITS 主实验报告](outputs/wits_12h/REPORT.md)：完整表格和图 3–6。
 - [结构化结果](outputs/wits_12h/results.json) / [汇总 CSV](outputs/wits_12h/summary.csv)。
