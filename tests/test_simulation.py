@@ -151,3 +151,35 @@ def test_trace_bounds_and_invalid_input(tmp_path):
         Config(service_seconds=2)
     with pytest.raises(ValueError):
         Config(rho=math.nan)
+
+
+def test_default_estimator_matches_paper_rule():
+    counts = [0] * 10 + [450] * 400 + [2] * 200 + [90] * 400
+    base = simulate(counts, "LIBRA")
+    c = Config()
+    seen = []
+
+    def paper(t, history):
+        seen.append(len(history) == t + 1)
+        m = Monitor(c.alpha, c.beta)
+        for n in history:
+            avg, dev = m.observe(n)
+        return max(0.0, avg + c.phi * dev) if avg >= c.cip_requests_per_second else 0.0
+
+    hooked = simulate(counts, "LIBRA", estimator=paper)
+    assert all(seen) and len(seen) == len(base["decisions"])
+    assert hooked["summary"]["total_cost_usd"] == pytest.approx(base["summary"]["total_cost_usd"])
+    assert [d["target_vms"] for d in hooked["decisions"]] == [d["target_vms"] for d in base["decisions"]]
+
+
+def test_estimator_sees_only_past_and_validates_output():
+    c = replace(Config(), vm_cold_start_seconds=0, scaling_interval_seconds=2)
+    lengths = []
+    r = simulate([20, 20, 40, 40], "LIBRA", c,
+                 estimator=lambda t, h: lengths.append(len(h)) or 3.0 * 16)
+    assert lengths == [1, 3]
+    assert [d["target_vms"] for d in r["decisions"]] == [3, 3]
+    with pytest.raises(ValueError):
+        simulate([20, 20], "LIBRA", c, estimator=lambda t, h: math.nan)
+    with pytest.raises(ValueError):
+        simulate([20, 20], "AUTO", c, estimator=lambda t, h: 16.0)

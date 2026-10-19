@@ -1,0 +1,34 @@
+/opt/anaconda3/lib/python3.12/site-packages/joblib/externals/loky/backend/context.py:136: UserWarning: Could not find the number of physical cores for the following reason:
+invalid literal for int() with base 10: ''
+Returning the number of logical cores instead. You can silence this warning by setting LOKY_MAX_CPU_COUNT to the number of cores you want to use.
+  warnings.warn(
+  File "/opt/anaconda3/lib/python3.12/site-packages/joblib/externals/loky/backend/context.py", line 276, in _count_physical_cores
+    cpu_count_physical = int(cpu_info)
+                         ^^^^^^^^^^^^^
+Azure x1: 60450 training rows; tuning EWMA on training prefix only
+Azure x1: EWMA grid 6/24
+Azure x1: EWMA grid 12/24
+Azure x1: EWMA grid 18/24
+Azure x1: EWMA grid 24/24
+Azure x1 paper: $12.215645, SLA=0.0%
+Azure x1 fill_paper: $11.835718, SLA=0.0%
+Azure x1 fill_tuned: $9.123432, SLA=0.0%
+Azure x1 fill_gbdt_lag: $9.681630, SLA=0.0%
+Azure x1 fill_gbdt_calendar: $9.582653, SLA=0.0%
+Azure x1 fill_previous_day_quantile: $11.438678, SLA=0.0%
+Azure x1 fill_window_quantile: $9.568097, SLA=0.0%
+Azure x1 oracle: $8.699732, SLA=0.0%
+Azure x64: 60450 training rows; tuning EWMA on training prefix only
+Azure x64: EWMA grid 6/24
+Azure x64: EWMA grid 12/24
+Azure x64: EWMA grid 18/24
+Azure x64: EWMA grid 24/24
+Azure x64 paper: $530.439181, SLA=0.0%
+Azure x64 fill_paper: $509.964484, SLA=0.0%
+Azure x64 fill_tuned: $326.062284, SLA=0.0%
+Azure x64 fill_gbdt_lag: $337.773429, SLA=0.0%
+Azure x64 fill_gbdt_calendar: $336.946307, SLA=0.0%
+Azure x64 fill_previous_day_quantile: $450.105791, SLA=0.0%
+Azure x64 fill_window_quantile: $323.187102, SLA=0.0%
+Azure x64 oracle: $286.521514, SLA=0.0%
+Azure experiment complete: /Users/tianzl/PycharmProjects/LIBRA-Reproduction/outputs/ml_azure2021

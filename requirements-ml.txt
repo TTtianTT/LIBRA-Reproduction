@@ -1,0 +1,4 @@
+# Optional ML extension (libra_ml, scripts/ml_experiments.py); install after requirements-reproduce.txt.
+# Results in outputs/ml were produced with CPython 3.12 and these versions.
+scikit-learn==1.5.2
+scipy==1.17.1

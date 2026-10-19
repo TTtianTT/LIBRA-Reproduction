@@ -1,0 +1,29 @@
+{
+  "checks_passed": true,
+  "comparisons": [
+    {
+      "load_multiplier": 1,
+      "baseline": "fill_tuned",
+      "calendar_gbdt_cost_change_percent": 5.033429733997341,
+      "calendar_gbdt_cheaper_days": 1
+    },
+    {
+      "load_multiplier": 1,
+      "baseline": "fill_window_quantile",
+      "calendar_gbdt_cost_change_percent": 0.15212947698761692,
+      "calendar_gbdt_cheaper_days": 3
+    },
+    {
+      "load_multiplier": 64,
+      "baseline": "fill_tuned",
+      "calendar_gbdt_cost_change_percent": 3.3380197203226603,
+      "calendar_gbdt_cheaper_days": 0
+    },
+    {
+      "load_multiplier": 64,
+      "baseline": "fill_window_quantile",
+      "calendar_gbdt_cost_change_percent": 4.257349545949607,
+      "calendar_gbdt_cheaper_days": 0
+    }
+  ]
+}

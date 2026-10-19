@@ -1,0 +1,14 @@
+/opt/anaconda3/lib/python3.12/site-packages/joblib/externals/loky/backend/context.py:136: UserWarning: Could not find the number of physical cores for the following reason:
+invalid literal for int() with base 10: ''
+Returning the number of logical cores instead. You can silence this warning by setting LOKY_MAX_CPU_COUNT to the number of cores you want to use.
+  warnings.warn(
+  File "/opt/anaconda3/lib/python3.12/site-packages/joblib/externals/loky/backend/context.py", line 276, in _count_physical_cores
+    cpu_count_physical = int(cpu_info)
+                         ^^^^^^^^^^^^^
+LOTO:WITS          paper=22.295 fill=17.772 tuned=17.457 quant=17.156 lin=17.724 gbdt=17.434 oracle=16.340  (35.8s)
+LOTO:Berkeley      paper=27.586 fill=21.474 tuned=21.069 quant=20.395 lin=20.871 gbdt=20.565 oracle=20.093  (18.0s)
+LOTO:Sin           paper=7.296 fill=5.567 tuned=6.291 quant=6.586 lin=6.040 gbdt=6.469 oracle=3.908  (19.2s)
+temporal:WITS      paper=8.699 fill=7.004 tuned=6.666 quant=6.712 lin=6.699 gbdt=6.706 oracle=6.564  (12.2s)
+temporal:Berkeley  paper=14.345 fill=11.193 tuned=10.661 quant=10.697 lin=10.837 gbdt=10.836 oracle=10.544  (16.4s)
+temporal:Sin       paper=3.525 fill=2.761 tuned=2.804 quant=3.170 lin=2.332 gbdt=2.121 oracle=2.000  (7.0s)
+Wrote outputs/ml

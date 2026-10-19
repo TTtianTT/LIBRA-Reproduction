@@ -8,6 +8,7 @@ import hashlib
 import itertools
 import json
 import math
+import platform
 from pathlib import Path
 import subprocess
 import sys
@@ -39,6 +40,7 @@ def provenance(trace, config):
         for path in sorted((ROOT / parent).glob("*.py")):
             source.update(str(path.relative_to(ROOT)).encode() + path.read_bytes())
     return {"created_utc": datetime.now(timezone.utc).isoformat(),
+            "platform": platform.platform(), "python": platform.python_version(),
             "trace": trace, "config": asdict(config), "validation_source_sha256": source.hexdigest(),
             "runner_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
             "upstream_commit": subprocess.check_output(["git", "-C", str(ROOT / "upstream"), "rev-parse", "HEAD"], text=True).strip()}

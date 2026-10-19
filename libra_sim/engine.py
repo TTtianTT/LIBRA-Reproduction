@@ -50,12 +50,30 @@ def libra_target(avg, deviation, config):
     return math.ceil(estimate / config.vm_capacity), estimate
 
 
+def estimate_target(estimate, config):
+    """Turn a provisioning level (req/s) into a VM count with Algorithm 1's CIP rule."""
+    if not math.isfinite(estimate) or estimate < 0:
+        raise ValueError(f"Estimator returned an invalid provisioning level: {estimate!r}")
+    if estimate < config.cip_requests_per_second:
+        return 0, 0.0
+    return math.ceil(estimate / config.vm_capacity), estimate
+
+
 def simulate(counts, policy="LIBRA", config=None, *, deviation_update="updated_mean",
-             routing="estimate"):
+             routing="estimate", estimator=None):
+    """Run one policy over per-second request counts.
+
+    ``estimator(t, history) -> req/s`` optionally replaces LIBRA's ``avg + phi*std``
+    at each scaling decision. ``history`` is a copy of ``counts[:t+1]`` only, so an
+    estimator cannot read future demand unless it closes over the trace itself
+    (as the offline oracle in ``libra_ml`` deliberately does).
+    """
     c = config or Config()
     policy = policy.upper()
     if policy not in POLICIES:
         raise ValueError(f"Unknown policy: {policy}")
+    if estimator is not None and policy != "LIBRA":
+        raise ValueError("estimator only applies to the LIBRA policy")
     if routing not in ("estimate", "capacity"):
         raise ValueError("routing must be 'estimate' (paper: rho*vm_reqs) or 'capacity' (rho*ready capacity)")
     counts = list(counts)
@@ -99,7 +117,10 @@ def simulate(counts, policy="LIBRA", config=None, *, deviation_update="updated_m
             routing_estimate = pending_routing[1]
             pending_routing = None
         if policy == "LIBRA" and t % c.scaling_interval_seconds == 0:
-            target, estimate = libra_target(avg, deviation, c)
+            if estimator is None:
+                target, estimate = libra_target(avg, deviation, c)
+            else:
+                target, estimate = estimate_target(float(estimator(t, counts[:t + 1])), c)
             previous = resize(target, t)
             if target > previous:
                 pending_routing = (t + c.vm_cold_start_seconds, estimate)

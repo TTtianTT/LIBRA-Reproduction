@@ -1,6 +1,14 @@
 import hashlib
 from pathlib import Path
 
+ROOT = Path(__file__).resolve().parents[1]
+
+
+def display_path(path):
+    """Repository-relative path for provenance, so results do not embed a home directory."""
+    resolved = Path(path).resolve()
+    return str(resolved.relative_to(ROOT)) if resolved.is_relative_to(ROOT) else str(resolved)
+
 
 def load_trace(path, seconds=None, offset=0):
     path = Path(path)
@@ -20,7 +28,7 @@ def load_trace(path, seconds=None, offset=0):
         raise ValueError(f"Trace has {len(counts)} seconds; requested [{offset}, {stop})")
     selected = counts[offset:stop]
     return selected, {
-        "path": str(path), "sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
+        "path": display_path(path), "sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
         "available_seconds": len(counts), "offset_seconds": offset,
         "duration_seconds": len(selected), "total_requests": sum(selected),
         "peak_requests_per_second": max(selected),

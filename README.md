@@ -8,6 +8,8 @@
 
 ## 直接看结果
 
+- [Azure Functions 2021 两周独立验证](outputs/ml_azure2021/REPORT.md)：前 7 天训练、后 7 天测试，原始/64 倍负载对照；本次 GBDT 未超过强规则。
+- [LIBRA-ML 改进报告](outputs/ml/REPORT.md)：用学到的 τ=0.797 需求分位数替代 avg+φ·std，跨 trace 与时间切分共 6 折评估。
 - [补丁后 E1–E3 重跑报告](outputs/review/REPORT.md)：完整基线扫描、phi/rho 联合扫描和路由/EWMA 变体，共 1,263 次仿真。
 - [P0–P2 验证报告](outputs/validation/REPORT.md)：MAX 区间/价格审计、EWMA 单变量消融、AUTO 三项修复的全部八种组合。
 - [WITS 主实验报告](outputs/wits_12h/REPORT.md)：完整表格和图 3–6。
@@ -72,6 +74,26 @@ python3 -m venv .venv
 每个实验目录包含 `results.json`、`summary.csv`、`phi_sweep.csv`、五种策略逐秒 `*_timeline.csv`、缩放决策 `*_decisions.json` 和 `REPORT.md`。绘图开启时产生图 3–6 的 PNG、SVG。
 
 `results.json` 记录 trace SHA-256、实际配置、仿真核心源码哈希、Python 版本、运行命令及响应时间分布。运行确定性，无随机采样；运行时长和生成时间等元数据随运行变化。
+
+## ML 扩展（改进部分）
+
+`libra_ml/` 是可选扩展，模拟器核心不依赖它。`simulate(..., estimator=f)` 在每次扩缩容决策时用 `f(t, counts[:t+1])` 替代 `avg + φ·std`；默认 `estimator=None` 时结果与原复现逐位一致。由价格可推出最优配置目标是下一窗口每秒需求的 0.797 分位数，因此 ML 部分是一个分位数回归问题（线性 QR、GBDT QR）。方法、结果和局限见 [outputs/ml/REPORT.md](outputs/ml/REPORT.md)。
+
+```bash
+.venv/bin/python -m pip install -e '.[test,ml]'   # 精确版本见 requirements-ml.txt
+.venv/bin/python scripts/ml_experiments.py        # 约 2–3 分钟
+.venv/bin/python scripts/plot_ml.py
+```
+
+两周 Azure 2021 数据已在本地下载。`data/azure2021/aggregate_counts.npz` 是未缩放的逐秒聚合，`manifest.json` 记录官方来源、授权归属和校验值。原始 RAR/CSV 位于 `data/azure2021/raw/`，由 Git 忽略。专页时间单位为秒，到达时间使用 `end_timestamp-duration`；不是将毫秒直接当秒处理。
+
+```bash
+.venv/bin/python scripts/prepare_azure_2021.py --download  # 下载需 curl，解压需 unrar
+.venv/bin/python scripts/azure_ml_experiments.py
+.venv/bin/python scripts/summarize_azure_ml.py
+```
+
+Azure 对照保持固定服务时间，不重放实际 duration；64 倍场景是明确标注的调用量复制。日周期特征收益、原始负载低于 CIP 的影响及负结果都保留在报告中。`outputs/review/run_metadata.json` 保持旧 E1–E3 运行的历史指纹，本次没有仅重写该文件或用旧 CSV 冒充新代码实验。
 
 ## 作者代码重放
 

@@ -1,0 +1,44 @@
+[
+  {
+    "path": "outputs/wits_12h/results.json",
+    "metrics_unchanged": true,
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "trace_path": "data/traces/wits_logs.txt"
+  },
+  {
+    "path": "outputs/berkeley_12h/results.json",
+    "metrics_unchanged": true,
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "trace_path": "data/traces/berkeley_logs.txt"
+  },
+  {
+    "path": "outputs/synthetic_sin/results.json",
+    "metrics_unchanged": true,
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "trace_path": "data/traces/sin_logs.txt"
+  },
+  {
+    "path": "outputs/synthetic_square/results.json",
+    "metrics_unchanged": true,
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "trace_path": "data/traces/square_load.txt"
+  },
+  {
+    "path": "outputs/validation/p0_max/results.json",
+    "metrics_unchanged": true,
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "trace_path": "data/traces/wits_logs.txt"
+  },
+  {
+    "path": "outputs/validation/p1_ewma/results.json",
+    "metrics_unchanged": true,
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "trace_path": "data/traces/wits_logs.txt"
+  },
+  {
+    "path": "outputs/validation/p2_auto/results.json",
+    "metrics_unchanged": true,
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "trace_path": "data/traces/wits_logs.txt"
+  }
+]

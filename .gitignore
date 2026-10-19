@@ -8,3 +8,4 @@ references/*.pdf
 references/*.txt
 references/paper-page-*.png
 references/published-*.png
+data/azure2021/raw/

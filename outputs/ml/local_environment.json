@@ -1,0 +1,6 @@
+{
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "numpy": "1.26.4",
+  "scipy": "1.17.1",
+  "scikit_learn": "1.5.2"
+}
