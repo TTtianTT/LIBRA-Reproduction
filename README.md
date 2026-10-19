@@ -8,6 +8,7 @@
 
 ## 直接看结果
 
+- [RL-0：DP 成本下限与 Gymnasium 环境](outputs/rl0/REPORT.md)：v1 精确 DP、60 秒启动状态、一致性校验与 v2 排队敏感性；尚未训练 PPO。
 - [Azure Functions 2021 两周独立验证](outputs/ml_azure2021/REPORT.md)：前 7 天训练、后 7 天测试，原始/64 倍负载对照；本次 GBDT 未超过强规则。
 - [LIBRA-ML 改进报告](outputs/ml/REPORT.md)：用学到的 τ=0.797 需求分位数替代 avg+φ·std，跨 trace 与时间切分共 6 折评估。
 - [补丁后 E1–E3 重跑报告](outputs/review/REPORT.md)：完整基线扫描、phi/rho 联合扫描和路由/EWMA 变体，共 1,263 次仿真。

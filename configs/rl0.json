@@ -1,0 +1,17 @@
+{
+  "stage": "RL-0; no PPO training",
+  "decision_seconds": 60,
+  "episode_seconds": 21600,
+  "gamma_for_later_training": 0.99,
+  "epsilon": 0.001,
+  "residual_deltas": [-3, -2, -1, 0, 1, 2, 3],
+  "raw_deltas": [-8, -4, -2, -1, 0, 1, 2, 4, 8],
+  "rho_grid": [0.6, 0.7, 0.8, 0.9, 1.0],
+  "v2_service_seconds": [0.5, 0.7],
+  "v2_latency_modes": ["wait_budget", "mmc_response"],
+  "baseline_reference_rho": {"v1": 1.0, "v2": 0.8},
+  "azure_seconds": {"train": [0, 777600], "validation": [777600, 950400], "test": [950400, 1209600]},
+  "azure_test_exposure": "Days 12-14 appeared in the previous ML study; not globally untouched data.",
+  "augmentation": {"amplitude": [0.5, 2.0], "time_scale": [0.8, 1.25], "noise": "Poisson resampling"},
+  "seeds": [0, 1, 2, 3, 4]
+}
