@@ -1,0 +1,110 @@
+{
+  "arxiv": {
+    "url": "https://arxiv.org/pdf/2104.05491v1",
+    "sha256": "a35c0c75f34b5a28e5ef65da14944ffd9c3094775b468c952961794fb56a0240",
+    "pdf_page_index_zero_based": 7,
+    "method": "Relative heights of five blue vector rectangles in Figure 4a; graphical readout, not raw author metrics",
+    "cost_bars": {
+      "LIBRA": {
+        "rectangle_pt": [
+          135.11920166015625,
+          102.63327026367188,
+          141.14486694335938,
+          127.25111389160156
+        ],
+        "normalized_cost": 1.0
+      },
+      "FAAS": {
+        "rectangle_pt": [
+          155.20474243164062,
+          75.02354431152344,
+          161.2303924560547,
+          127.25111389160156
+        ],
+        "normalized_cost": 2.1215330785846884
+      },
+      "MAX": {
+        "rectangle_pt": [
+          175.29026794433594,
+          69.91289520263672,
+          181.31591796875,
+          127.25111389160156
+        ],
+        "normalized_cost": 2.3291324599979544
+      },
+      "SPOCK": {
+        "rectangle_pt": [
+          195.37579345703125,
+          98.91703033447266,
+          201.40145874023438,
+          127.25111389160156
+        ],
+        "normalized_cost": 1.150957166897552
+      },
+      "AUTO": {
+        "rectangle_pt": [
+          215.46133422851562,
+          99.14436340332031,
+          221.4869842529297,
+          127.25111389160156
+        ],
+        "normalized_cost": 1.1417226834763583
+      }
+    },
+    "max_to_faas_cost_ratio": 1.0978534737491623
+  },
+  "published": {
+    "url": "https://open.bu.edu/bitstreams/86e15fd8-9c9a-436b-9d16-d9072bf4a39f/download",
+    "sha256": "36a6e6e8a930412c09e1f24d0ccbe4650bf2aafd39552ab5373681a2d0ccbde3",
+    "pdf_page_index_zero_based": 8,
+    "method": "Relative heights of five blue vector rectangles in Figure 4a; graphical readout, not raw author metrics",
+    "cost_bars": {
+      "LIBRA": {
+        "rectangle_pt": [
+          73.7125015258789,
+          98.79827880859375,
+          79.7269515991211,
+          122.2459716796875
+        ],
+        "normalized_cost": 1.0
+      },
+      "FAAS": {
+        "rectangle_pt": [
+          93.76129913330078,
+          72.50152587890625,
+          99.77613830566406,
+          122.2459716796875
+        ],
+        "normalized_cost": 2.121507052922297
+      },
+      "MAX": {
+        "rectangle_pt": [
+          113.81099700927734,
+          67.63385009765625,
+          119.82584381103516,
+          122.2459716796875
+        ],
+        "normalized_cost": 2.3291042697576834
+      },
+      "SPOCK": {
+        "rectangle_pt": [
+          133.86000061035156,
+          95.25885009765625,
+          139.87484741210938,
+          122.2459716796875
+        ],
+        "normalized_cost": 1.1509499774837506
+      },
+      "AUTO": {
+        "rectangle_pt": [
+          153.90899658203125,
+          95.47528076171875,
+          159.92384338378906,
+          122.2459716796875
+        ],
+        "normalized_cost": 1.141719616729183
+      }
+    },
+    "max_to_faas_cost_ratio": 1.0978536538680979
+  }
+}

@@ -24,15 +24,21 @@ class Monitor:
     beta: float
     avg: float | None = None
     deviation: float = 0
+    deviation_update: str = "updated_mean"
+
+    def __post_init__(self):
+        if self.deviation_update not in ("updated_mean", "previous_mean"):
+            raise ValueError("deviation_update must be updated_mean or previous_mean")
 
     def observe(self, count):
         if self.avg is None:
             self.avg = float(count)
         else:
+            previous = self.avg
             self.avg = (1 - self.alpha) * self.avg + self.alpha * count
-            # Eq. (7) uses the updated avg from Eq. (6).
+            reference = previous if self.deviation_update == "previous_mean" else self.avg
             self.deviation = ((1 - self.beta) * self.deviation
-                              + self.beta * abs(count - self.avg))
+                              + self.beta * abs(count - reference))
         return self.avg, self.deviation
 
 
@@ -44,7 +50,7 @@ def libra_target(avg, deviation, config):
     return math.ceil(estimate / config.vm_capacity), estimate
 
 
-def simulate(counts, policy="LIBRA", config=None):
+def simulate(counts, policy="LIBRA", config=None, *, deviation_update="updated_mean"):
     c = config or Config()
     policy = policy.upper()
     if policy not in POLICIES:
@@ -53,7 +59,7 @@ def simulate(counts, policy="LIBRA", config=None):
     if not counts or any(not isinstance(n, int) or isinstance(n, bool) or n < 0 for n in counts):
         raise ValueError("Trace must contain nonnegative integer request counts")
     horizon = len(counts)
-    monitor = Monitor(c.alpha, c.beta)
+    monitor = Monitor(c.alpha, c.beta, deviation_update=deviation_update)
     vms = []
     queue = deque()
     queued = 0

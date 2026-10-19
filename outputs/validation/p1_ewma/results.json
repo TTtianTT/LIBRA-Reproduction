@@ -1,0 +1,259 @@
+{
+  "metadata": {
+    "created_utc": "2026-10-19T07:30:49.327483+00:00",
+    "trace": {
+      "path": "/Users/tianzl/PycharmProjects/LIBRA-Reproduction/data/traces/wits_logs.txt",
+      "sha256": "2c098873d49b6db5e1c2dc94896c2c4f05ff4ce3286f3a87c5f4d702459bed74",
+      "available_seconds": 45000,
+      "offset_seconds": 0,
+      "duration_seconds": 43200,
+      "total_requests": 6217439,
+      "peak_requests_per_second": 1168
+    },
+    "config": {
+      "epoch_seconds": 1,
+      "request_memory_mb": 512,
+      "service_seconds": 1,
+      "sla_seconds": 1,
+      "vm_memory_mb": 8192,
+      "vm_hourly_price": 0.1,
+      "vm_cold_start_seconds": 100,
+      "faas_gb_second_price": 1.667e-05,
+      "faas_request_price": 2e-07,
+      "gateway_hourly_price": 0.0116,
+      "alpha": 0.2,
+      "beta": 0.2,
+      "scaling_interval_seconds": 300,
+      "rho": 0.8,
+      "phi": 1,
+      "cip_requests_per_second": 4,
+      "auto_min_instances": 10,
+      "auto_max_instances": 292,
+      "auto_scale_group": 10,
+      "auto_scale_out_threshold": 0.7,
+      "auto_scale_in_threshold": 0.3,
+      "auto_window_seconds": 120
+    },
+    "validation_source_sha256": "a189aeaac739c40179e31a4b071dcecaa5b58128c3b4840574d704acab36aba5",
+    "runner_sha256": "fae7fabcc95fe41ac500848d51ed743a864945012c1144a5dcdb6de5d167f2b9",
+    "upstream_commit": "53a804412ca24c6eca7fa226fcccc0220b17fb0f"
+  },
+  "controlled_difference": "Only absolute-deviation mean reference",
+  "runs": [
+    {
+      "deviation_update": "updated_mean",
+      "phi": -1,
+      "total_cost_usd": 28.3280955,
+      "vm_cost_usd": 10.425,
+      "faas_cost_usd": 17.7638955,
+      "gateway_cost_usd": 0.1392,
+      "sla_violation_percent": 0.0,
+      "vm_uptime_seconds": 375300,
+      "faas_requests": 2081300
+    },
+    {
+      "deviation_update": "updated_mean",
+      "phi": 0,
+      "total_cost_usd": 24.29683435833333,
+      "vm_cost_usd": 12.483333333333333,
+      "faas_cost_usd": 11.674301025,
+      "gateway_cost_usd": 0.1392,
+      "sla_violation_percent": 0.0,
+      "vm_uptime_seconds": 449400,
+      "faas_requests": 1367815
+    },
+    {
+      "deviation_update": "updated_mean",
+      "phi": 1,
+      "total_cost_usd": 22.295063378333335,
+      "vm_cost_usd": 14.708333333333334,
+      "faas_cost_usd": 7.447530045000001,
+      "gateway_cost_usd": 0.1392,
+      "sla_violation_percent": 0.0,
+      "vm_uptime_seconds": 529500,
+      "faas_requests": 872587
+    },
+    {
+      "deviation_update": "updated_mean",
+      "phi": 2,
+      "total_cost_usd": 21.701137911666667,
+      "vm_cost_usd": 16.791666666666668,
+      "faas_cost_usd": 4.770271245,
+      "gateway_cost_usd": 0.1392,
+      "sla_violation_percent": 0.0,
+      "vm_uptime_seconds": 604500,
+      "faas_requests": 558907
+    },
+    {
+      "deviation_update": "updated_mean",
+      "phi": 3,
+      "total_cost_usd": 22.212610058333333,
+      "vm_cost_usd": 18.908333333333335,
+      "faas_cost_usd": 3.165076725,
+      "gateway_cost_usd": 0.1392,
+      "sla_violation_percent": 0.0,
+      "vm_uptime_seconds": 680700,
+      "faas_requests": 370835
+    },
+    {
+      "deviation_update": "updated_mean",
+      "phi": 4,
+      "total_cost_usd": 23.403896924999998,
+      "vm_cost_usd": 21.075,
+      "faas_cost_usd": 2.1896969250000002,
+      "gateway_cost_usd": 0.1392,
+      "sla_violation_percent": 0.0,
+      "vm_uptime_seconds": 758700,
+      "faas_requests": 256555
+    },
+    {
+      "deviation_update": "previous_mean",
+      "phi": -1,
+      "total_cost_usd": 29.61159372,
+      "vm_cost_usd": 9.9,
+      "faas_cost_usd": 19.57239372,
+      "gateway_cost_usd": 0.1392,
+      "sla_violation_percent": 0.0,
+      "vm_uptime_seconds": 356400,
+      "faas_requests": 2293192
+    },
+    {
+      "deviation_update": "previous_mean",
+      "phi": 0,
+      "total_cost_usd": 24.29683435833333,
+      "vm_cost_usd": 12.483333333333333,
+      "faas_cost_usd": 11.674301025,
+      "gateway_cost_usd": 0.1392,
+      "sla_violation_percent": 0.0,
+      "vm_uptime_seconds": 449400,
+      "faas_requests": 1367815
+    },
+    {
+      "deviation_update": "previous_mean",
+      "phi": 1,
+      "total_cost_usd": 22.04181647333333,
+      "vm_cost_usd": 15.233333333333333,
+      "faas_cost_usd": 6.66928314,
+      "gateway_cost_usd": 0.1392,
+      "sla_violation_percent": 0.0,
+      "vm_uptime_seconds": 548400,
+      "faas_requests": 781404
+    },
+    {
+      "deviation_update": "previous_mean",
+      "phi": 2,
+      "total_cost_usd": 21.88724961333333,
+      "vm_cost_usd": 17.883333333333333,
+      "faas_cost_usd": 3.86471628,
+      "gateway_cost_usd": 0.1392,
+      "sla_violation_percent": 0.0,
+      "vm_uptime_seconds": 643800,
+      "faas_requests": 452808
+    },
+    {
+      "deviation_update": "previous_mean",
+      "phi": 3,
+      "total_cost_usd": 23.004367005000002,
+      "vm_cost_usd": 20.475,
+      "faas_cost_usd": 2.3901670050000003,
+      "gateway_cost_usd": 0.1392,
+      "sla_violation_percent": 0.0,
+      "vm_uptime_seconds": 737100,
+      "faas_requests": 280043
+    },
+    {
+      "deviation_update": "previous_mean",
+      "phi": 4,
+      "total_cost_usd": 24.906791498333334,
+      "vm_cost_usd": 23.183333333333334,
+      "faas_cost_usd": 1.584258165,
+      "gateway_cost_usd": 0.1392,
+      "sla_violation_percent": 0.0,
+      "vm_uptime_seconds": 834600,
+      "faas_requests": 185619
+    }
+  ],
+  "integer_grid_minima": {
+    "updated_mean": {
+      "deviation_update": "updated_mean",
+      "phi": 2,
+      "total_cost_usd": 21.701137911666667,
+      "vm_cost_usd": 16.791666666666668,
+      "faas_cost_usd": 4.770271245,
+      "gateway_cost_usd": 0.1392,
+      "sla_violation_percent": 0.0,
+      "vm_uptime_seconds": 604500,
+      "faas_requests": 558907
+    },
+    "previous_mean": {
+      "deviation_update": "previous_mean",
+      "phi": 2,
+      "total_cost_usd": 21.88724961333333,
+      "vm_cost_usd": 17.883333333333333,
+      "faas_cost_usd": 3.86471628,
+      "gateway_cost_usd": 0.1392,
+      "sla_violation_percent": 0.0,
+      "vm_uptime_seconds": 643800,
+      "faas_requests": 452808
+    }
+  },
+  "equivalence_checks": [
+    {
+      "previous_mean_phi": -1,
+      "equivalent_updated_mean_phi": -1.25,
+      "cost_difference_usd": 0.0,
+      "vm_uptime_difference_seconds": 0,
+      "faas_request_difference": 0,
+      "allocated_vms_identical": true,
+      "vm_routing_identical": true
+    },
+    {
+      "previous_mean_phi": 0,
+      "equivalent_updated_mean_phi": 0.0,
+      "cost_difference_usd": 0.0,
+      "vm_uptime_difference_seconds": 0,
+      "faas_request_difference": 0,
+      "allocated_vms_identical": true,
+      "vm_routing_identical": true
+    },
+    {
+      "previous_mean_phi": 1,
+      "equivalent_updated_mean_phi": 1.25,
+      "cost_difference_usd": 0.0,
+      "vm_uptime_difference_seconds": 0,
+      "faas_request_difference": 0,
+      "allocated_vms_identical": true,
+      "vm_routing_identical": true
+    },
+    {
+      "previous_mean_phi": 2,
+      "equivalent_updated_mean_phi": 2.5,
+      "cost_difference_usd": 0.0,
+      "vm_uptime_difference_seconds": 0,
+      "faas_request_difference": 0,
+      "allocated_vms_identical": true,
+      "vm_routing_identical": true
+    },
+    {
+      "previous_mean_phi": 3,
+      "equivalent_updated_mean_phi": 3.75,
+      "cost_difference_usd": 0.0,
+      "vm_uptime_difference_seconds": 0,
+      "faas_request_difference": 0,
+      "allocated_vms_identical": true,
+      "vm_routing_identical": true
+    },
+    {
+      "previous_mean_phi": 4,
+      "equivalent_updated_mean_phi": 5.0,
+      "cost_difference_usd": 0.0,
+      "vm_uptime_difference_seconds": 0,
+      "faas_request_difference": 0,
+      "allocated_vms_identical": true,
+      "vm_routing_identical": true
+    }
+  ],
+  "identity": "d_updated[t] = (1-alpha) * d_previous[t] with common zero initialization and fixed alpha/beta",
+  "identity_max_abs_error": 4.263256414560601e-14,
+  "conclusion": "Both integer-grid minima are phi=2; update order alone does not reproduce the paper's phi=1 optimum."
+}

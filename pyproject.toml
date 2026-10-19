@@ -13,7 +13,7 @@ dependencies = ["numpy>=1.24,<3", "matplotlib>=3.7,<4"]
 test = ["pytest>=7,<10"]
 
 [tool.setuptools.packages.find]
-include = ["libra_sim*"]
+include = ["libra_sim*", "libra_validation*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

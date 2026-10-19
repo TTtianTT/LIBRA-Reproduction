@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "created_utc": "2026-10-19T07:03:27.767672+00:00",
+    "created_utc": "2026-10-19T07:30:46.888746+00:00",
     "python": "3.12.7",
     "platform": "macOS-27.0.1-arm64-arm-64bit",
     "trace": {
@@ -38,7 +38,7 @@
     },
     "price_derived_cip": 3.254572674607824,
     "upstream_commit": "53a804412ca24c6eca7fa226fcccc0220b17fb0f",
-    "simulator_source_sha256": "3a971f80d9e929d12c0602c362d84211251f6e109368425928304faa3f7d7825",
+    "simulator_source_sha256": "06ebb2461510161260c831adef6895eeb3a37773c761ac3ed22f017216412314",
     "command": [
       "scripts/reproduce.py",
       "--trace",
@@ -48,7 +48,7 @@
       "--no-plots"
     ],
     "deterministic": true,
-    "elapsed_seconds": 1.7332049999968149,
+    "elapsed_seconds": 2.139924124989193,
     "model": "paper-equations reconstruction; see docs/methodology.md"
   },
   "policies": {

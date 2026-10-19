@@ -1,0 +1,278 @@
+{
+  "metadata": {
+    "created_utc": "2026-10-19T07:30:47.394436+00:00",
+    "trace": {
+      "path": "/Users/tianzl/PycharmProjects/LIBRA-Reproduction/data/traces/wits_logs.txt",
+      "sha256": "2c098873d49b6db5e1c2dc94896c2c4f05ff4ce3286f3a87c5f4d702459bed74",
+      "available_seconds": 45000,
+      "offset_seconds": 0,
+      "duration_seconds": 45000,
+      "total_requests": 6432107,
+      "peak_requests_per_second": 1168
+    },
+    "config": {
+      "epoch_seconds": 1,
+      "request_memory_mb": 512,
+      "service_seconds": 1,
+      "sla_seconds": 1,
+      "vm_memory_mb": 8192,
+      "vm_hourly_price": 0.1,
+      "vm_cold_start_seconds": 100,
+      "faas_gb_second_price": 1.667e-05,
+      "faas_request_price": 2e-07,
+      "gateway_hourly_price": 0.0116,
+      "alpha": 0.2,
+      "beta": 0.2,
+      "scaling_interval_seconds": 300,
+      "rho": 0.8,
+      "phi": 1,
+      "cip_requests_per_second": 4,
+      "auto_min_instances": 10,
+      "auto_max_instances": 292,
+      "auto_scale_group": 10,
+      "auto_scale_out_threshold": 0.7,
+      "auto_scale_in_threshold": 0.3,
+      "auto_window_seconds": 120
+    },
+    "validation_source_sha256": "a189aeaac739c40179e31a4b071dcecaa5b58128c3b4840574d704acab36aba5",
+    "runner_sha256": "fae7fabcc95fe41ac500848d51ed743a864945012c1144a5dcdb6de5d167f2b9",
+    "upstream_commit": "53a804412ca24c6eca7fa226fcccc0220b17fb0f"
+  },
+  "history": [
+    {
+      "revision": "53a804412ca24c6eca7fa226fcccc0220b17fb0f",
+      "git_blobs": {
+        "configuration.py": "27969b7c43595d9c7114875bb402dee6abf6da1f",
+        "traces/wits_logs.txt": "1c570960a0f30bb327f156b6d90899a7ef11779c"
+      }
+    },
+    {
+      "revision": "29cf270806845e38dac6cf00cac7d915e64847e0",
+      "git_blobs": {
+        "configuration.py": "27969b7c43595d9c7114875bb402dee6abf6da1f",
+        "traces/wits_logs.txt": "1c570960a0f30bb327f156b6d90899a7ef11779c"
+      }
+    },
+    {
+      "revision": "e21125a9703506bf38addaaf7e7ea43730a3245b",
+      "git_blobs": {
+        "configuration.py": "27969b7c43595d9c7114875bb402dee6abf6da1f",
+        "traces/wits_logs.txt": "1c570960a0f30bb327f156b6d90899a7ef11779c"
+      }
+    },
+    {
+      "revision": "53832315d27715cb3696a9f181c3fec30e5bac95",
+      "git_blobs": {
+        "configuration.py": "27969b7c43595d9c7114875bb402dee6abf6da1f",
+        "traces/wits_logs.txt": "1c570960a0f30bb327f156b6d90899a7ef11779c"
+      }
+    },
+    {
+      "revision": "4978c01dd5af40348c4c3f3ac123298f1d26a9b1",
+      "git_blobs": {
+        "configuration.py": "27969b7c43595d9c7114875bb402dee6abf6da1f",
+        "traces/wits_logs.txt": "1c570960a0f30bb327f156b6d90899a7ef11779c"
+      }
+    },
+    {
+      "revision": "f5b684dad56d90f86ad883a0b4d1f830378273b2",
+      "git_blobs": {
+        "configuration.py": "27969b7c43595d9c7114875bb402dee6abf6da1f",
+        "traces/wits_logs.txt": "1c570960a0f30bb327f156b6d90899a7ef11779c"
+      }
+    },
+    {
+      "revision": "bc7b3fe72acb7af200952ead6f27e47942b199a1",
+      "git_blobs": {
+        "configuration.py": "27969b7c43595d9c7114875bb402dee6abf6da1f",
+        "traces/wits_logs.txt": "1c570960a0f30bb327f156b6d90899a7ef11779c"
+      }
+    },
+    {
+      "revision": "96c59fcf4c5aa696c3cad37f361004ff43cb8c16",
+      "git_blobs": {
+        "configuration.py": null,
+        "traces/wits_logs.txt": null
+      }
+    }
+  ],
+  "paper_evidence": {
+    "arxiv": {
+      "url": "https://arxiv.org/pdf/2104.05491v1",
+      "sha256": "a35c0c75f34b5a28e5ef65da14944ffd9c3094775b468c952961794fb56a0240",
+      "pdf_page_index_zero_based": 7,
+      "method": "Relative heights of five blue vector rectangles in Figure 4a; graphical readout, not raw author metrics",
+      "cost_bars": {
+        "LIBRA": {
+          "rectangle_pt": [
+            135.11920166015625,
+            102.63327026367188,
+            141.14486694335938,
+            127.25111389160156
+          ],
+          "normalized_cost": 1.0
+        },
+        "FAAS": {
+          "rectangle_pt": [
+            155.20474243164062,
+            75.02354431152344,
+            161.2303924560547,
+            127.25111389160156
+          ],
+          "normalized_cost": 2.1215330785846884
+        },
+        "MAX": {
+          "rectangle_pt": [
+            175.29026794433594,
+            69.91289520263672,
+            181.31591796875,
+            127.25111389160156
+          ],
+          "normalized_cost": 2.3291324599979544
+        },
+        "SPOCK": {
+          "rectangle_pt": [
+            195.37579345703125,
+            98.91703033447266,
+            201.40145874023438,
+            127.25111389160156
+          ],
+          "normalized_cost": 1.150957166897552
+        },
+        "AUTO": {
+          "rectangle_pt": [
+            215.46133422851562,
+            99.14436340332031,
+            221.4869842529297,
+            127.25111389160156
+          ],
+          "normalized_cost": 1.1417226834763583
+        }
+      },
+      "max_to_faas_cost_ratio": 1.0978534737491623
+    },
+    "published": {
+      "url": "https://open.bu.edu/bitstreams/86e15fd8-9c9a-436b-9d16-d9072bf4a39f/download",
+      "sha256": "36a6e6e8a930412c09e1f24d0ccbe4650bf2aafd39552ab5373681a2d0ccbde3",
+      "pdf_page_index_zero_based": 8,
+      "method": "Relative heights of five blue vector rectangles in Figure 4a; graphical readout, not raw author metrics",
+      "cost_bars": {
+        "LIBRA": {
+          "rectangle_pt": [
+            73.7125015258789,
+            98.79827880859375,
+            79.7269515991211,
+            122.2459716796875
+          ],
+          "normalized_cost": 1.0
+        },
+        "FAAS": {
+          "rectangle_pt": [
+            93.76129913330078,
+            72.50152587890625,
+            99.77613830566406,
+            122.2459716796875
+          ],
+          "normalized_cost": 2.121507052922297
+        },
+        "MAX": {
+          "rectangle_pt": [
+            113.81099700927734,
+            67.63385009765625,
+            119.82584381103516,
+            122.2459716796875
+          ],
+          "normalized_cost": 2.3291042697576834
+        },
+        "SPOCK": {
+          "rectangle_pt": [
+            133.86000061035156,
+            95.25885009765625,
+            139.87484741210938,
+            122.2459716796875
+          ],
+          "normalized_cost": 1.1509499774837506
+        },
+        "AUTO": {
+          "rectangle_pt": [
+            153.90899658203125,
+            95.47528076171875,
+            159.92384338378906,
+            122.2459716796875
+          ],
+          "normalized_cost": 1.141719616729183
+        }
+      },
+      "max_to_faas_cost_ratio": 1.0978536538680979
+    }
+  },
+  "window_count": 1801,
+  "peak_values_rps": [
+    759,
+    1168
+  ],
+  "peak_epoch_zero_based": 1674,
+  "samples": [
+    {
+      "offset_seconds": 0,
+      "duration_seconds": 43200,
+      "peak_rps": 1168,
+      "max_vms": 73,
+      "max_cost_usd": 87.6,
+      "libra_cost_usd": 22.295063378333335,
+      "normalized_max_cost": 3.9291209230259887,
+      "max_sla_percent": 0.0
+    },
+    {
+      "offset_seconds": 1674,
+      "duration_seconds": 43200,
+      "peak_rps": 1168,
+      "max_vms": 73,
+      "max_cost_usd": 87.6,
+      "libra_cost_usd": 24.414313825,
+      "normalized_max_cost": 3.5880590635440477,
+      "max_sla_percent": 0.0
+    },
+    {
+      "offset_seconds": 1675,
+      "duration_seconds": 43200,
+      "peak_rps": 759,
+      "max_vms": 48,
+      "max_cost_usd": 57.6,
+      "libra_cost_usd": 24.16617160666667,
+      "normalized_max_cost": 2.383497102375538,
+      "max_sla_percent": 0.0
+    },
+    {
+      "offset_seconds": 1800,
+      "duration_seconds": 43200,
+      "peak_rps": 759,
+      "max_vms": 48,
+      "max_cost_usd": 57.6,
+      "libra_cost_usd": 21.836913986666666,
+      "normalized_max_cost": 2.63773535194441,
+      "max_sla_percent": 0.0
+    },
+    {
+      "offset_seconds": 0,
+      "duration_seconds": 45000,
+      "peak_rps": 1168,
+      "max_vms": 73,
+      "max_cost_usd": 91.25,
+      "libra_cost_usd": 23.033152923333333,
+      "normalized_max_cost": 3.961680813031931,
+      "max_sla_percent": 0.0
+    }
+  ],
+  "all_window_max_faas_ratio_min": 1.1063773880601653,
+  "all_window_max_faas_ratio_max": 1.6823205058168307,
+  "paper_ratio_in_available_window_range": false,
+  "diagnostic_only": {
+    "implied_max_cost_from_paper_ratio_with_first_window_faas_usd": 58.25852838707693,
+    "implied_vm_hourly_price_if_73_vms": 0.06650516939164033,
+    "implied_faas_unit_price_if_73_vms": 1.2833588844407707e-05,
+    "max_cost_with_extra_100s_boot_billing_usd": 87.80277777777779,
+    "max_cost_with_upstream_default_292_vms_usd": 350.40000000000003
+  },
+  "conclusion": "Public trace/configuration and paper Figure 4a remain inconsistent. Exact WITS capture/time interval and figure-generating script are not disclosed. MAX instance sizing unchanged."
+}

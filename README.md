@@ -8,6 +8,7 @@
 
 ## 直接看结果
 
+- [P0–P2 验证报告](outputs/validation/REPORT.md)：MAX 区间/价格审计、EWMA 单变量消融、AUTO 三项修复的全部八种组合。
 - [WITS 主实验报告](outputs/wits_12h/REPORT.md)：完整表格和图 3–6。
 - [结构化结果](outputs/wits_12h/results.json) / [汇总 CSV](outputs/wits_12h/summary.csv)。
 - [作者代码对照审计](docs/upstream_audit.md)。
@@ -24,6 +25,8 @@
 | AUTO | 26.0483 | 4.1377 |
 
 LIBRA 相比 AUTO 节省约 14.41%，相比 SPOCK 节省约 13.81%。此次 phi 扫描的最优值是 **2**，与论文报告的 **1** 不同。Berkeley 和合成 trace 上 LIBRA 并非总比其他策略便宜，详见对应实际输出；没有为匹配论文结论调整参数。
+
+后续验证发现：仅切换 EWMA deviation 更新顺序，两组整数扫描最优值都仍为 2。AUTO 的 $33.924→约 $26 成本差异主要来自利用率窗口修正，同时 SLA 违约会增加；缩容与计费两项修复在主 trace 上无影响。MAX 的论文图差异仍未完全解释，保留实际峰值对应的 73 台，不调整实例数。
 
 ## 安装与运行
 
@@ -77,9 +80,14 @@ python3 -m venv .venv
 # 仅在缺少 upstream/ 时需要联网；下载研究代码，不执行其中 aws/ 目录
 .venv/bin/python scripts/fetch_upstream.py
 .venv/bin/python scripts/replay_upstream.py
+
+# P0/P1/P2 全部控制实验（需要上述固定 upstream checkout）
+.venv/bin/python scripts/validate_reproduction.py
 ```
 
 此脚本只做 Python 2→3 语法适配，保留原有模型和 bug。公开代码未实现 SPOCK，因此历史重放只报告其实际存在的四种策略，也不自动补加 Gateway 成本。细节和历史结果见[审计说明](docs/upstream_audit.md)。
+
+控制实验通过 `libra_validation/` 在原作者 AUTO engine 上独立开关利用率窗口、缩容清理和计费修复；不会修改 `upstream/` 原文件。`--part p0/p1/p2` 可单独运行一项。论文柱形读数和 PDF 哈希保存在 `references/paper_evidence.json`；重新提取读数的可选脚本是 `scripts/extract_paper_evidence.py`，需安装 PyMuPDF。常规仿真与验证无需此依赖。
 
 ## 来源
 

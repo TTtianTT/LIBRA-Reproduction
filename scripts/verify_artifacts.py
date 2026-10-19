@@ -86,6 +86,50 @@ def main():
     for result in replay["policies"].values():
         assert result["request_conservation_ok"]
     print("Verified 4 PNG + 4 SVG figures and upstream replay provenance")
+    validation = ROOT / "outputs/validation"
+    if (validation / "REPORT.md").exists():
+        verify_validation(validation)
+
+
+def verify_validation(out):
+    a = json.loads((out / "p0_max/results.json").read_text())
+    b = json.loads((out / "p1_ewma/results.json").read_text())
+    c = json.loads((out / "p2_auto/results.json").read_text())
+    fingerprint = hashlib.sha256()
+    for parent in ("libra_sim", "libra_validation"):
+        for path in sorted((ROOT / parent).glob("*.py")):
+            fingerprint.update(str(path.relative_to(ROOT)).encode() + path.read_bytes())
+    for result in (a, b, c):
+        assert result["metadata"]["validation_source_sha256"] == fingerprint.hexdigest()
+        assert result["metadata"]["runner_sha256"] == hashlib.sha256((ROOT / "scripts/validate_reproduction.py").read_bytes()).hexdigest()
+    with (out / "p0_max/all_12h_windows.csv").open() as stream:
+        rows = list(csv.DictReader(stream))
+    assert len(rows) == 1801 == a["window_count"]
+    assert sorted({int(r["max_vms"]) for r in rows}) == [48, 73]
+    assert a["paper_ratio_in_available_window_range"] is False
+    assert len(b["runs"]) == 12
+    assert all(r["sla_violation_percent"] == 0 for r in b["runs"])
+    assert all(r["phi"] == 2 for r in b["integer_grid_minima"].values())
+    assert b["identity_max_abs_error"] < 1e-9
+    for r in b["equivalence_checks"]:
+        assert r["allocated_vms_identical"] and r["vm_routing_identical"]
+        close(r["cost_difference_usd"], 0)
+        assert r["faas_request_difference"] == r["vm_uptime_difference_seconds"] == 0
+    assert len(c["runs"]) == 8
+    for name, run in c["runs"].items():
+        assert run["total_requests"] == c["metadata"]["trace"]["total_requests"]
+        reference = c["runs"]["w1_r0_b0" if run["fixes"]["window"] else "w0_r0_b0"]
+        close(run["total_cost_usd"], reference["total_cost_usd"])
+        assert run["response_histogram"] == reference["response_histogram"]
+        assert run["telemetry"]["unbilled_vms"] == run["telemetry"]["pending_overwrite_events"] == 0
+        assert run["telemetry"]["early_cancel_billing_calls"] == 0
+    bridge, main = c["controller_bridge"], c["reconstructed_auto"]
+    close(bridge["total_cost_usd"], main["total_cost_usd"])
+    assert bridge["response_histogram"] == main["response_histogram"]
+    for name in ("p1_ewma/cost_curves", "p2_auto/cumulative_fixes"):
+        assert (out / f"{name}.png").read_bytes()[:8] == b"\x89PNG\r\n\x1a\n"
+        ET.parse(out / f"{name}.svg")
+    print("Verified P0 1,801 windows, P1 12 runs + 6 equivalence checks, P2 8 combinations + controller bridge")
 
 
 if __name__ == "__main__":
