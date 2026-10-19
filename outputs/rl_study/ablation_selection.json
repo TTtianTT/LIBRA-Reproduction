@@ -1,0 +1,8 @@
+{
+  "split": "validation",
+  "penalties": {
+    "0.5": 0.0001,
+    "0.7": 0.01
+  },
+  "fingerprint": "36ffae4dd9c0319d67382834627f4399d86e9c974148bf2a78e3724472b387a3"
+}

@@ -1,0 +1,5266 @@
+{
+  "fingerprint": "36ffae4dd9c0319d67382834627f4399d86e9c974148bf2a78e3724472b387a3",
+  "grouped_seed_results": [
+    {
+      "dataset": "Azure16x",
+      "latency_mode": "wait_budget",
+      "version": "v1",
+      "service_seconds": 1.0,
+      "variant": "main",
+      "penalty": 0.0,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 35.96933799466666,
+      "total_cost_usd_ci95": [
+        33.90925965160065,
+        38.02941633773267
+      ],
+      "violation_rate": 0.0,
+      "violation_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "expected_violations": 0.0,
+      "expected_violations_ci95": [
+        0.0,
+        0.0
+      ],
+      "vm_seconds": 522888.0,
+      "vm_seconds_ci95": [
+        281140.68358315364,
+        764635.3164168464
+      ],
+      "starting_vm_seconds": 56796.0,
+      "starting_vm_seconds_ci95": [
+        50536.77190821134,
+        63055.22809178866
+      ],
+      "cancelled_startup_vm_seconds": 16356.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        15499.089900370598,
+        17212.910099629404
+      ]
+    },
+    {
+      "dataset": "Azure1x",
+      "latency_mode": "wait_budget",
+      "version": "v1",
+      "service_seconds": 1.0,
+      "variant": "main",
+      "penalty": 0.0,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 4.920320196999997,
+      "total_cost_usd_ci95": [
+        1.9583624204069445,
+        7.88227797359305
+      ],
+      "violation_rate": 0.0,
+      "violation_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "expected_violations": 0.0,
+      "expected_violations_ci95": [
+        0.0,
+        0.0
+      ],
+      "vm_seconds": 75960.0,
+      "vm_seconds_ci95": [
+        -79253.53749811128,
+        231173.53749811128
+      ],
+      "starting_vm_seconds": 4112.0,
+      "starting_vm_seconds_ci95": [
+        107.42281722015741,
+        8116.577182779843
+      ],
+      "cancelled_startup_vm_seconds": 1212.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        314.28465753110254,
+        2109.7153424688977
+      ]
+    },
+    {
+      "dataset": "WITS",
+      "latency_mode": "wait_budget",
+      "version": "v1",
+      "service_seconds": 1.0,
+      "variant": "main",
+      "penalty": 0.0,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 17.206387996666656,
+      "total_cost_usd_ci95": [
+        17.03943197930882,
+        17.373344014024493
+      ],
+      "violation_rate": 0.0,
+      "violation_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "expected_violations": 0.0,
+      "expected_violations_ci95": [
+        0.0,
+        0.0
+      ],
+      "vm_seconds": 487140.0,
+      "vm_seconds_ci95": [
+        442261.6526248699,
+        532018.3473751302
+      ],
+      "starting_vm_seconds": 14920.0,
+      "starting_vm_seconds_ci95": [
+        14712.229873263286,
+        15127.770126736714
+      ],
+      "cancelled_startup_vm_seconds": 1260.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        1260.0,
+        1260.0
+      ]
+    },
+    {
+      "dataset": "Berkeley",
+      "latency_mode": "wait_budget",
+      "version": "v1",
+      "service_seconds": 1.0,
+      "variant": "main",
+      "penalty": 0.0,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 20.585081150666642,
+      "total_cost_usd_ci95": [
+        20.475715122429822,
+        20.694447178903463
+      ],
+      "violation_rate": 0.0,
+      "violation_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "expected_violations": 0.0,
+      "expected_violations_ci95": [
+        0.0,
+        0.0
+      ],
+      "vm_seconds": 579840.0,
+      "vm_seconds_ci95": [
+        534961.6526248698,
+        624718.3473751302
+      ],
+      "starting_vm_seconds": 12820.0,
+      "starting_vm_seconds_ci95": [
+        12612.229873263286,
+        13027.770126736714
+      ],
+      "cancelled_startup_vm_seconds": 1860.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        1860.0,
+        1860.0
+      ]
+    },
+    {
+      "dataset": "Sin",
+      "latency_mode": "wait_budget",
+      "version": "v1",
+      "service_seconds": 1.0,
+      "variant": "main",
+      "penalty": 0.0,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 5.36082471311111,
+      "total_cost_usd_ci95": [
+        5.028242379672972,
+        5.693407046549248
+      ],
+      "violation_rate": 0.0,
+      "violation_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "expected_violations": 0.0,
+      "expected_violations_ci95": [
+        0.0,
+        0.0
+      ],
+      "vm_seconds": 117320.0,
+      "vm_seconds_ci95": [
+        106931.49366316432,
+        127708.50633683568
+      ],
+      "starting_vm_seconds": 9080.0,
+      "starting_vm_seconds_ci95": [
+        8976.114936631644,
+        9183.885063368356
+      ],
+      "cancelled_startup_vm_seconds": 0.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dataset": "Azure16x",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "main",
+      "penalty": 0.0,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 20.772395620333334,
+      "total_cost_usd_ci95": [
+        19.423762947518206,
+        22.121028293148463
+      ],
+      "violation_rate": 0.08780776768602525,
+      "violation_rate_ci95": [
+        -0.050380630315835756,
+        0.22599616568788625
+      ],
+      "expected_violations": 509287.8624275123,
+      "expected_violations_ci95": [
+        -292209.2680120177,
+        1310784.9928670423
+      ],
+      "vm_seconds": 307380.0,
+      "vm_seconds_ci95": [
+        175171.20211333138,
+        439588.7978866686
+      ],
+      "starting_vm_seconds": 38676.0,
+      "starting_vm_seconds_ci95": [
+        22048.951625596605,
+        55303.0483744034
+      ],
+      "cancelled_startup_vm_seconds": 13884.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        1975.3689589293554,
+        25792.631041070643
+      ]
+    },
+    {
+      "dataset": "Azure1x",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "main",
+      "penalty": 0.0,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 2.5806869599999955,
+      "total_cost_usd_ci95": [
+        2.293604237594669,
+        2.867769682405322
+      ],
+      "violation_rate": 0.00753699752115311,
+      "violation_rate_ci95": [
+        -0.005145835749771517,
+        0.020219830792077738
+      ],
+      "expected_violations": 2732.176675413045,
+      "expected_violations_ci95": [
+        -1865.3757509636753,
+        7329.729101789765
+      ],
+      "vm_seconds": 11412.0,
+      "vm_seconds_ci95": [
+        -8679.378929028877,
+        31503.378929028877
+      ],
+      "starting_vm_seconds": 4572.0,
+      "starting_vm_seconds_ci95": [
+        -4325.587818931774,
+        13469.587818931774
+      ],
+      "cancelled_startup_vm_seconds": 3528.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        -5370.038322513683,
+        12426.038322513683
+      ]
+    },
+    {
+      "dataset": "WITS",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "main",
+      "penalty": 0.0,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 10.64712008666665,
+      "total_cost_usd_ci95": [
+        8.274259253382024,
+        13.019980919951276
+      ],
+      "violation_rate": 0.05040888356580194,
+      "violation_rate_ci95": [
+        -0.015976181377884126,
+        0.11679394850948802
+      ],
+      "expected_violations": 313414.158628476,
+      "expected_violations_ci95": [
+        -99330.93316993053,
+        726159.2504268826
+      ],
+      "vm_seconds": 294396.0,
+      "vm_seconds_ci95": [
+        265056.9831044646,
+        323735.0168955354
+      ],
+      "starting_vm_seconds": 9252.0,
+      "starting_vm_seconds_ci95": [
+        9093.377727963614,
+        9410.622272036386
+      ],
+      "cancelled_startup_vm_seconds": 672.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        638.6826587376265,
+        705.3173412623735
+      ]
+    },
+    {
+      "dataset": "Berkeley",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "main",
+      "penalty": 0.0,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 12.493749992500007,
+      "total_cost_usd_ci95": [
+        10.028478735316689,
+        14.959021249683325
+      ],
+      "violation_rate": 0.06409996977281275,
+      "violation_rate_ci95": [
+        -0.02430398813982844,
+        0.15250392768545395
+      ],
+      "expected_violations": 437357.9397580878,
+      "expected_violations_ci95": [
+        -165827.56931733777,
+        1040543.4488335133
+      ],
+      "vm_seconds": 355968.0,
+      "vm_seconds_ci95": [
+        326642.5690582007,
+        385293.4309417993
+      ],
+      "starting_vm_seconds": 8100.0,
+      "starting_vm_seconds_ci95": [
+        7948.945055130117,
+        8251.054944869882
+      ],
+      "cancelled_startup_vm_seconds": 1200.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        1147.3206580148951,
+        1252.6793419851049
+      ]
+    },
+    {
+      "dataset": "Sin",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "main",
+      "penalty": 0.0,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 3.1238813474444442,
+      "total_cost_usd_ci95": [
+        2.2915013533656006,
+        3.956261341523288
+      ],
+      "violation_rate": 0.13078704110765352,
+      "violation_rate_ci95": [
+        -0.021254981505099996,
+        0.28282906372040706
+      ],
+      "expected_violations": 204742.79688167502,
+      "expected_violations_ci95": [
+        -33273.97213184438,
+        442759.5658951944
+      ],
+      "vm_seconds": 69920.0,
+      "vm_seconds_ci95": [
+        62761.63744084717,
+        77078.36255915283
+      ],
+      "starting_vm_seconds": 5552.0,
+      "starting_vm_seconds_ci95": [
+        5489.668961978986,
+        5614.331038021014
+      ],
+      "cancelled_startup_vm_seconds": 12.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        -21.317341262373517,
+        45.31734126237352
+      ]
+    },
+    {
+      "dataset": "Azure16x",
+      "latency_mode": "mmc_response",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "main",
+      "penalty": 0.0,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 20.770445996999996,
+      "total_cost_usd_ci95": [
+        19.421200041452384,
+        22.11969195254761
+      ],
+      "violation_rate": 0.15100119740625778,
+      "violation_rate_ci95": [
+        0.009079236266243212,
+        0.2929231585462724
+      ],
+      "expected_violations": 875811.7769946118,
+      "expected_violations_ci95": [
+        52659.860879770946,
+        1698963.6931094527
+      ],
+      "vm_seconds": 307440.0,
+      "vm_seconds_ci95": [
+        175178.95688214386,
+        439701.04311785614
+      ],
+      "starting_vm_seconds": 38636.0,
+      "starting_vm_seconds_ci95": [
+        22116.04056664222,
+        55155.959433357784
+      ],
+      "cancelled_startup_vm_seconds": 13884.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        1975.3689589293554,
+        25792.631041070643
+      ]
+    },
+    {
+      "dataset": "WITS",
+      "latency_mode": "mmc_response",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "main",
+      "penalty": 0.0,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 10.64365753266665,
+      "total_cost_usd_ci95": [
+        8.267752074987431,
+        13.019562990345868
+      ],
+      "violation_rate": 0.16821960912555162,
+      "violation_rate_ci95": [
+        0.10024371120128021,
+        0.236195507049823
+      ],
+      "expected_violations": 1045895.1583419606,
+      "expected_violations_ci95": [
+        623259.1595275765,
+        1468531.1571563447
+      ],
+      "vm_seconds": 294396.0,
+      "vm_seconds_ci95": [
+        265056.9831044646,
+        323735.0168955354
+      ],
+      "starting_vm_seconds": 9252.0,
+      "starting_vm_seconds_ci95": [
+        9093.377727963614,
+        9410.622272036386
+      ],
+      "cancelled_startup_vm_seconds": 672.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        638.6826587376265,
+        705.3173412623735
+      ]
+    },
+    {
+      "dataset": "Berkeley",
+      "latency_mode": "mmc_response",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "main",
+      "penalty": 0.0,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 12.493344688500006,
+      "total_cost_usd_ci95": [
+        10.027720351232372,
+        14.95896902576764
+      ],
+      "violation_rate": 0.1800116014882726,
+      "violation_rate_ci95": [
+        0.09389965757713767,
+        0.2661235453994075
+      ],
+      "expected_violations": 1228229.9576505732,
+      "expected_violations_ci95": [
+        640682.9976282648,
+        1815776.9176728816
+      ],
+      "vm_seconds": 355968.0,
+      "vm_seconds_ci95": [
+        326642.5690582007,
+        385293.4309417993
+      ],
+      "starting_vm_seconds": 8100.0,
+      "starting_vm_seconds_ci95": [
+        7948.945055130117,
+        8251.054944869882
+      ],
+      "cancelled_startup_vm_seconds": 1200.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        1147.3206580148951,
+        1252.6793419851049
+      ]
+    },
+    {
+      "dataset": "Azure16x",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "main",
+      "penalty": 0.0001,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 23.067557747833337,
+      "total_cost_usd_ci95": [
+        21.5512904488774,
+        24.583825046789276
+      ],
+      "violation_rate": 0.00015415200433046785,
+      "violation_rate_ci95": [
+        1.289819976286872e-05,
+        0.000295405808898067
+      ],
+      "expected_violations": 894.086557980852,
+      "expected_violations_ci95": [
+        74.80997136703081,
+        1713.3631445946733
+      ],
+      "vm_seconds": 233148.0,
+      "vm_seconds_ci95": [
+        -6964.795584827138,
+        473260.79558482714
+      ],
+      "starting_vm_seconds": 26564.0,
+      "starting_vm_seconds_ci95": [
+        12140.444906099341,
+        40987.55509390066
+      ],
+      "cancelled_startup_vm_seconds": 9084.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        7531.433346253697,
+        10636.566653746304
+      ]
+    },
+    {
+      "dataset": "Azure1x",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "main",
+      "penalty": 0.0001,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 2.600813518333328,
+      "total_cost_usd_ci95": [
+        2.2907145245548524,
+        2.9109125121118034
+      ],
+      "violation_rate": 1.2559034128775321e-05,
+      "violation_rate_ci95": [
+        -8.794067431815884e-06,
+        3.3912135689366525e-05
+      ],
+      "expected_violations": 4.5526749897493115,
+      "expected_violations_ci95": [
+        -3.1878670321681204,
+        12.293217011666744
+      ],
+      "vm_seconds": 14484.0,
+      "vm_seconds_ci95": [
+        -10142.090830161345,
+        39110.090830161345
+      ],
+      "starting_vm_seconds": 2304.0,
+      "starting_vm_seconds_ci95": [
+        -1613.3426693024494,
+        6221.342669302449
+      ],
+      "cancelled_startup_vm_seconds": 504.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        -359.3628270517596,
+        1367.3628270517597
+      ]
+    },
+    {
+      "dataset": "WITS",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "main",
+      "penalty": 0.0001,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 13.45078369883332,
+      "total_cost_usd_ci95": [
+        10.898845461004964,
+        16.002721936661676
+      ],
+      "violation_rate": 0.0003982297369908699,
+      "violation_rate_ci95": [
+        0.0001284646726228273,
+        0.0006679948013589125
+      ],
+      "expected_violations": 2475.9690977267774,
+      "expected_violations_ci95": [
+        798.7212656873985,
+        4153.216929766157
+      ],
+      "vm_seconds": 259860.0,
+      "vm_seconds_ci95": [
+        187894.5428732732,
+        331825.4571267268
+      ],
+      "starting_vm_seconds": 9080.0,
+      "starting_vm_seconds_ci95": [
+        8746.826587376265,
+        9413.173412623735
+      ],
+      "cancelled_startup_vm_seconds": 660.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        660.0,
+        660.0
+      ]
+    },
+    {
+      "dataset": "Berkeley",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "main",
+      "penalty": 0.0001,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 14.89053240733332,
+      "total_cost_usd_ci95": [
+        13.186993498145512,
+        16.594071316521127
+      ],
+      "violation_rate": 0.0003882998465184709,
+      "violation_rate_ci95": [
+        0.0001324354370644251,
+        0.0006441642559725168
+      ],
+      "expected_violations": 2649.393150786318,
+      "expected_violations_ci95": [
+        903.6149332167963,
+        4395.17136835584
+      ],
+      "vm_seconds": 321420.0,
+      "vm_seconds_ci95": [
+        249454.5428732732,
+        393385.4571267268
+      ],
+      "starting_vm_seconds": 7920.0,
+      "starting_vm_seconds_ci95": [
+        7586.826587376265,
+        8253.173412623735
+      ],
+      "cancelled_startup_vm_seconds": 1200.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        1200.0,
+        1200.0
+      ]
+    },
+    {
+      "dataset": "Sin",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "main",
+      "penalty": 0.0001,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 3.8870859601111105,
+      "total_cost_usd_ci95": [
+        3.356519191153473,
+        4.417652729068748
+      ],
+      "violation_rate": 0.0004260079032765373,
+      "violation_rate_ci95": [
+        0.0001513785271660089,
+        0.0007006372793870656
+      ],
+      "expected_violations": 666.901314318611,
+      "expected_violations_ci95": [
+        236.97808878699038,
+        1096.8245398502315
+      ],
+      "vm_seconds": 63464.0,
+      "vm_seconds_ci95": [
+        48175.3452567863,
+        78752.6547432137
+      ],
+      "starting_vm_seconds": 5268.0,
+      "starting_vm_seconds_ci95": [
+        4640.842901603475,
+        5895.157098396525
+      ],
+      "cancelled_startup_vm_seconds": 48.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        -85.26936504949407,
+        181.26936504949407
+      ]
+    },
+    {
+      "dataset": "Azure16x",
+      "latency_mode": "mmc_response",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "main",
+      "penalty": 0.0001,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 23.067501843833334,
+      "total_cost_usd_ci95": [
+        21.55126619636673,
+        24.58373749129994
+      ],
+      "violation_rate": 0.0519402438409331,
+      "violation_rate_ci95": [
+        0.00766904792444726,
+        0.09621143975741894
+      ],
+      "expected_violations": 301255.0763652149,
+      "expected_violations_ci95": [
+        44480.72337132771,
+        558029.429359102
+      ],
+      "vm_seconds": 233148.0,
+      "vm_seconds_ci95": [
+        -6964.795584827138,
+        473260.79558482714
+      ],
+      "starting_vm_seconds": 26564.0,
+      "starting_vm_seconds_ci95": [
+        12140.444906099341,
+        40987.55509390066
+      ],
+      "cancelled_startup_vm_seconds": 9084.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        7531.433346253697,
+        10636.566653746304
+      ]
+    },
+    {
+      "dataset": "WITS",
+      "latency_mode": "mmc_response",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "main",
+      "penalty": 0.0001,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 13.45078369883332,
+      "total_cost_usd_ci95": [
+        10.898845461004964,
+        16.002721936661676
+      ],
+      "violation_rate": 0.10695483672221932,
+      "violation_rate_ci95": [
+        0.08458894859199012,
+        0.12932072485244853
+      ],
+      "expected_violations": 664985.1730753586,
+      "expected_violations_ci95": [
+        525926.6279448345,
+        804043.7182058827
+      ],
+      "vm_seconds": 259860.0,
+      "vm_seconds_ci95": [
+        187894.5428732732,
+        331825.4571267268
+      ],
+      "starting_vm_seconds": 9080.0,
+      "starting_vm_seconds_ci95": [
+        8746.826587376265,
+        9413.173412623735
+      ],
+      "cancelled_startup_vm_seconds": 660.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        660.0,
+        660.0
+      ]
+    },
+    {
+      "dataset": "Berkeley",
+      "latency_mode": "mmc_response",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "main",
+      "penalty": 0.0001,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 14.89053240733332,
+      "total_cost_usd_ci95": [
+        13.186993498145512,
+        16.594071316521127
+      ],
+      "violation_rate": 0.11079314105384727,
+      "violation_rate_ci95": [
+        0.09464741868283691,
+        0.12693886342485763
+      ],
+      "expected_violations": 755948.2489988633,
+      "expected_violations_ci95": [
+        645785.0165181173,
+        866111.4814796093
+      ],
+      "vm_seconds": 321420.0,
+      "vm_seconds_ci95": [
+        249454.5428732732,
+        393385.4571267268
+      ],
+      "starting_vm_seconds": 7920.0,
+      "starting_vm_seconds_ci95": [
+        7586.826587376265,
+        8253.173412623735
+      ],
+      "cancelled_startup_vm_seconds": 1200.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        1200.0,
+        1200.0
+      ]
+    },
+    {
+      "dataset": "Azure16x",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "main",
+      "penalty": 0.01,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 24.368844678166663,
+      "total_cost_usd_ci95": [
+        24.041780347373763,
+        24.695909008959564
+      ],
+      "violation_rate": 5.0932868747912536e-05,
+      "violation_rate_ci95": [
+        -3.1805141733505437e-06,
+        0.00010504625166917562
+      ],
+      "expected_violations": 295.41226858969264,
+      "expected_violations_ci95": [
+        -18.447083981886692,
+        609.2716211612719
+      ],
+      "vm_seconds": 75372.0,
+      "vm_seconds_ci95": [
+        55181.69119500165,
+        95562.30880499835
+      ],
+      "starting_vm_seconds": 15544.0,
+      "starting_vm_seconds_ci95": [
+        12312.217897549768,
+        18775.78210245023
+      ],
+      "cancelled_startup_vm_seconds": 7644.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        6911.018492227782,
+        8376.981507772218
+      ]
+    },
+    {
+      "dataset": "Azure1x",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "main",
+      "penalty": 0.01,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 2.4184274849999956,
+      "total_cost_usd_ci95": [
+        2.4184274849999956,
+        2.4184274849999956
+      ],
+      "violation_rate": 0.0,
+      "violation_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "expected_violations": 0.0,
+      "expected_violations_ci95": [
+        0.0,
+        0.0
+      ],
+      "vm_seconds": 0.0,
+      "vm_seconds_ci95": [
+        0.0,
+        0.0
+      ],
+      "starting_vm_seconds": 0.0,
+      "starting_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ],
+      "cancelled_startup_vm_seconds": 0.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dataset": "WITS",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "main",
+      "penalty": 0.01,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 16.391235322833328,
+      "total_cost_usd_ci95": [
+        14.910223702244638,
+        17.872246943422017
+      ],
+      "violation_rate": 0.00024066229761734951,
+      "violation_rate_ci95": [
+        -0.0001112112598469187,
+        0.0005925358550816178
+      ],
+      "expected_violations": 1496.3031550357157,
+      "expected_violations_ci95": [
+        -691.4492242113658,
+        3684.0555342827975
+      ],
+      "vm_seconds": 199380.0,
+      "vm_seconds_ci95": [
+        175391.51429109107,
+        223368.48570890893
+      ],
+      "starting_vm_seconds": 8800.0,
+      "starting_vm_seconds_ci95": [
+        8688.942195792088,
+        8911.057804207912
+      ],
+      "cancelled_startup_vm_seconds": 660.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        660.0,
+        660.0
+      ]
+    },
+    {
+      "dataset": "Berkeley",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "main",
+      "penalty": 0.01,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 16.88518530983331,
+      "total_cost_usd_ci95": [
+        15.447442272104103,
+        18.32292834756252
+      ],
+      "violation_rate": 0.000241317350691558,
+      "violation_rate_ci95": [
+        -0.00010823543591721518,
+        0.0005908701373003311
+      ],
+      "expected_violations": 1646.5227628095413,
+      "expected_violations_ci95": [
+        -738.4968733893143,
+        4031.542399008397
+      ],
+      "vm_seconds": 260940.0,
+      "vm_seconds_ci95": [
+        236951.51429109107,
+        284928.48570890893
+      ],
+      "starting_vm_seconds": 7640.0,
+      "starting_vm_seconds_ci95": [
+        7528.942195792089,
+        7751.057804207911
+      ],
+      "cancelled_startup_vm_seconds": 1200.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        1200.0,
+        1200.0
+      ]
+    },
+    {
+      "dataset": "Sin",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "main",
+      "penalty": 0.01,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 4.411432286055554,
+      "total_cost_usd_ci95": [
+        4.1106252375652375,
+        4.71223933454587
+      ],
+      "violation_rate": 0.0002132410580059605,
+      "violation_rate_ci95": [
+        -9.68125952404803e-05,
+        0.0005232947112524013
+      ],
+      "expected_violations": 333.8218393534169,
+      "expected_violations_ci95": [
+        -151.55692303332887,
+        819.2006017401627
+      ],
+      "vm_seconds": 50664.0,
+      "vm_seconds_ci95": [
+        46043.995344950876,
+        55284.004655049124
+      ],
+      "starting_vm_seconds": 4600.0,
+      "starting_vm_seconds_ci95": [
+        4322.355489480221,
+        4877.644510519779
+      ],
+      "cancelled_startup_vm_seconds": 0.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dataset": "Azure16x",
+      "latency_mode": "mmc_response",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "main",
+      "penalty": 0.01,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 24.368844678166663,
+      "total_cost_usd_ci95": [
+        24.041780347373763,
+        24.695909008959564
+      ],
+      "violation_rate": 0.02105641969360893,
+      "violation_rate_ci95": [
+        0.016646963434347822,
+        0.02546587595287004
+      ],
+      "expected_violations": 122127.908028362,
+      "expected_violations_ci95": [
+        96552.92062204728,
+        147702.89543467673
+      ],
+      "vm_seconds": 75372.0,
+      "vm_seconds_ci95": [
+        55181.69119500165,
+        95562.30880499835
+      ],
+      "starting_vm_seconds": 15544.0,
+      "starting_vm_seconds_ci95": [
+        12312.217897549768,
+        18775.78210245023
+      ],
+      "cancelled_startup_vm_seconds": 7644.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        6911.018492227782,
+        8376.981507772218
+      ]
+    },
+    {
+      "dataset": "WITS",
+      "latency_mode": "mmc_response",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "main",
+      "penalty": 0.01,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 16.391235322833328,
+      "total_cost_usd_ci95": [
+        14.910223702244638,
+        17.872246943422017
+      ],
+      "violation_rate": 0.08327196408786869,
+      "violation_rate_ci95": [
+        0.07348147511427693,
+        0.09306245306146045
+      ],
+      "expected_violations": 517738.35712651414,
+      "expected_violations_ci95": [
+        456866.5891530347,
+        578610.1250999935
+      ],
+      "vm_seconds": 199380.0,
+      "vm_seconds_ci95": [
+        175391.51429109107,
+        223368.48570890893
+      ],
+      "starting_vm_seconds": 8800.0,
+      "starting_vm_seconds_ci95": [
+        8688.942195792088,
+        8911.057804207912
+      ],
+      "cancelled_startup_vm_seconds": 660.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        660.0,
+        660.0
+      ]
+    },
+    {
+      "dataset": "Berkeley",
+      "latency_mode": "mmc_response",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "main",
+      "penalty": 0.01,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 16.88518530983331,
+      "total_cost_usd_ci95": [
+        15.447442272104103,
+        18.32292834756252
+      ],
+      "violation_rate": 0.09353777689021711,
+      "violation_rate_ci95": [
+        0.08534100285536085,
+        0.10173455092507337
+      ],
+      "expected_violations": 638213.8639885648,
+      "expected_violations_ci95": [
+        582286.7829422986,
+        694140.9450348311
+      ],
+      "vm_seconds": 260940.0,
+      "vm_seconds_ci95": [
+        236951.51429109107,
+        284928.48570890893
+      ],
+      "starting_vm_seconds": 7640.0,
+      "starting_vm_seconds_ci95": [
+        7528.942195792089,
+        7751.057804207911
+      ],
+      "cancelled_startup_vm_seconds": 1200.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        1200.0,
+        1200.0
+      ]
+    },
+    {
+      "dataset": "Azure16x",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "main",
+      "penalty": 0.0,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 27.81749687620001,
+      "total_cost_usd_ci95": [
+        26.663406293188718,
+        28.971587459211303
+      ],
+      "violation_rate": 0.06877095231012896,
+      "violation_rate_ci95": [
+        -0.027995706626078018,
+        0.16553761124633593
+      ],
+      "expected_violations": 398873.724069222,
+      "expected_violations_ci95": [
+        -162375.99429386447,
+        960123.4424323085
+      ],
+      "vm_seconds": 458928.0,
+      "vm_seconds_ci95": [
+        316552.4476966944,
+        601303.5523033056
+      ],
+      "starting_vm_seconds": 54216.0,
+      "starting_vm_seconds_ci95": [
+        48057.43669034278,
+        60374.56330965722
+      ],
+      "cancelled_startup_vm_seconds": 14736.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        13226.941423645265,
+        16245.058576354735
+      ]
+    },
+    {
+      "dataset": "Azure1x",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "main",
+      "penalty": 0.0,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 3.168087501766661,
+      "total_cost_usd_ci95": [
+        2.9172266761976906,
+        3.4189483273356314
+      ],
+      "violation_rate": 0.006466680836806718,
+      "violation_rate_ci95": [
+        -0.00072597294819759,
+        0.013659334621811027
+      ],
+      "expected_violations": 2344.184736704109,
+      "expected_violations_ci95": [
+        -263.1666456675225,
+        4951.536119075741
+      ],
+      "vm_seconds": 23496.0,
+      "vm_seconds_ci95": [
+        -22.161093477505347,
+        47014.16109347751
+      ],
+      "starting_vm_seconds": 4048.0,
+      "starting_vm_seconds_ci95": [
+        270.86709729335143,
+        7825.132902706649
+      ],
+      "cancelled_startup_vm_seconds": 1308.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        272.4790243483817,
+        2343.5209756516183
+      ]
+    },
+    {
+      "dataset": "WITS",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "main",
+      "penalty": 0.0,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 14.219571134866666,
+      "total_cost_usd_ci95": [
+        12.824970148769644,
+        15.614172120963687
+      ],
+      "violation_rate": 0.062201901394387936,
+      "violation_rate_ci95": [
+        -0.010857510415816264,
+        0.13526131320459214
+      ],
+      "expected_violations": 386736.5276036219,
+      "expected_violations_ci95": [
+        -67505.90870220232,
+        840978.963909446
+      ],
+      "vm_seconds": 420180.0,
+      "vm_seconds_ci95": [
+        390800.2251555633,
+        449559.7748444367
+      ],
+      "starting_vm_seconds": 12920.0,
+      "starting_vm_seconds_ci95": [
+        12783.98252386835,
+        13056.01747613165
+      ],
+      "cancelled_startup_vm_seconds": 1200.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        1200.0,
+        1200.0
+      ]
+    },
+    {
+      "dataset": "Berkeley",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "main",
+      "penalty": 0.0,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 17.095760660099977,
+      "total_cost_usd_ci95": [
+        15.397063042154613,
+        18.79445827804534
+      ],
+      "violation_rate": 0.0693771000046576,
+      "violation_rate_ci95": [
+        -0.021719249688276557,
+        0.16047344969759175
+      ],
+      "expected_violations": 473364.11595777905,
+      "expected_violations_ci95": [
+        -148191.74377809226,
+        1094919.9756936503
+      ],
+      "vm_seconds": 504360.0,
+      "vm_seconds_ci95": [
+        474980.2251555633,
+        533739.7748444367
+      ],
+      "starting_vm_seconds": 13660.0,
+      "starting_vm_seconds_ci95": [
+        13523.98252386835,
+        13796.01747613165
+      ],
+      "cancelled_startup_vm_seconds": 2040.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        2040.0,
+        2040.0
+      ]
+    },
+    {
+      "dataset": "Sin",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "main",
+      "penalty": 0.0,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 4.279492826344443,
+      "total_cost_usd_ci95": [
+        3.7107824767272826,
+        4.848203175961603
+      ],
+      "violation_rate": 0.1044391815698886,
+      "violation_rate_ci95": [
+        -0.04449804143653635,
+        0.25337640457631355
+      ],
+      "expected_violations": 163496.09225466877,
+      "expected_violations_ci95": [
+        -69660.21543353025,
+        396652.3999428678
+      ],
+      "vm_seconds": 101600.0,
+      "vm_seconds_ci95": [
+        94799.12619341744,
+        108400.87380658256
+      ],
+      "starting_vm_seconds": 8060.0,
+      "starting_vm_seconds_ci95": [
+        7991.991261934175,
+        8128.008738065825
+      ],
+      "cancelled_startup_vm_seconds": 0.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dataset": "Azure16x",
+      "latency_mode": "mmc_response",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "main",
+      "penalty": 0.0,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 27.81379169320001,
+      "total_cost_usd_ci95": [
+        26.660130057100016,
+        28.967453329300003
+      ],
+      "violation_rate": 0.18211552110230342,
+      "violation_rate_ci95": [
+        0.09784231537818136,
+        0.26638872682642545
+      ],
+      "expected_violations": 1056275.850090035,
+      "expected_violations_ci95": [
+        567488.5601475439,
+        1545063.140032526
+      ],
+      "vm_seconds": 458928.0,
+      "vm_seconds_ci95": [
+        316552.4476966944,
+        601303.5523033056
+      ],
+      "starting_vm_seconds": 54216.0,
+      "starting_vm_seconds_ci95": [
+        48057.43669034278,
+        60374.56330965722
+      ],
+      "cancelled_startup_vm_seconds": 14736.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        13226.941423645265,
+        16245.058576354735
+      ]
+    },
+    {
+      "dataset": "WITS",
+      "latency_mode": "mmc_response",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "main",
+      "penalty": 0.0,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 14.219402168866669,
+      "total_cost_usd_ci95": [
+        12.824840842901104,
+        15.613963494832234
+      ],
+      "violation_rate": 0.2582767321965632,
+      "violation_rate_ci95": [
+        0.20230402711089931,
+        0.3142494372822271
+      ],
+      "expected_violations": 1605819.8275514676,
+      "expected_violations_ci95": [
+        1257812.9480163625,
+        1953826.7070865727
+      ],
+      "vm_seconds": 420180.0,
+      "vm_seconds_ci95": [
+        390800.2251555633,
+        449559.7748444367
+      ],
+      "starting_vm_seconds": 12920.0,
+      "starting_vm_seconds_ci95": [
+        12783.98252386835,
+        13056.01747613165
+      ],
+      "cancelled_startup_vm_seconds": 1200.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        1200.0,
+        1200.0
+      ]
+    },
+    {
+      "dataset": "Berkeley",
+      "latency_mode": "mmc_response",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "main",
+      "penalty": 0.0,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 17.095506004199976,
+      "total_cost_usd_ci95": [
+        15.39687604174631,
+        18.79413596665364
+      ],
+      "violation_rate": 0.2618223554156659,
+      "violation_rate_ci95": [
+        0.19037081573105225,
+        0.33327389510027955
+      ],
+      "expected_violations": 1786429.6403424132,
+      "expected_violations_ci95": [
+        1298911.4979819132,
+        2273947.7827029135
+      ],
+      "vm_seconds": 504360.0,
+      "vm_seconds_ci95": [
+        474980.2251555633,
+        533739.7748444367
+      ],
+      "starting_vm_seconds": 13660.0,
+      "starting_vm_seconds_ci95": [
+        13523.98252386835,
+        13796.01747613165
+      ],
+      "cancelled_startup_vm_seconds": 2040.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        2040.0,
+        2040.0
+      ]
+    },
+    {
+      "dataset": "Azure16x",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "main",
+      "penalty": 0.0001,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 31.581287450499996,
+      "total_cost_usd_ci95": [
+        29.677679716961702,
+        33.484895184038294
+      ],
+      "violation_rate": 0.002680001519554755,
+      "violation_rate_ci95": [
+        -0.0003642968628873619,
+        0.005724299901996872
+      ],
+      "expected_violations": 15544.094573466205,
+      "expected_violations_ci95": [
+        -2112.933462246314,
+        33201.122609178725
+      ],
+      "vm_seconds": 254808.0,
+      "vm_seconds_ci95": [
+        50995.05433465546,
+        458620.94566534454
+      ],
+      "starting_vm_seconds": 42412.0,
+      "starting_vm_seconds_ci95": [
+        25875.519058386304,
+        58948.4809416137
+      ],
+      "cancelled_startup_vm_seconds": 15600.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        8427.092893771958,
+        22772.90710622804
+      ]
+    },
+    {
+      "dataset": "Azure1x",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "main",
+      "penalty": 0.0001,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 3.0827250159333275,
+      "total_cost_usd_ci95": [
+        2.916119715953687,
+        3.249330315912968
+      ],
+      "violation_rate": 0.00015238232805422789,
+      "violation_rate_ci95": [
+        -0.0002706988407905775,
+        0.0005754634968990332
+      ],
+      "expected_violations": 55.23889868431371,
+      "expected_violations_ci95": [
+        -98.12887118426593,
+        208.60666855289335
+      ],
+      "vm_seconds": 7572.0,
+      "vm_seconds_ci95": [
+        -13451.242336557694,
+        28595.242336557694
+      ],
+      "starting_vm_seconds": 1228.0,
+      "starting_vm_seconds_ci95": [
+        -2181.47458918289,
+        4637.47458918289
+      ],
+      "cancelled_startup_vm_seconds": 348.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        -618.202896608832,
+        1314.202896608832
+      ]
+    },
+    {
+      "dataset": "WITS",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "main",
+      "penalty": 0.0001,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 19.156773856966655,
+      "total_cost_usd_ci95": [
+        15.898262351962465,
+        22.415285361970845
+      ],
+      "violation_rate": 0.0059805022408183535,
+      "violation_rate_ci95": [
+        0.0008141799651381759,
+        0.011146824516498531
+      ],
+      "expected_violations": 37183.40787165143,
+      "expected_violations_ci95": [
+        5062.114268268742,
+        69304.70147503412
+      ],
+      "vm_seconds": 352896.0,
+      "vm_seconds_ci95": [
+        289365.4212028564,
+        416426.5787971436
+      ],
+      "starting_vm_seconds": 13964.0,
+      "starting_vm_seconds_ci95": [
+        10305.728283047933,
+        17622.27171695207
+      ],
+      "cancelled_startup_vm_seconds": 2532.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        -1166.22488012346,
+        6230.22488012346
+      ]
+    },
+    {
+      "dataset": "Berkeley",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "main",
+      "penalty": 0.0001,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 21.410101978233342,
+      "total_cost_usd_ci95": [
+        18.76395161155585,
+        24.056252344910835
+      ],
+      "violation_rate": 0.005466163096185486,
+      "violation_rate_ci95": [
+        0.0007985186648001956,
+        0.010133807527570777
+      ],
+      "expected_violations": 37295.95877505934,
+      "expected_violations_ci95": [
+        5448.340761051622,
+        69143.57678906707
+      ],
+      "vm_seconds": 437412.0,
+      "vm_seconds_ci95": [
+        374241.04697767686,
+        500582.95302232314
+      ],
+      "starting_vm_seconds": 14900.0,
+      "starting_vm_seconds_ci95": [
+        10698.843119113979,
+        19101.15688088602
+      ],
+      "cancelled_startup_vm_seconds": 3468.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        -496.76361022244873,
+        7432.763610222449
+      ]
+    },
+    {
+      "dataset": "Sin",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "main",
+      "penalty": 0.0001,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 5.5724149784999994,
+      "total_cost_usd_ci95": [
+        5.021387135792542,
+        6.1234428212074565
+      ],
+      "violation_rate": 0.005775517735207024,
+      "violation_rate_ci95": [
+        0.0007320372386386267,
+        0.010818998231775422
+      ],
+      "expected_violations": 9041.382422381332,
+      "expected_violations_ci95": [
+        1145.9801398598938,
+        16936.78470490277
+      ],
+      "vm_seconds": 86752.0,
+      "vm_seconds_ci95": [
+        74261.6920959669,
+        99242.3079040331
+      ],
+      "starting_vm_seconds": 7524.0,
+      "starting_vm_seconds_ci95": [
+        6791.649774325581,
+        8256.35022567442
+      ],
+      "cancelled_startup_vm_seconds": 24.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        -42.634682524747035,
+        90.63468252474703
+      ]
+    },
+    {
+      "dataset": "Azure16x",
+      "latency_mode": "mmc_response",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "main",
+      "penalty": 0.0001,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 31.580891816233333,
+      "total_cost_usd_ci95": [
+        29.68770842978296,
+        33.47407520268371
+      ],
+      "violation_rate": 0.07895952878754382,
+      "violation_rate_ci95": [
+        0.02714305248612904,
+        0.1307760050889586
+      ],
+      "expected_violations": 457967.7936726754,
+      "expected_violations_ci95": [
+        157430.572997228,
+        758505.0143481228
+      ],
+      "vm_seconds": 254820.0,
+      "vm_seconds_ci95": [
+        51096.52006899219,
+        458543.47993100784
+      ],
+      "starting_vm_seconds": 42400.0,
+      "starting_vm_seconds_ci95": [
+        25848.474525038862,
+        58951.525474961134
+      ],
+      "cancelled_startup_vm_seconds": 15588.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        8447.587728729364,
+        22728.412271270638
+      ]
+    },
+    {
+      "dataset": "WITS",
+      "latency_mode": "mmc_response",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "main",
+      "penalty": 0.0001,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 19.15833052903332,
+      "total_cost_usd_ci95": [
+        15.900461570733391,
+        22.41619948733325
+      ],
+      "violation_rate": 0.183908942354236,
+      "violation_rate_ci95": [
+        0.1523029016457066,
+        0.2155149830627654
+      ],
+      "expected_violations": 1143442.6306419787,
+      "expected_violations_ci95": [
+        946934.0005051804,
+        1339951.2607787768
+      ],
+      "vm_seconds": 352884.0,
+      "vm_seconds_ci95": [
+        289340.36176675814,
+        416427.63823324186
+      ],
+      "starting_vm_seconds": 13952.0,
+      "starting_vm_seconds_ci95": [
+        10326.953504412053,
+        17577.046495587947
+      ],
+      "cancelled_startup_vm_seconds": 2520.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        -1144.9075388610868,
+        6184.907538861087
+      ]
+    },
+    {
+      "dataset": "Berkeley",
+      "latency_mode": "mmc_response",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "main",
+      "penalty": 0.0001,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 21.41036008813334,
+      "total_cost_usd_ci95": [
+        18.763688687828115,
+        24.057031488438568
+      ],
+      "violation_rate": 0.1894196453717792,
+      "violation_rate_ci95": [
+        0.1647943763909762,
+        0.2140449143525822
+      ],
+      "expected_violations": 1292421.6055503716,
+      "expected_violations_ci95": [
+        1124401.9177782137,
+        1460441.2933225294
+      ],
+      "vm_seconds": 437340.0,
+      "vm_seconds_ci95": [
+        374092.9705234244,
+        500587.0294765756
+      ],
+      "starting_vm_seconds": 14868.0,
+      "starting_vm_seconds_ci95": [
+        10755.50086858403,
+        18980.49913141597
+      ],
+      "cancelled_startup_vm_seconds": 3456.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        -475.4462689600755,
+        7387.446268960075
+      ]
+    },
+    {
+      "dataset": "Azure16x",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "main",
+      "penalty": 0.01,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 32.64740190126666,
+      "total_cost_usd_ci95": [
+        32.17971611959593,
+        33.11508768293739
+      ],
+      "violation_rate": 0.0015810985288341722,
+      "violation_rate_ci95": [
+        0.0004626874367724134,
+        0.002699509620895931
+      ],
+      "expected_violations": 9170.42206239112,
+      "expected_violations_ci95": [
+        2683.6019392779735,
+        15657.242185504267
+      ],
+      "vm_seconds": 132108.0,
+      "vm_seconds_ci95": [
+        131908.09595242576,
+        132307.90404757424
+      ],
+      "starting_vm_seconds": 25580.0,
+      "starting_vm_seconds_ci95": [
+        25399.210992950262,
+        25760.789007049738
+      ],
+      "cancelled_startup_vm_seconds": 11340.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        11234.64131602979,
+        11445.35868397021
+      ]
+    },
+    {
+      "dataset": "Azure1x",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "main",
+      "penalty": 0.01,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 3.0227183189999947,
+      "total_cost_usd_ci95": [
+        3.0227183189999947,
+        3.0227183189999947
+      ],
+      "violation_rate": 0.0,
+      "violation_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "expected_violations": 0.0,
+      "expected_violations_ci95": [
+        0.0,
+        0.0
+      ],
+      "vm_seconds": 0.0,
+      "vm_seconds_ci95": [
+        0.0,
+        0.0
+      ],
+      "starting_vm_seconds": 0.0,
+      "starting_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ],
+      "cancelled_startup_vm_seconds": 0.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dataset": "WITS",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "main",
+      "penalty": 0.01,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 20.519960291566655,
+      "total_cost_usd_ci95": [
+        18.269159576557897,
+        22.770761006575412
+      ],
+      "violation_rate": 0.00644018304702077,
+      "violation_rate_ci95": [
+        0.000799657972613126,
+        0.012080708121428413
+      ],
+      "expected_violations": 40041.44524368576,
+      "expected_violations_ci95": [
+        4971.824665585773,
+        75111.06582178574
+      ],
+      "vm_seconds": 307860.0,
+      "vm_seconds_ci95": [
+        307860.0,
+        307860.0
+      ],
+      "starting_vm_seconds": 12400.0,
+      "starting_vm_seconds_ci95": [
+        12400.0,
+        12400.0
+      ],
+      "cancelled_startup_vm_seconds": 1200.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        1200.0,
+        1200.0
+      ]
+    },
+    {
+      "dataset": "Berkeley",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "main",
+      "penalty": 0.01,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 22.12547601390001,
+      "total_cost_usd_ci95": [
+        19.941752580298992,
+        24.309199447501026
+      ],
+      "violation_rate": 0.005857118320099601,
+      "violation_rate_ci95": [
+        0.0008110974715619191,
+        0.010903139168637284
+      ],
+      "expected_violations": 39963.46972513879,
+      "expected_violations_ci95": [
+        5534.166714315274,
+        74392.77273596231
+      ],
+      "vm_seconds": 392040.0,
+      "vm_seconds_ci95": [
+        392040.0,
+        392040.0
+      ],
+      "starting_vm_seconds": 13140.0,
+      "starting_vm_seconds_ci95": [
+        13140.0,
+        13140.0
+      ],
+      "cancelled_startup_vm_seconds": 2040.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        2040.0,
+        2040.0
+      ]
+    },
+    {
+      "dataset": "Sin",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "main",
+      "penalty": 0.01,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 5.776842195655557,
+      "total_cost_usd_ci95": [
+        5.3065786030729125,
+        6.247105788238201
+      ],
+      "violation_rate": 0.005516446376290993,
+      "violation_rate_ci95": [
+        0.0007300069661741789,
+        0.010302885786407806
+      ],
+      "expected_violations": 8635.814759353132,
+      "expected_violations_ci95": [
+        1142.8018153157973,
+        16128.827703390467
+      ],
+      "vm_seconds": 77520.0,
+      "vm_seconds_ci95": [
+        77520.0,
+        77520.0
+      ],
+      "starting_vm_seconds": 7000.0,
+      "starting_vm_seconds_ci95": [
+        7000.0,
+        7000.0
+      ],
+      "cancelled_startup_vm_seconds": 0.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dataset": "Azure16x",
+      "latency_mode": "mmc_response",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "main",
+      "penalty": 0.01,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 32.65213656996666,
+      "total_cost_usd_ci95": [
+        32.18897789110707,
+        33.11529524882624
+      ],
+      "violation_rate": 0.047728084438242446,
+      "violation_rate_ci95": [
+        0.0440239604335243,
+        0.05143220844296059
+      ],
+      "expected_violations": 276824.4170405082,
+      "expected_violations_ci95": [
+        255340.37928117477,
+        298308.45479984157
+      ],
+      "vm_seconds": 132108.0,
+      "vm_seconds_ci95": [
+        131908.09595242576,
+        132307.90404757424
+      ],
+      "starting_vm_seconds": 25580.0,
+      "starting_vm_seconds_ci95": [
+        25399.210992950262,
+        25760.789007049738
+      ],
+      "cancelled_startup_vm_seconds": 11340.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        11234.64131602979,
+        11445.35868397021
+      ]
+    },
+    {
+      "dataset": "WITS",
+      "latency_mode": "mmc_response",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "main",
+      "penalty": 0.01,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 20.519960291566655,
+      "total_cost_usd_ci95": [
+        18.269159576557897,
+        22.770761006575412
+      ],
+      "violation_rate": 0.16742691864923764,
+      "violation_rate_ci95": [
+        0.15043644105311058,
+        0.1844173962453647
+      ],
+      "expected_violations": 1040966.6536595974,
+      "expected_violations_ci95": [
+        935329.3956248107,
+        1146603.911694384
+      ],
+      "vm_seconds": 307860.0,
+      "vm_seconds_ci95": [
+        307860.0,
+        307860.0
+      ],
+      "starting_vm_seconds": 12400.0,
+      "starting_vm_seconds_ci95": [
+        12400.0,
+        12400.0
+      ],
+      "cancelled_startup_vm_seconds": 1200.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        1200.0,
+        1200.0
+      ]
+    },
+    {
+      "dataset": "Berkeley",
+      "latency_mode": "mmc_response",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "main",
+      "penalty": 0.01,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 22.12547601390001,
+      "total_cost_usd_ci95": [
+        19.941752580298992,
+        24.309199447501026
+      ],
+      "violation_rate": 0.17811135102535855,
+      "violation_rate_ci95": [
+        0.16306748082928224,
+        0.19315522122143486
+      ],
+      "expected_violations": 1215264.4347270827,
+      "expected_violations_ci95": [
+        1112619.2057470423,
+        1317909.6637071231
+      ],
+      "vm_seconds": 392040.0,
+      "vm_seconds_ci95": [
+        392040.0,
+        392040.0
+      ],
+      "starting_vm_seconds": 13140.0,
+      "starting_vm_seconds_ci95": [
+        13140.0,
+        13140.0
+      ],
+      "cancelled_startup_vm_seconds": 2040.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        2040.0,
+        2040.0
+      ]
+    },
+    {
+      "dataset": "Azure16x",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "no_augmentation",
+      "penalty": 0.0001,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 23.958976905833328,
+      "total_cost_usd_ci95": [
+        22.979969159821344,
+        24.937984651845312
+      ],
+      "violation_rate": 0.0009805569043307004,
+      "violation_rate_ci95": [
+        -7.3055515732385e-05,
+        0.002034169324393786
+      ],
+      "expected_violations": 5687.261422939,
+      "expected_violations_ci95": [
+        -423.72432902433684,
+        11798.247174902337
+      ],
+      "vm_seconds": 185988.0,
+      "vm_seconds_ci95": [
+        -91764.60069795576,
+        463740.60069795576
+      ],
+      "starting_vm_seconds": 27988.0,
+      "starting_vm_seconds_ci95": [
+        -1933.3746933039074,
+        57909.37469330391
+      ],
+      "cancelled_startup_vm_seconds": 9708.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        5004.941290081696,
+        14411.058709918303
+      ]
+    },
+    {
+      "dataset": "Azure1x",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "no_augmentation",
+      "penalty": 0.0001,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 3.7013137916666636,
+      "total_cost_usd_ci95": [
+        0.1394503849967168,
+        7.26317719833661
+      ],
+      "violation_rate": 4.4642146553706423e-05,
+      "violation_rate_ci95": [
+        -7.93043227308543e-05,
+        0.00016858861583826716
+      ],
+      "expected_violations": 16.182867410011685,
+      "expected_violations_ci95": [
+        -28.747975598580144,
+        61.11371041860352
+      ],
+      "vm_seconds": 56868.0,
+      "vm_seconds_ci95": [
+        -101022.88024238811,
+        214758.8802423881
+      ],
+      "starting_vm_seconds": 1960.0,
+      "starting_vm_seconds_ci95": [
+        -3481.8324061876756,
+        7401.832406187676
+      ],
+      "cancelled_startup_vm_seconds": 300.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        -532.933531559338,
+        1132.933531559338
+      ]
+    },
+    {
+      "dataset": "WITS",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "no_augmentation",
+      "penalty": 0.0001,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 12.944442934000005,
+      "total_cost_usd_ci95": [
+        10.732408987204979,
+        15.156476880795031
+      ],
+      "violation_rate": 0.003149920817262159,
+      "violation_rate_ci95": [
+        -0.0004789447001342616,
+        0.00677878633465858
+      ],
+      "expected_violations": 19584.44053615762,
+      "expected_violations_ci95": [
+        -2977.809457458061,
+        42146.6905297733
+      ],
+      "vm_seconds": 242532.0,
+      "vm_seconds_ci95": [
+        154519.61576857883,
+        330544.38423142117
+      ],
+      "starting_vm_seconds": 9000.0,
+      "starting_vm_seconds_ci95": [
+        8591.947571605047,
+        9408.052428394953
+      ],
+      "cancelled_startup_vm_seconds": 660.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        660.0,
+        660.0
+      ]
+    },
+    {
+      "dataset": "Berkeley",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "no_augmentation",
+      "penalty": 0.0001,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 13.981141272499974,
+      "total_cost_usd_ci95": [
+        12.486228733855013,
+        15.476053811144935
+      ],
+      "violation_rate": 0.0030623885191462543,
+      "violation_rate_ci95": [
+        -0.0002358014605963756,
+        0.006360578498888884
+      ],
+      "expected_violations": 20894.860609446045,
+      "expected_violations_ci95": [
+        -1608.8875137367068,
+        43398.608732628796
+      ],
+      "vm_seconds": 304092.0,
+      "vm_seconds_ci95": [
+        216079.61576857883,
+        392104.38423142117
+      ],
+      "starting_vm_seconds": 7852.0,
+      "starting_vm_seconds_ci95": [
+        7412.093322525872,
+        8291.906677474128
+      ],
+      "cancelled_startup_vm_seconds": 1212.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        1178.6826587376265,
+        1245.3173412623735
+      ]
+    },
+    {
+      "dataset": "Sin",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "no_augmentation",
+      "penalty": 0.0001,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 3.6526278998333326,
+      "total_cost_usd_ci95": [
+        3.058806609657016,
+        4.246449190009649
+      ],
+      "violation_rate": 0.0034862707085403207,
+      "violation_rate_ci95": [
+        7.317340748751134e-05,
+        0.00689936800959313
+      ],
+      "expected_violations": 5457.64174728649,
+      "expected_violations_ci95": [
+        114.55055469925173,
+        10800.732939873727
+      ],
+      "vm_seconds": 59800.0,
+      "vm_seconds_ci95": [
+        40654.45913141522,
+        78945.54086858478
+      ],
+      "starting_vm_seconds": 4940.0,
+      "starting_vm_seconds_ci95": [
+        4327.92135740757,
+        5552.07864259243
+      ],
+      "cancelled_startup_vm_seconds": 0.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dataset": "Azure16x",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "no_forecast",
+      "penalty": 0.0001,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 23.721662294166663,
+      "total_cost_usd_ci95": [
+        22.26489946951408,
+        25.178425118819245
+      ],
+      "violation_rate": 0.0005941020041035357,
+      "violation_rate_ci95": [
+        -0.0006861847732881547,
+        0.001874388781495226
+      ],
+      "expected_violations": 3445.8106350646376,
+      "expected_violations_ci95": [
+        -3979.8936429840423,
+        10871.514913113318
+      ],
+      "vm_seconds": 284640.0,
+      "vm_seconds_ci95": [
+        -55726.5119504811,
+        625006.5119504811
+      ],
+      "starting_vm_seconds": 29324.0,
+      "starting_vm_seconds_ci95": [
+        13815.80654175885,
+        44832.19345824115
+      ],
+      "cancelled_startup_vm_seconds": 10884.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        6206.916902468135,
+        15561.083097531864
+      ]
+    },
+    {
+      "dataset": "Azure1x",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "no_forecast",
+      "penalty": 0.0001,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 3.8572842234999967,
+      "total_cost_usd_ci95": [
+        0.2350035583059693,
+        7.479564888694024
+      ],
+      "violation_rate": 5.84630144912178e-05,
+      "violation_rate_ci95": [
+        -8.316543875207754e-05,
+        0.00020009146773451313
+      ],
+      "expected_violations": 21.192959679095438,
+      "expected_violations_ci95": [
+        -30.147637878505613,
+        72.53355723669648
+      ],
+      "vm_seconds": 66780.0,
+      "vm_seconds_ci95": [
+        -92880.8917527097,
+        226440.8917527097
+      ],
+      "starting_vm_seconds": 3496.0,
+      "starting_vm_seconds_ci95": [
+        -749.1981847518655,
+        7741.1981847518655
+      ],
+      "cancelled_startup_vm_seconds": 1596.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        -582.14905547422,
+        3774.14905547422
+      ]
+    },
+    {
+      "dataset": "WITS",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "no_forecast",
+      "penalty": 0.0001,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 13.379133433333331,
+      "total_cost_usd_ci95": [
+        10.712276973509017,
+        16.045989893157646
+      ],
+      "violation_rate": 0.0007263819363781309,
+      "violation_rate_ci95": [
+        -0.000230678573874478,
+        0.0016834424466307396
+      ],
+      "expected_violations": 4516.23538013291,
+      "expected_violations_ci95": [
+        -1434.229961671559,
+        10466.700721937379
+      ],
+      "vm_seconds": 268572.0,
+      "vm_seconds_ci95": [
+        180486.8724242305,
+        356657.1275757695
+      ],
+      "starting_vm_seconds": 9180.0,
+      "starting_vm_seconds_ci95": [
+        8783.444319909036,
+        9576.555680090964
+      ],
+      "cancelled_startup_vm_seconds": 720.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        553.4132936881324,
+        886.5867063118676
+      ]
+    },
+    {
+      "dataset": "Berkeley",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "no_forecast",
+      "penalty": 0.0001,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 14.76425257833331,
+      "total_cost_usd_ci95": [
+        12.86288513524149,
+        16.66562002142513
+      ],
+      "violation_rate": 0.0008312176887387916,
+      "violation_rate_ci95": [
+        -0.0004440178852957421,
+        0.002106453262773325
+      ],
+      "expected_violations": 5671.4481633261,
+      "expected_violations_ci95": [
+        -3029.560672445965,
+        14372.456999098165
+      ],
+      "vm_seconds": 330132.0,
+      "vm_seconds_ci95": [
+        242046.8724242305,
+        418217.1275757695
+      ],
+      "starting_vm_seconds": 7996.0,
+      "starting_vm_seconds_ci95": [
+        7603.194339650902,
+        8388.805660349097
+      ],
+      "cancelled_startup_vm_seconds": 1236.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        1136.0479762128793,
+        1335.9520237871207
+      ]
+    },
+    {
+      "dataset": "Sin",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "no_forecast",
+      "penalty": 0.0001,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 3.7897286106666654,
+      "total_cost_usd_ci95": [
+        3.04133236174061,
+        4.53812485959272
+      ],
+      "violation_rate": 0.0013034301352094395,
+      "violation_rate_ci95": [
+        -0.0012279022585458751,
+        0.003834762528964754
+      ],
+      "expected_violations": 2040.476863475916,
+      "expected_violations_ci95": [
+        -1922.2404649790353,
+        6003.194191930867
+      ],
+      "vm_seconds": 66004.0,
+      "vm_seconds_ci95": [
+        47261.433391908446,
+        84746.56660809155
+      ],
+      "starting_vm_seconds": 5796.0,
+      "starting_vm_seconds_ci95": [
+        4035.164592712238,
+        7556.835407287762
+      ],
+      "cancelled_startup_vm_seconds": 636.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        -1129.8190869057964,
+        2401.819086905796
+      ]
+    },
+    {
+      "dataset": "Azure16x",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "raw_actions",
+      "penalty": 0.0001,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 26.16683976,
+      "total_cost_usd_ci95": [
+        26.16683976,
+        26.16683976
+      ],
+      "violation_rate": 0.0,
+      "violation_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "expected_violations": 0.0,
+      "expected_violations_ci95": [
+        0.0,
+        0.0
+      ],
+      "vm_seconds": 0.0,
+      "vm_seconds_ci95": [
+        0.0,
+        0.0
+      ],
+      "starting_vm_seconds": 0.0,
+      "starting_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ],
+      "cancelled_startup_vm_seconds": 0.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dataset": "Azure1x",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "raw_actions",
+      "penalty": 0.0001,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 2.4184274849999956,
+      "total_cost_usd_ci95": [
+        2.4184274849999956,
+        2.4184274849999956
+      ],
+      "violation_rate": 0.0,
+      "violation_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "expected_violations": 0.0,
+      "expected_violations_ci95": [
+        0.0,
+        0.0
+      ],
+      "vm_seconds": 0.0,
+      "vm_seconds_ci95": [
+        0.0,
+        0.0
+      ],
+      "starting_vm_seconds": 0.0,
+      "starting_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ],
+      "cancelled_startup_vm_seconds": 0.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dataset": "WITS",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "raw_actions",
+      "penalty": 0.0001,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 27.29386483250001,
+      "total_cost_usd_ci95": [
+        27.29386483250001,
+        27.29386483250001
+      ],
+      "violation_rate": 0.0,
+      "violation_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "expected_violations": 0.0,
+      "expected_violations_ci95": [
+        0.0,
+        0.0
+      ],
+      "vm_seconds": 0.0,
+      "vm_seconds_ci95": [
+        0.0,
+        0.0
+      ],
+      "starting_vm_seconds": 0.0,
+      "starting_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ],
+      "cancelled_startup_vm_seconds": 0.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dataset": "Berkeley",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "raw_actions",
+      "penalty": 0.0001,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 29.938914549999982,
+      "total_cost_usd_ci95": [
+        29.93891454999998,
+        29.938914549999986
+      ],
+      "violation_rate": 0.0,
+      "violation_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "expected_violations": 0.0,
+      "expected_violations_ci95": [
+        0.0,
+        0.0
+      ],
+      "vm_seconds": 0.0,
+      "vm_seconds_ci95": [
+        0.0,
+        0.0
+      ],
+      "starting_vm_seconds": 0.0,
+      "starting_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ],
+      "cancelled_startup_vm_seconds": 0.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dataset": "Sin",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "raw_actions",
+      "penalty": 0.0001,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 6.869399344722224,
+      "total_cost_usd_ci95": [
+        6.869399344722224,
+        6.869399344722224
+      ],
+      "violation_rate": 0.0,
+      "violation_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "expected_violations": 0.0,
+      "expected_violations_ci95": [
+        0.0,
+        0.0
+      ],
+      "vm_seconds": 0.0,
+      "vm_seconds_ci95": [
+        0.0,
+        0.0
+      ],
+      "starting_vm_seconds": 0.0,
+      "starting_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ],
+      "cancelled_startup_vm_seconds": 0.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dataset": "Azure16x",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "interval120",
+      "penalty": 0.0001,
+      "decision_seconds": 120,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 23.815586906666667,
+      "total_cost_usd_ci95": [
+        22.16805330002917,
+        25.463120513304162
+      ],
+      "violation_rate": 0.00013616338585571824,
+      "violation_rate_ci95": [
+        3.487511181323075e-05,
+        0.00023745165989820575
+      ],
+      "expected_violations": 789.7519951915134,
+      "expected_violations_ci95": [
+        202.27676452031653,
+        1377.2272258627104
+      ],
+      "vm_seconds": 174480.0,
+      "vm_seconds_ci95": [
+        63693.65296916218,
+        285266.3470308378
+      ],
+      "starting_vm_seconds": 47880.0,
+      "starting_vm_seconds_ci95": [
+        -11639.912024332007,
+        107399.912024332
+      ],
+      "cancelled_startup_vm_seconds": 0.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dataset": "Azure1x",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "interval120",
+      "penalty": 0.0001,
+      "decision_seconds": 120,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 2.837216670999999,
+      "total_cost_usd_ci95": [
+        1.6715221549202464,
+        4.002911187079752
+      ],
+      "violation_rate": 9.971143314980496e-07,
+      "violation_rate_ci95": [
+        -1.0320338526187923e-06,
+        3.0262625156148915e-06
+      ],
+      "expected_violations": 0.36145593939670595,
+      "expected_violations_ci95": [
+        -0.37411433564201735,
+        1.0970262144354292
+      ],
+      "vm_seconds": 15552.0,
+      "vm_seconds_ci95": [
+        -27294.8780882742,
+        58398.8780882742
+      ],
+      "starting_vm_seconds": 12920.0,
+      "starting_vm_seconds_ci95": [
+        -22813.010301029593,
+        48653.01030102959
+      ],
+      "cancelled_startup_vm_seconds": 0.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dataset": "WITS",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "interval120",
+      "penalty": 0.0001,
+      "decision_seconds": 120,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 13.109869947999993,
+      "total_cost_usd_ci95": [
+        11.227094750634874,
+        14.992645145365112
+      ],
+      "violation_rate": 0.0004527400515750282,
+      "violation_rate_ci95": [
+        0.0001626481282734426,
+        0.0007428319748766138
+      ],
+      "expected_violations": 2814.8836535245914,
+      "expected_violations_ci95": [
+        1011.2548160043041,
+        4618.5124910448785
+      ],
+      "vm_seconds": 251496.0,
+      "vm_seconds_ci95": [
+        222156.98310446457,
+        280835.0168955354
+      ],
+      "starting_vm_seconds": 7780.0,
+      "starting_vm_seconds_ci95": [
+        7643.982523868349,
+        7916.017476131651
+      ],
+      "cancelled_startup_vm_seconds": 0.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dataset": "Berkeley",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "interval120",
+      "penalty": 0.0001,
+      "decision_seconds": 120,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 14.71489959133334,
+      "total_cost_usd_ci95": [
+        13.218489076138638,
+        16.211310106528042
+      ],
+      "violation_rate": 0.00040470422232341297,
+      "violation_rate_ci95": [
+        0.00014688128788545925,
+        0.0006625271567613667
+      ],
+      "expected_violations": 2761.3211911659864,
+      "expected_violations_ci95": [
+        1002.1798401197618,
+        4520.462542212211
+      ],
+      "vm_seconds": 312816.0,
+      "vm_seconds_ci95": [
+        283476.9831044646,
+        342155.0168955354
+      ],
+      "starting_vm_seconds": 7200.0,
+      "starting_vm_seconds_ci95": [
+        7024.402193382984,
+        7375.597806617016
+      ],
+      "cancelled_startup_vm_seconds": 0.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dataset": "Sin",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "interval120",
+      "penalty": 0.0001,
+      "decision_seconds": 120,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 4.059351151833334,
+      "total_cost_usd_ci95": [
+        3.7425889632570835,
+        4.376113340409584
+      ],
+      "violation_rate": 0.0004036690751790955,
+      "violation_rate_ci95": [
+        0.0001452270364723121,
+        0.0006621111138858789
+      ],
+      "expected_violations": 631.9306161133931,
+      "expected_violations_ci95": [
+        227.348133105201,
+        1036.5130991215851
+      ],
+      "vm_seconds": 61240.0,
+      "vm_seconds_ci95": [
+        55783.90741747673,
+        66696.09258252327
+      ],
+      "starting_vm_seconds": 5360.0,
+      "starting_vm_seconds_ci95": [
+        4924.53160093349,
+        5795.46839906651
+      ],
+      "cancelled_startup_vm_seconds": 0.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dataset": "Azure16x",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "interval300",
+      "penalty": 0.0001,
+      "decision_seconds": 300,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 24.012069103833333,
+      "total_cost_usd_ci95": [
+        21.854905580343587,
+        26.16923262732308
+      ],
+      "violation_rate": 0.0010571511037169266,
+      "violation_rate_ci95": [
+        -0.0004891155384584092,
+        0.0026034177458922622
+      ],
+      "expected_violations": 6131.510230393494,
+      "expected_violations_ci95": [
+        -2836.885774756004,
+        15099.906235542992
+      ],
+      "vm_seconds": 331140.0,
+      "vm_seconds_ci95": [
+        -8042.091011367273,
+        670322.0910113673
+      ],
+      "starting_vm_seconds": 26360.0,
+      "starting_vm_seconds_ci95": [
+        14860.823750326648,
+        37859.17624967335
+      ],
+      "cancelled_startup_vm_seconds": 0.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dataset": "Azure1x",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "interval300",
+      "penalty": 0.0001,
+      "decision_seconds": 300,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 3.840774844166667,
+      "total_cost_usd_ci95": [
+        0.20588180791013855,
+        7.475667880423195
+      ],
+      "violation_rate": 6.337832673930453e-05,
+      "violation_rate_ci95": [
+        -8.12582895939917e-05,
+        0.00020801494307260077
+      ],
+      "expected_violations": 22.974770199651367,
+      "expected_violations_ci95": [
+        -29.456292494401183,
+        75.40583289370392
+      ],
+      "vm_seconds": 66300.0,
+      "vm_seconds_ci95": [
+        -93750.29671295776,
+        226350.29671295776
+      ],
+      "starting_vm_seconds": 1860.0,
+      "starting_vm_seconds_ci95": [
+        -1290.5006619257883,
+        5010.500661925788
+      ],
+      "cancelled_startup_vm_seconds": 0.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dataset": "WITS",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "interval300",
+      "penalty": 0.0001,
+      "decision_seconds": 300,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 12.786755332499997,
+      "total_cost_usd_ci95": [
+        9.836533336967207,
+        15.736977328032786
+      ],
+      "violation_rate": 0.0016609152423256543,
+      "violation_rate_ci95": [
+        -0.0006584205572501441,
+        0.0039802510419014525
+      ],
+      "expected_violations": 10326.639203329973,
+      "expected_violations_ci95": [
+        -4093.6896510487804,
+        24746.968057708727
+      ],
+      "vm_seconds": 269460.0,
+      "vm_seconds_ci95": [
+        173506.05716436426,
+        365413.94283563574
+      ],
+      "starting_vm_seconds": 7160.0,
+      "starting_vm_seconds_ci95": [
+        6715.768783168353,
+        7604.231216831647
+      ],
+      "cancelled_startup_vm_seconds": 0.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dataset": "Berkeley",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "interval300",
+      "penalty": 0.0001,
+      "decision_seconds": 300,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 14.0629064975,
+      "total_cost_usd_ci95": [
+        12.186480950157112,
+        15.939332044842889
+      ],
+      "violation_rate": 0.0017404039938610511,
+      "violation_rate_ci95": [
+        -0.0005408610712401265,
+        0.004021669058962229
+      ],
+      "expected_violations": 11874.880874353583,
+      "expected_violations_ci95": [
+        -3690.327540735656,
+        27440.08928944282
+      ],
+      "vm_seconds": 329760.0,
+      "vm_seconds_ci95": [
+        233806.05716436426,
+        425713.94283563574
+      ],
+      "starting_vm_seconds": 5160.0,
+      "starting_vm_seconds_ci95": [
+        4715.768783168353,
+        5604.231216831647
+      ],
+      "cancelled_startup_vm_seconds": 0.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dataset": "Sin",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "variant": "interval300",
+      "penalty": 0.0001,
+      "decision_seconds": 300,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 4.128344269944445,
+      "total_cost_usd_ci95": [
+        3.56479236763235,
+        4.6918961722565395
+      ],
+      "violation_rate": 0.0022055595392980235,
+      "violation_rate_ci95": [
+        -0.0008393179282249466,
+        0.005250437006820994
+      ],
+      "expected_violations": 3452.7306753062594,
+      "expected_violations_ci95": [
+        -1313.9245191445225,
+        8219.385869757041
+      ],
+      "vm_seconds": 66140.0,
+      "vm_seconds_ci95": [
+        46126.163438956006,
+        86153.836561044
+      ],
+      "starting_vm_seconds": 5160.0,
+      "starting_vm_seconds_ci95": [
+        4406.769324660625,
+        5913.230675339375
+      ],
+      "cancelled_startup_vm_seconds": 0.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dataset": "Azure16x",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "no_augmentation",
+      "penalty": 0.01,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 32.63052973043333,
+      "total_cost_usd_ci95": [
+        32.11053286054799,
+        33.15052660031867
+      ],
+      "violation_rate": 0.0015560580328202148,
+      "violation_rate_ci95": [
+        0.00023204224559458635,
+        0.0028800738200458432
+      ],
+      "expected_violations": 9025.186384214296,
+      "expected_violations_ci95": [
+        1345.8524498004608,
+        16704.52031862813
+      ],
+      "vm_seconds": 132060.0,
+      "vm_seconds_ci95": [
+        131893.41329368812,
+        132226.58670631188
+      ],
+      "starting_vm_seconds": 25540.0,
+      "starting_vm_seconds_ci95": [
+        25373.413293688132,
+        25706.586706311868
+      ],
+      "cancelled_startup_vm_seconds": 11340.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        11173.413293688132,
+        11506.586706311868
+      ]
+    },
+    {
+      "dataset": "Azure1x",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "no_augmentation",
+      "penalty": 0.01,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 3.026051652333328,
+      "total_cost_usd_ci95": [
+        3.016796835316002,
+        3.035306469350654
+      ],
+      "violation_rate": 0.0,
+      "violation_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "expected_violations": 0.0,
+      "expected_violations_ci95": [
+        0.0,
+        0.0
+      ],
+      "vm_seconds": 120.0,
+      "vm_seconds_ci95": [
+        -213.1734126237352,
+        453.1734126237352
+      ],
+      "starting_vm_seconds": 120.0,
+      "starting_vm_seconds_ci95": [
+        -213.1734126237352,
+        453.1734126237352
+      ],
+      "cancelled_startup_vm_seconds": 120.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        -213.1734126237352,
+        453.1734126237352
+      ]
+    },
+    {
+      "dataset": "WITS",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "no_augmentation",
+      "penalty": 0.01,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 20.525895825766657,
+      "total_cost_usd_ci95": [
+        18.28174247563359,
+        22.770049175899725
+      ],
+      "violation_rate": 0.006425028098122111,
+      "violation_rate_ci95": [
+        0.0008014758653392745,
+        0.012048580330904949
+      ],
+      "expected_violations": 39947.22027336024,
+      "expected_violations_ci95": [
+        4983.127302719149,
+        74911.31324400133
+      ],
+      "vm_seconds": 307860.0,
+      "vm_seconds_ci95": [
+        307860.0,
+        307860.0
+      ],
+      "starting_vm_seconds": 12400.0,
+      "starting_vm_seconds_ci95": [
+        12400.0,
+        12400.0
+      ],
+      "cancelled_startup_vm_seconds": 1200.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        1200.0,
+        1200.0
+      ]
+    },
+    {
+      "dataset": "Berkeley",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "no_augmentation",
+      "penalty": 0.01,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 22.12600222230001,
+      "total_cost_usd_ci95": [
+        19.942874827469534,
+        24.309129617130484
+      ],
+      "violation_rate": 0.005855930888826059,
+      "violation_rate_ci95": [
+        0.0008112550709223837,
+        0.010900606706729734
+      ],
+      "expected_violations": 39955.36781031354,
+      "expected_violations_ci95": [
+        5535.242024207684,
+        74375.4935964194
+      ],
+      "vm_seconds": 392040.0,
+      "vm_seconds_ci95": [
+        392040.0,
+        392040.0
+      ],
+      "starting_vm_seconds": 13140.0,
+      "starting_vm_seconds_ci95": [
+        13140.0,
+        13140.0
+      ],
+      "cancelled_startup_vm_seconds": 2040.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        2040.0,
+        2040.0
+      ]
+    },
+    {
+      "dataset": "Sin",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "no_augmentation",
+      "penalty": 0.01,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 5.8325733436555565,
+      "total_cost_usd_ci95": [
+        5.402059353295322,
+        6.263087334015791
+      ],
+      "violation_rate": 0.0047123401642310304,
+      "violation_rate_ci95": [
+        0.0003393996093781484,
+        0.009085280719083912
+      ],
+      "expected_violations": 7377.013019878259,
+      "expected_violations_ci95": [
+        531.3188882943823,
+        14222.707151462135
+      ],
+      "vm_seconds": 78096.0,
+      "vm_seconds_ci95": [
+        76496.76761940608,
+        79695.23238059392
+      ],
+      "starting_vm_seconds": 7112.0,
+      "starting_vm_seconds_ci95": [
+        6801.038148217847,
+        7422.961851782153
+      ],
+      "cancelled_startup_vm_seconds": 12.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        -21.317341262373517,
+        45.31734126237352
+      ]
+    },
+    {
+      "dataset": "Azure16x",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "no_forecast",
+      "penalty": 0.01,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 32.6980645249,
+      "total_cost_usd_ci95": [
+        32.21080968647211,
+        33.185319363327885
+      ],
+      "violation_rate": 0.0013638427652940758,
+      "violation_rate_ci95": [
+        0.00010108338370116337,
+        0.0026266021468869883
+      ],
+      "expected_violations": 7910.33168167413,
+      "expected_violations_ci95": [
+        586.2868601350265,
+        15234.376503213232
+      ],
+      "vm_seconds": 132012.0,
+      "vm_seconds_ci95": [
+        131978.6826587376,
+        132045.3173412624
+      ],
+      "starting_vm_seconds": 25488.0,
+      "starting_vm_seconds_ci95": [
+        25465.78843915842,
+        25510.21156084158
+      ],
+      "cancelled_startup_vm_seconds": 11268.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        11234.682658737627,
+        11301.317341262373
+      ]
+    },
+    {
+      "dataset": "Azure1x",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "no_forecast",
+      "penalty": 0.01,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 3.0227183189999947,
+      "total_cost_usd_ci95": [
+        3.0227183189999947,
+        3.0227183189999947
+      ],
+      "violation_rate": 0.0,
+      "violation_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "expected_violations": 0.0,
+      "expected_violations_ci95": [
+        0.0,
+        0.0
+      ],
+      "vm_seconds": 0.0,
+      "vm_seconds_ci95": [
+        0.0,
+        0.0
+      ],
+      "starting_vm_seconds": 0.0,
+      "starting_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ],
+      "cancelled_startup_vm_seconds": 0.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dataset": "WITS",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "no_forecast",
+      "penalty": 0.01,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 20.521454433766657,
+      "total_cost_usd_ci95": [
+        18.272336570835613,
+        22.7705722966977
+      ],
+      "violation_rate": 0.006436263289274572,
+      "violation_rate_ci95": [
+        0.0008001533785241812,
+        0.012072373200024963
+      ],
+      "expected_violations": 40017.07438900401,
+      "expected_violations_ci95": [
+        4974.904821618009,
+        75059.24395639001
+      ],
+      "vm_seconds": 307860.0,
+      "vm_seconds_ci95": [
+        307860.0,
+        307860.0
+      ],
+      "starting_vm_seconds": 12400.0,
+      "starting_vm_seconds_ci95": [
+        12400.0,
+        12400.0
+      ],
+      "cancelled_startup_vm_seconds": 1200.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        1200.0,
+        1200.0
+      ]
+    },
+    {
+      "dataset": "Berkeley",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "no_forecast",
+      "penalty": 0.01,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 22.12547601390001,
+      "total_cost_usd_ci95": [
+        19.941752580298992,
+        24.309199447501026
+      ],
+      "violation_rate": 0.005857118320099601,
+      "violation_rate_ci95": [
+        0.0008110974715619191,
+        0.010903139168637284
+      ],
+      "expected_violations": 39963.46972513879,
+      "expected_violations_ci95": [
+        5534.166714315274,
+        74392.77273596231
+      ],
+      "vm_seconds": 392040.0,
+      "vm_seconds_ci95": [
+        392040.0,
+        392040.0
+      ],
+      "starting_vm_seconds": 13140.0,
+      "starting_vm_seconds_ci95": [
+        13140.0,
+        13140.0
+      ],
+      "cancelled_startup_vm_seconds": 2040.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        2040.0,
+        2040.0
+      ]
+    },
+    {
+      "dataset": "Sin",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "no_forecast",
+      "penalty": 0.01,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 5.776842195655557,
+      "total_cost_usd_ci95": [
+        5.3065786030729125,
+        6.247105788238201
+      ],
+      "violation_rate": 0.005516446376290993,
+      "violation_rate_ci95": [
+        0.0007300069661741789,
+        0.010302885786407806
+      ],
+      "expected_violations": 8635.814759353132,
+      "expected_violations_ci95": [
+        1142.8018153157973,
+        16128.827703390467
+      ],
+      "vm_seconds": 77520.0,
+      "vm_seconds_ci95": [
+        77520.0,
+        77520.0
+      ],
+      "starting_vm_seconds": 7000.0,
+      "starting_vm_seconds_ci95": [
+        7000.0,
+        7000.0
+      ],
+      "cancelled_startup_vm_seconds": 0.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dataset": "Azure16x",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "raw_actions",
+      "penalty": 0.01,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 651.0663179643979,
+      "total_cost_usd_ci95": [
+        -959.2794765689397,
+        2261.4121124977355
+      ],
+      "violation_rate": 0.00017161218808974058,
+      "violation_rate_ci95": [
+        -0.0002897117511406518,
+        0.0006329361273201329
+      ],
+      "expected_violations": 995.3561825105141,
+      "expected_violations_ci95": [
+        -1680.3374273918168,
+        3671.049792412845
+      ],
+      "vm_seconds": 22643208.0,
+      "vm_seconds_ci95": [
+        -35882896.52263523,
+        81169312.52263522
+      ],
+      "starting_vm_seconds": 135504.0,
+      "starting_vm_seconds_ci95": [
+        -214406.30433237233,
+        485414.3043323723
+      ],
+      "cancelled_startup_vm_seconds": 4464.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        -7930.05094960295,
+        16858.050949602948
+      ]
+    },
+    {
+      "dataset": "Azure1x",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "raw_actions",
+      "penalty": 0.01,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 594.8745490578651,
+      "total_cost_usd_ci95": [
+        -779.4095868809068,
+        1969.158684996637
+      ],
+      "violation_rate": 1.6423483890763517e-10,
+      "violation_rate_ci95": [
+        -2.8304015050318925e-10,
+        6.115098283184596e-10
+      ],
+      "expected_violations": 5.953545757369556e-05,
+      "expected_violations_ci95": [
+        -0.00010260262063770711,
+        0.00022167353578509823
+      ],
+      "vm_seconds": 21337908.0,
+      "vm_seconds_ci95": [
+        -28166502.56053207,
+        70842318.56053206
+      ],
+      "starting_vm_seconds": 161056.0,
+      "starting_vm_seconds_ci95": [
+        -233954.84638422052,
+        556066.8463842205
+      ],
+      "cancelled_startup_vm_seconds": 26448.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        -46983.420142271236,
+        99879.42014227124
+      ]
+    },
+    {
+      "dataset": "WITS",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "raw_actions",
+      "penalty": 0.01,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 134.74946777483288,
+      "total_cost_usd_ci95": [
+        -125.63304404772467,
+        395.13197959739045
+      ],
+      "violation_rate": 4.9517786934042805e-05,
+      "violation_rate_ci95": [
+        -6.037109488167423e-05,
+        0.00015940666874975984
+      ],
+      "expected_violations": 307.87381967740816,
+      "expected_violations_ci95": [
+        -375.3535997900217,
+        991.101239144838
+      ],
+      "vm_seconds": 4031832.0,
+      "vm_seconds_ci95": [
+        -5946347.818010293,
+        14010011.818010293
+      ],
+      "starting_vm_seconds": 22340.0,
+      "starting_vm_seconds_ci95": [
+        -33455.052881976844,
+        78135.05288197685
+      ],
+      "cancelled_startup_vm_seconds": 0.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dataset": "Berkeley",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "raw_actions",
+      "penalty": 0.01,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 137.15714871416625,
+      "total_cost_usd_ci95": [
+        -122.06544335243328,
+        396.3797407807658
+      ],
+      "violation_rate": 4.2831326553386325e-05,
+      "violation_rate_ci95": [
+        -5.444060136241055e-05,
+        0.0001401032544691832
+      ],
+      "expected_violations": 292.24071095334807,
+      "expected_violations_ci95": [
+        -371.45148953180876,
+        955.9329114385049
+      ],
+      "vm_seconds": 4040052.0,
+      "vm_seconds_ci95": [
+        -5953453.142037194,
+        14033557.142037194
+      ],
+      "starting_vm_seconds": 22320.0,
+      "starting_vm_seconds_ci95": [
+        -33484.087817877764,
+        78124.08781787776
+      ],
+      "cancelled_startup_vm_seconds": 0.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dataset": "Sin",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "raw_actions",
+      "penalty": 0.01,
+      "decision_seconds": 60,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 26.364532145622245,
+      "total_cost_usd_ci95": [
+        -18.324082687802058,
+        71.05314697904655
+      ],
+      "violation_rate": 0.0003027743035852649,
+      "violation_rate_ci95": [
+        -0.00045467041625326396,
+        0.0010602190234237938
+      ],
+      "expected_violations": 473.9831807107139,
+      "expected_violations_ci95": [
+        -711.7715325207482,
+        1659.737893942176
+      ],
+      "vm_seconds": 740376.0,
+      "vm_seconds_ci95": [
+        -1024143.6353501696,
+        2504895.6353501696
+      ],
+      "starting_vm_seconds": 11280.0,
+      "starting_vm_seconds_ci95": [
+        -16569.612837414166,
+        39129.61283741417
+      ],
+      "cancelled_startup_vm_seconds": 0.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dataset": "Azure16x",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "interval120",
+      "penalty": 0.01,
+      "decision_seconds": 120,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 35.36612090813334,
+      "total_cost_usd_ci95": [
+        30.700766421160345,
+        40.031475395106334
+      ],
+      "violation_rate": 0.0017544561196017306,
+      "violation_rate_ci95": [
+        0.0001821037542407229,
+        0.003326808484962738
+      ],
+      "expected_violations": 10175.901636285866,
+      "expected_violations_ci95": [
+        1056.2076019163305,
+        19295.5956706554
+      ],
+      "vm_seconds": 452496.0,
+      "vm_seconds_ci95": [
+        -35516.28478999151,
+        940508.2847899916
+      ],
+      "starting_vm_seconds": 107820.0,
+      "starting_vm_seconds_ci95": [
+        -28981.91653049938,
+        244621.91653049938
+      ],
+      "cancelled_startup_vm_seconds": 0.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dataset": "Azure1x",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "interval120",
+      "penalty": 0.01,
+      "decision_seconds": 120,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 6.937256581166669,
+      "total_cost_usd_ci95": [
+        -0.04282794893985287,
+        13.917341111273192
+      ],
+      "violation_rate": 7.426806623216794e-05,
+      "violation_rate_ci95": [
+        -0.00010202296265983009,
+        0.00025055909512416595
+      ],
+      "expected_violations": 26.922322545293348,
+      "expected_violations_ci95": [
+        -36.98352801011371,
+        90.82817310070041
+      ],
+      "vm_seconds": 162096.0,
+      "vm_seconds_ci95": [
+        -125314.17460211337,
+        449506.1746021134
+      ],
+      "starting_vm_seconds": 42300.0,
+      "starting_vm_seconds_ci95": [
+        -30610.949799682814,
+        115210.94979968281
+      ],
+      "cancelled_startup_vm_seconds": 0.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dataset": "WITS",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "interval120",
+      "penalty": 0.01,
+      "decision_seconds": 120,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 18.684113436966662,
+      "total_cost_usd_ci95": [
+        16.751651431347334,
+        20.61657544258599
+      ],
+      "violation_rate": 0.005365390830740834,
+      "violation_rate_ci95": [
+        0.00013921678131879715,
+        0.010591564880162871
+      ],
+      "expected_violations": 33358.990201290464,
+      "expected_violations_ci95": [
+        865.5718456259674,
+        65852.40855695496
+      ],
+      "vm_seconds": 402000.0,
+      "vm_seconds_ci95": [
+        263357.81959911913,
+        540642.1804008809
+      ],
+      "starting_vm_seconds": 11740.0,
+      "starting_vm_seconds_ci95": [
+        11097.206485853601,
+        12382.793514146399
+      ],
+      "cancelled_startup_vm_seconds": 0.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dataset": "Berkeley",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "interval120",
+      "penalty": 0.01,
+      "decision_seconds": 120,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 21.12621630569999,
+      "total_cost_usd_ci95": [
+        19.56968725242461,
+        22.68274535897537
+      ],
+      "violation_rate": 0.005103478680453492,
+      "violation_rate_ci95": [
+        0.0004152689120649365,
+        0.009791688448842047
+      ],
+      "expected_violations": 34821.341245455,
+      "expected_violations_ci95": [
+        2833.404703153781,
+        66809.27778775622
+      ],
+      "vm_seconds": 487080.0,
+      "vm_seconds_ci95": [
+        348236.600944378,
+        625923.399055622
+      ],
+      "starting_vm_seconds": 12640.0,
+      "starting_vm_seconds_ci95": [
+        11997.206485853601,
+        13282.793514146399
+      ],
+      "cancelled_startup_vm_seconds": 0.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dataset": "Sin",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "interval120",
+      "penalty": 0.01,
+      "decision_seconds": 120,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 5.5649041821333345,
+      "total_cost_usd_ci95": [
+        4.8980890691308545,
+        6.2317192951358145
+      ],
+      "violation_rate": 0.005259097511319011,
+      "violation_rate_ci95": [
+        0.0007819784358553059,
+        0.009736216586782717
+      ],
+      "expected_violations": 8232.943603752039,
+      "expected_violations_ci95": [
+        1224.1614360430985,
+        15241.72577146098
+      ],
+      "vm_seconds": 97240.0,
+      "vm_seconds_ci95": [
+        68521.38806524263,
+        125958.61193475737
+      ],
+      "starting_vm_seconds": 8180.0,
+      "starting_vm_seconds_ci95": [
+        6429.738166566769,
+        9930.261833433231
+      ],
+      "cancelled_startup_vm_seconds": 0.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dataset": "Azure16x",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "interval300",
+      "penalty": 0.01,
+      "decision_seconds": 300,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 38.732875467466656,
+      "total_cost_usd_ci95": [
+        31.513161982323552,
+        45.95258895260976
+      ],
+      "violation_rate": 0.002144426800914804,
+      "violation_rate_ci95": [
+        -8.993801798441291e-05,
+        0.004378791619814021
+      ],
+      "expected_violations": 12437.744066963494,
+      "expected_violations_ci95": [
+        -521.6433823261686,
+        25397.131516253157
+      ],
+      "vm_seconds": 871080.0,
+      "vm_seconds_ci95": [
+        176500.19901390595,
+        1565659.800986094
+      ],
+      "starting_vm_seconds": 46360.0,
+      "starting_vm_seconds_ci95": [
+        33298.72163066626,
+        59421.27836933374
+      ],
+      "cancelled_startup_vm_seconds": 0.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dataset": "Azure1x",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "interval300",
+      "penalty": 0.01,
+      "decision_seconds": 300,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 13.852524015499991,
+      "total_cost_usd_ci95": [
+        1.0507308481043793,
+        26.654317182895603
+      ],
+      "violation_rate": 0.00015068588711158207,
+      "violation_rate_ci95": [
+        -7.292664033211832e-05,
+        0.0003742984145552825
+      ],
+      "expected_violations": 54.623935449722715,
+      "expected_violations_ci95": [
+        -26.43605297367356,
+        135.683923873119
+      ],
+      "vm_seconds": 437580.0,
+      "vm_seconds_ci95": [
+        -72707.23660359095,
+        947867.2366035909
+      ],
+      "starting_vm_seconds": 4740.0,
+      "starting_vm_seconds_ci95": [
+        -200.66826725545343,
+        9680.668267255453
+      ],
+      "cancelled_startup_vm_seconds": 0.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dataset": "WITS",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "interval300",
+      "penalty": 0.01,
+      "decision_seconds": 300,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 18.18182644063333,
+      "total_cost_usd_ci95": [
+        16.77794986371077,
+        19.58570301755589
+      ],
+      "violation_rate": 0.004013593410703218,
+      "violation_rate_ci95": [
+        -0.00018123269208724854,
+        0.008208419513493685
+      ],
+      "expected_violations": 24954.2722018492,
+      "expected_violations_ci95": [
+        -1126.8032078582619,
+        51035.34761155666
+      ],
+      "vm_seconds": 473520.0,
+      "vm_seconds_ci95": [
+        329893.27367858693,
+        617146.7263214131
+      ],
+      "starting_vm_seconds": 10660.0,
+      "starting_vm_seconds_ci95": [
+        9993.65317475253,
+        11326.34682524747
+      ],
+      "cancelled_startup_vm_seconds": 0.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dataset": "Berkeley",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "interval300",
+      "penalty": 0.01,
+      "decision_seconds": 300,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 20.81776861146666,
+      "total_cost_usd_ci95": [
+        19.492112433871867,
+        22.143424789061456
+      ],
+      "violation_rate": 0.004205686837673039,
+      "violation_rate_ci95": [
+        0.0003227798178519481,
+        0.00808859385749413
+      ],
+      "expected_violations": 28695.653634653405,
+      "expected_violations_ci95": [
+        2202.346063992911,
+        55188.9612053139
+      ],
+      "vm_seconds": 554820.0,
+      "vm_seconds_ci95": [
+        411193.27367858693,
+        698446.7263214131
+      ],
+      "starting_vm_seconds": 9220.0,
+      "starting_vm_seconds_ci95": [
+        8596.689619789859,
+        9843.310380210141
+      ],
+      "cancelled_startup_vm_seconds": 0.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "dataset": "Sin",
+      "latency_mode": "wait_budget",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "variant": "interval300",
+      "penalty": 0.01,
+      "decision_seconds": 300,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_cost_usd": 5.876339105555555,
+      "total_cost_usd_ci95": [
+        5.221509727878961,
+        6.5311684832321495
+      ],
+      "violation_rate": 0.004664135518311989,
+      "violation_rate_ci95": [
+        0.0010052276607722876,
+        0.008323043375851689
+      ],
+      "expected_violations": 7301.550237445315,
+      "expected_violations_ci95": [
+        1573.6507304262122,
+        13029.449744464418
+      ],
+      "vm_seconds": 113520.0,
+      "vm_seconds_ci95": [
+        81697.72382872897,
+        145342.27617127105
+      ],
+      "starting_vm_seconds": 8100.0,
+      "starting_vm_seconds_ci95": [
+        7257.862503601541,
+        8942.137496398458
+      ],
+      "cancelled_startup_vm_seconds": 0.0,
+      "cancelled_startup_vm_seconds_ci95": [
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "primary_comparisons": [
+    {
+      "service_seconds": 0.5,
+      "validation_selected_penalty": 0.0001,
+      "ppo": {
+        "dataset": "Azure16x",
+        "latency_mode": "wait_budget",
+        "version": "v2",
+        "service_seconds": 0.5,
+        "variant": "main",
+        "penalty": 0.0001,
+        "decision_seconds": 60,
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "total_cost_usd": 23.067557747833337,
+        "total_cost_usd_ci95": [
+          21.5512904488774,
+          24.583825046789276
+        ],
+        "violation_rate": 0.00015415200433046785,
+        "violation_rate_ci95": [
+          1.289819976286872e-05,
+          0.000295405808898067
+        ],
+        "expected_violations": 894.086557980852,
+        "expected_violations_ci95": [
+          74.80997136703081,
+          1713.3631445946733
+        ],
+        "vm_seconds": 233148.0,
+        "vm_seconds_ci95": [
+          -6964.795584827138,
+          473260.79558482714
+        ],
+        "starting_vm_seconds": 26564.0,
+        "starting_vm_seconds_ci95": [
+          12140.444906099341,
+          40987.55509390066
+        ],
+        "cancelled_startup_vm_seconds": 9084.0,
+        "cancelled_startup_vm_seconds_ci95": [
+          7531.433346253697,
+          10636.566653746304
+        ]
+      },
+      "cheapest_test_feasible_baseline_descriptive_only": {
+        "key": "baseline:v2:0.5:Quantile-tuned:0.0001:wait_budget:Azure16x",
+        "kind": "baseline",
+        "dataset": "Azure16x",
+        "latency_mode": "wait_budget",
+        "split": "test",
+        "version": "v2",
+        "service_seconds": 0.5,
+        "label": "Quantile-tuned",
+        "penalty": 0.0001,
+        "parameters": {
+          "rho": 0.7,
+          "window": 300
+        },
+        "summary": {
+          "total_cost_usd": 22.562844858333335,
+          "vm_cost_usd": 13.898333333333333,
+          "faas_cost_usd": 7.829311525,
+          "gateway_cost_usd": 0.8351999999999999,
+          "requests": 5800032,
+          "vm_requests": 4007402.0,
+          "faas_requests": 1792630.0,
+          "expected_violations": 1470.2353203050084,
+          "vm_seconds": 500340,
+          "starting_vm_seconds": 48560,
+          "cancelled_startup_vm_seconds": 12660,
+          "unfinished_startup_vm_seconds": 0,
+          "violation_rate": 0.0002534874497770027,
+          "episodes": 12,
+          "max_target_vms": 23
+        }
+      },
+      "strict_feasible_cost_advantage_supported_by_seed_CI": false,
+      "caveat": "test-feasible baseline minimum is descriptive; never used to select a PPO checkpoint"
+    },
+    {
+      "service_seconds": 0.7,
+      "validation_selected_penalty": 0.01,
+      "ppo": {
+        "dataset": "Azure16x",
+        "latency_mode": "wait_budget",
+        "version": "v2",
+        "service_seconds": 0.7,
+        "variant": "main",
+        "penalty": 0.01,
+        "decision_seconds": 60,
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "total_cost_usd": 32.64740190126666,
+        "total_cost_usd_ci95": [
+          32.17971611959593,
+          33.11508768293739
+        ],
+        "violation_rate": 0.0015810985288341722,
+        "violation_rate_ci95": [
+          0.0004626874367724134,
+          0.002699509620895931
+        ],
+        "expected_violations": 9170.42206239112,
+        "expected_violations_ci95": [
+          2683.6019392779735,
+          15657.242185504267
+        ],
+        "vm_seconds": 132108.0,
+        "vm_seconds_ci95": [
+          131908.09595242576,
+          132307.90404757424
+        ],
+        "starting_vm_seconds": 25580.0,
+        "starting_vm_seconds_ci95": [
+          25399.210992950262,
+          25760.789007049738
+        ],
+        "cancelled_startup_vm_seconds": 11340.0,
+        "cancelled_startup_vm_seconds_ci95": [
+          11234.64131602979,
+          11445.35868397021
+        ]
+      },
+      "cheapest_test_feasible_baseline_descriptive_only": {
+        "key": "baseline:v2:0.7:Quantile-tuned:0.01:wait_budget:Azure16x",
+        "kind": "baseline",
+        "dataset": "Azure16x",
+        "latency_mode": "wait_budget",
+        "split": "test",
+        "version": "v2",
+        "service_seconds": 0.7,
+        "label": "Quantile-tuned",
+        "penalty": 0.01,
+        "parameters": {
+          "rho": 0.6,
+          "window": 600
+        },
+        "summary": {
+          "total_cost_usd": 33.831741203166665,
+          "vm_cost_usd": 22.296666666666667,
+          "faas_cost_usd": 10.6998745365,
+          "gateway_cost_usd": 0.8351999999999999,
+          "requests": 5800032,
+          "vm_requests": 4026915.0,
+          "faas_requests": 1773117.0,
+          "expected_violations": 4348.828403931193,
+          "vm_seconds": 802680,
+          "starting_vm_seconds": 49160,
+          "cancelled_startup_vm_seconds": 15660,
+          "unfinished_startup_vm_seconds": 0,
+          "violation_rate": 0.0007497938638840601,
+          "episodes": 12,
+          "max_target_vms": 33
+        }
+      },
+      "strict_feasible_cost_advantage_supported_by_seed_CI": false,
+      "caveat": "test-feasible baseline minimum is descriptive; never used to select a PPO checkpoint"
+    }
+  ],
+  "training_runs": 85,
+  "training_samples": 1351680,
+  "fit_seconds": 1532.3572190002305,
+  "validation_evaluation_seconds": 539.5139118802617,
+  "test_rows": 843,
+  "dp_bounds": [
+    {
+      "dataset": "Azure16x",
+      "version": "v1",
+      "service_seconds": 1.0,
+      "penalty": 0.0,
+      "decision_seconds": 60,
+      "episodes": 12,
+      "total_cost_usd": 30.828030880000025,
+      "expected_violations": 0.0,
+      "objective_usd": 30.828030880000018,
+      "max_vms": 150,
+      "scope": "global v1 fill-routing bound",
+      "observed_policy_max_vms": 53,
+      "seconds": 1.3528194579994306
+    },
+    {
+      "dataset": "Azure16x",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "penalty": 0.0,
+      "decision_seconds": 60,
+      "episodes": 12,
+      "total_cost_usd": 16.496404880000007,
+      "expected_violations": 2145850.794978472,
+      "objective_usd": 16.496404880000007,
+      "max_vms": 133,
+      "scope": "finite VM/rho domain only",
+      "observed_policy_max_vms": 35,
+      "seconds": 28.975127417012118
+    },
+    {
+      "dataset": "Azure16x",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "penalty": 0.0001,
+      "decision_seconds": 60,
+      "episodes": 12,
+      "total_cost_usd": 19.452736568333336,
+      "expected_violations": 1641.1055324631604,
+      "objective_usd": 19.61684712157965,
+      "max_vms": 133,
+      "scope": "finite VM/rho domain only",
+      "observed_policy_max_vms": 35,
+      "seconds": 29.395888458006084
+    },
+    {
+      "dataset": "Azure16x",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "penalty": 0.01,
+      "decision_seconds": 60,
+      "episodes": 12,
+      "total_cost_usd": 20.634100705833337,
+      "expected_violations": 103.57478793399345,
+      "objective_usd": 21.669848585173277,
+      "max_vms": 133,
+      "scope": "finite VM/rho domain only",
+      "observed_policy_max_vms": 35,
+      "seconds": 27.08058362500742
+    },
+    {
+      "dataset": "Azure16x",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "penalty": 0.0,
+      "decision_seconds": 60,
+      "episodes": 12,
+      "total_cost_usd": 22.536366164166676,
+      "expected_violations": 1674291.1443162463,
+      "objective_usd": 22.536366164166676,
+      "max_vms": 512,
+      "scope": "finite VM/rho domain only",
+      "observed_policy_max_vms": 512,
+      "seconds": 204.9381215419853
+    },
+    {
+      "dataset": "Azure16x",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "penalty": 0.0001,
+      "decision_seconds": 60,
+      "episodes": 12,
+      "total_cost_usd": 28.3062661975,
+      "expected_violations": 4763.891962902583,
+      "objective_usd": 28.782655393790268,
+      "max_vms": 512,
+      "scope": "finite VM/rho domain only",
+      "observed_policy_max_vms": 512,
+      "seconds": 199.67136487498647
+    },
+    {
+      "dataset": "Azure16x",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "penalty": 0.01,
+      "decision_seconds": 60,
+      "episodes": 12,
+      "total_cost_usd": 35.835493104,
+      "expected_violations": 0.0,
+      "objective_usd": 35.835493104,
+      "max_vms": 512,
+      "scope": "finite VM/rho domain only",
+      "observed_policy_max_vms": 512,
+      "seconds": 199.44014670798788
+    },
+    {
+      "dataset": "Azure1x",
+      "version": "v1",
+      "service_seconds": 1.0,
+      "penalty": 0.0,
+      "decision_seconds": 60,
+      "episodes": 12,
+      "total_cost_usd": 3.6011833683333325,
+      "expected_violations": 0.0,
+      "objective_usd": 3.601183368333332,
+      "max_vms": 10,
+      "scope": "global v1 fill-routing bound",
+      "observed_policy_max_vms": 15,
+      "seconds": 0.3480412919889204
+    },
+    {
+      "dataset": "WITS",
+      "version": "v1",
+      "service_seconds": 1.0,
+      "penalty": 0.0,
+      "decision_seconds": 60,
+      "episodes": 2,
+      "total_cost_usd": 16.16690631833334,
+      "expected_violations": 0.0,
+      "objective_usd": 16.16690631833334,
+      "max_vms": 73,
+      "scope": "global v1 fill-routing bound",
+      "observed_policy_max_vms": 45,
+      "seconds": 0.19514070800505579
+    },
+    {
+      "dataset": "WITS",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "penalty": 0.0,
+      "decision_seconds": 60,
+      "episodes": 2,
+      "total_cost_usd": 8.21915179083333,
+      "expected_violations": 1984675.6106953481,
+      "objective_usd": 8.21915179083333,
+      "max_vms": 69,
+      "scope": "finite VM/rho domain only",
+      "observed_policy_max_vms": 35,
+      "seconds": 1.8261881669750437
+    },
+    {
+      "dataset": "WITS",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "penalty": 0.0001,
+      "decision_seconds": 60,
+      "episodes": 2,
+      "total_cost_usd": 10.980864274166661,
+      "expected_violations": 2390.495296516412,
+      "objective_usd": 11.219913803818308,
+      "max_vms": 69,
+      "scope": "finite VM/rho domain only",
+      "observed_policy_max_vms": 35,
+      "seconds": 1.8045911670196801
+    },
+    {
+      "dataset": "WITS",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "penalty": 0.01,
+      "decision_seconds": 60,
+      "episodes": 2,
+      "total_cost_usd": 12.657989676666665,
+      "expected_violations": 131.32324438245868,
+      "objective_usd": 13.971222120491248,
+      "max_vms": 69,
+      "scope": "finite VM/rho domain only",
+      "observed_policy_max_vms": 35,
+      "seconds": 1.79959183401661
+    },
+    {
+      "dataset": "WITS",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "penalty": 0.0,
+      "decision_seconds": 60,
+      "episodes": 2,
+      "total_cost_usd": 11.402366955666665,
+      "expected_violations": 2245565.9061940247,
+      "objective_usd": 11.402366955666668,
+      "max_vms": 512,
+      "scope": "finite VM/rho domain only",
+      "observed_policy_max_vms": 512,
+      "seconds": 34.3001887910068
+    },
+    {
+      "dataset": "WITS",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "penalty": 0.0001,
+      "decision_seconds": 60,
+      "episodes": 2,
+      "total_cost_usd": 17.273837172666667,
+      "expected_violations": 7257.534147286914,
+      "objective_usd": 17.99959058739536,
+      "max_vms": 512,
+      "scope": "finite VM/rho domain only",
+      "observed_policy_max_vms": 512,
+      "seconds": 33.19026583398227
+    },
+    {
+      "dataset": "WITS",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "penalty": 0.01,
+      "decision_seconds": 60,
+      "episodes": 2,
+      "total_cost_usd": 26.612228318500023,
+      "expected_violations": 321.456751729927,
+      "objective_usd": 29.82679583579926,
+      "max_vms": 512,
+      "scope": "finite VM/rho domain only",
+      "observed_policy_max_vms": 512,
+      "seconds": 33.210528249968775
+    },
+    {
+      "dataset": "Berkeley",
+      "version": "v1",
+      "service_seconds": 1.0,
+      "penalty": 0.0,
+      "decision_seconds": 60,
+      "episodes": 2,
+      "total_cost_usd": 20.07579034666665,
+      "expected_violations": 0.0,
+      "objective_usd": 20.075790346666658,
+      "max_vms": 42,
+      "scope": "global v1 fill-routing bound",
+      "observed_policy_max_vms": 35,
+      "seconds": 0.10651229199720547
+    },
+    {
+      "dataset": "Berkeley",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "penalty": 0.0,
+      "decision_seconds": 60,
+      "episodes": 2,
+      "total_cost_usd": 10.17076997666667,
+      "expected_violations": 2156462.8148974404,
+      "objective_usd": 10.17076997666667,
+      "max_vms": 43,
+      "scope": "finite VM/rho domain only",
+      "observed_policy_max_vms": 35,
+      "seconds": 1.061841708025895
+    },
+    {
+      "dataset": "Berkeley",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "penalty": 0.0001,
+      "decision_seconds": 60,
+      "episodes": 2,
+      "total_cost_usd": 13.43753013833334,
+      "expected_violations": 2787.6886688203163,
+      "objective_usd": 13.716299005215369,
+      "max_vms": 43,
+      "scope": "finite VM/rho domain only",
+      "observed_policy_max_vms": 35,
+      "seconds": 1.050745124986861
+    },
+    {
+      "dataset": "Berkeley",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "penalty": 0.01,
+      "decision_seconds": 60,
+      "episodes": 2,
+      "total_cost_usd": 15.29406012583333,
+      "expected_violations": 167.2870905185692,
+      "objective_usd": 16.966931031019016,
+      "max_vms": 43,
+      "scope": "finite VM/rho domain only",
+      "observed_policy_max_vms": 35,
+      "seconds": 1.0470653750235215
+    },
+    {
+      "dataset": "Berkeley",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "penalty": 0.0,
+      "decision_seconds": 60,
+      "episodes": 2,
+      "total_cost_usd": 14.166011382000004,
+      "expected_violations": 2377614.32877223,
+      "objective_usd": 14.166011382000006,
+      "max_vms": 512,
+      "scope": "finite VM/rho domain only",
+      "observed_policy_max_vms": 512,
+      "seconds": 34.32904658402549
+    },
+    {
+      "dataset": "Berkeley",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "penalty": 0.0001,
+      "decision_seconds": 60,
+      "episodes": 2,
+      "total_cost_usd": 21.0540171955,
+      "expected_violations": 7986.713651377206,
+      "objective_usd": 21.852688560637716,
+      "max_vms": 512,
+      "scope": "finite VM/rho domain only",
+      "observed_policy_max_vms": 512,
+      "seconds": 33.227779750013724
+    },
+    {
+      "dataset": "Berkeley",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "penalty": 0.01,
+      "decision_seconds": 60,
+      "episodes": 2,
+      "total_cost_usd": 34.499853970166654,
+      "expected_violations": 383.4897589369267,
+      "objective_usd": 38.33475155953596,
+      "max_vms": 512,
+      "scope": "finite VM/rho domain only",
+      "observed_policy_max_vms": 512,
+      "seconds": 33.21670800005086
+    },
+    {
+      "dataset": "Sin",
+      "version": "v1",
+      "service_seconds": 1.0,
+      "penalty": 0.0,
+      "decision_seconds": 60,
+      "episodes": 1,
+      "total_cost_usd": 3.2966470783333333,
+      "expected_violations": 0.0,
+      "objective_usd": 3.296647078333333,
+      "max_vms": 19,
+      "scope": "global v1 fill-routing bound",
+      "observed_policy_max_vms": 35,
+      "seconds": 0.017344332998618484
+    }
+  ],
+  "selected_at_final_checkpoint_count": 23
+}

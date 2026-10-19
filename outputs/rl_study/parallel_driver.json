@@ -1,0 +1,7 @@
+{
+  "source": "scripts/rl_study_parallel.py",
+  "sha256": "7e4d8729141fac78f33152b3e9f9319437e04197193db44601cf6a738da1eae3",
+  "workers": 3,
+  "training_wall_seconds": 621.9524268329842,
+  "semantics": "same train_agent, per-seed budgets and validation selection; process scheduling only"
+}

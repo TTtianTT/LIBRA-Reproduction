@@ -1,5 +1,5 @@
 {
-  "created_utc": "2026-10-19T09:39:28.847508+00:00",
+  "created_utc": "2026-10-19T10:08:56.315992+00:00",
   "platform": "macOS-27.0.1-arm64-arm-64bit",
   "python": "3.12.7",
   "command": [
@@ -14,17 +14,22 @@
     "libra_ml/models.py": "ee92b21333f9e80b632cf5555bd97506f6615af50e155b4b2ef2bd36be2fdef4",
     "libra_ml/policies.py": "0dbece50e15757ab8a96a9b3b074c6aebe4387af2b4014305497f37d368c2288",
     "libra_rl/__init__.py": "ec35c9c6de3edbc2c098ac4ac69a8fed5c60adf874fc9cd89ff6681a2f2577ed",
+    "libra_rl/baselines.py": "9a366b4c11eb8cd3cd49ac1b8c4428d7d2c148c9f6307a6cf06025e91ec3d408",
     "libra_rl/data.py": "1aab6fd1db504c06e8e34c83a96f5a3dbdb65252295cf33fa10e86bd470a6a48",
     "libra_rl/dp.py": "29d3214c9b1c008dfeb9aae8f5123da79140544e0c73a1f671c389bc2f3e9d43",
     "libra_rl/env.py": "510d9db23d35948078ba39fccf4f9eb5985877e60a7bce8f1b4a08c23f65885f",
+    "libra_rl/evaluation.py": "b110f53325bee6ccf9f39c6834ef999bf8e785fee796c08d12cb1808444a3159",
+    "libra_rl/fast_dp.py": "d12059f2adcc91caaa394499b0e2a16ca74b6b40fe517e83ace2784c4240f84f",
     "libra_rl/model.py": "0d4767922204bfea478ddb226667565131b2dba26154266e93e5c5b377f64da0",
     "libra_rl/queueing.py": "3985d8993ccc26bb02154cc61197336229164ffb906b1ba061e190145d54fda2",
+    "libra_rl/study.py": "78cf36a8dea906769fcf5a27ef76c7799b0284d1eee6167e96c76655c24ad03b",
+    "libra_rl/training.py": "2612ada7c22585d3747e739ea13a03b52b04c3ecce7765f7f04badd88f8ef47c",
     "libra_sim/__init__.py": "531f7200cae60dabf9095908b7fa6855bcacca40c2d5de6f4b48e82069d61aad",
     "libra_sim/config.py": "7f051de5a742f4e4714b9b8db0f57017caada832355b45c97128271667885791",
     "libra_sim/engine.py": "a37f4c0f7913fda36a07c9f803ae716c5ee9df3d15747316c9a57ed2d8c22023",
     "libra_sim/plotting.py": "682ad94dce3f808f28ec84cbb42009133d50f23940181ffdc8c7a41a8dcd9c40",
     "libra_sim/traces.py": "9a3c9d72f7ef673ad61539dea262f7fc1b14dd09f66b29e27781bf22d2d1c3b9",
-    "pyproject.toml": "dd7d2e89e16392211416793f8ed3eace16d0712dc450bf4b4a53a11290a35022",
+    "pyproject.toml": "9efbceebbcee8e61e77a429013e025ef5201e71aa962e118f586615e199585ab",
     "scripts/rl0_experiments.py": "d18defa052810fff105b08512de3eedf35904ef3405a45207536bdf5db53c016"
   },
   "protocol": {
@@ -6706,7 +6711,7 @@
         "min_samples_leaf": 200,
         "l2_regularization": 1.0
       },
-      "fit_seconds": 4.213939416978974,
+      "fit_seconds": 14.921785458980594,
       "target_domain": "raw Azure train days 1-9 only; v1 quantile"
     },
     "rows": [
@@ -7023,5 +7028,5 @@
     "scipy": "1.17.1",
     "scikit-learn": "1.5.2"
   },
-  "elapsed_seconds": 16.887625417031813
+  "elapsed_seconds": 35.88195558299776
 }

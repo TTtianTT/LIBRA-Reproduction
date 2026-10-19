@@ -1,0 +1,1143 @@
+{
+  "fingerprint": "36ffae4dd9c0319d67382834627f4399d86e9c974148bf2a78e3724472b387a3",
+  "selection_split": "train",
+  "candidate_budget": 12,
+  "selection": [
+    {
+      "split": "train",
+      "version": "v1",
+      "service_seconds": 1.0,
+      "family": "LIBRA",
+      "parameters": {
+        "rho": 1.0,
+        "phi": 0
+      },
+      "summary": {
+        "total_cost_usd": 143.28557936166666,
+        "vm_cost_usd": 106.49166666666667,
+        "faas_cost_usd": 34.288312695,
+        "gateway_cost_usd": 2.5056,
+        "requests": 21309072,
+        "vm_requests": 17291695.0,
+        "faas_requests": 4017377.0,
+        "expected_violations": 0.0,
+        "vm_seconds": 3833700,
+        "starting_vm_seconds": 267700,
+        "cancelled_startup_vm_seconds": 0,
+        "unfinished_startup_vm_seconds": 0,
+        "violation_rate": 0.0,
+        "episodes": 36,
+        "max_target_vms": 45
+      },
+      "penalty": 0.0
+    },
+    {
+      "split": "train",
+      "version": "v1",
+      "service_seconds": 1.0,
+      "family": "Quantile",
+      "parameters": {
+        "rho": 1.0,
+        "window": 300
+      },
+      "summary": {
+        "total_cost_usd": 108.03246309333333,
+        "vm_cost_usd": 55.90833333333334,
+        "faas_cost_usd": 49.61852976,
+        "gateway_cost_usd": 2.5056,
+        "requests": 21309072,
+        "vm_requests": 15495536.0,
+        "faas_requests": 5813536.0,
+        "expected_violations": 0.0,
+        "vm_seconds": 2012700,
+        "starting_vm_seconds": 194940,
+        "cancelled_startup_vm_seconds": 55500,
+        "unfinished_startup_vm_seconds": 240,
+        "violation_rate": 0.0,
+        "episodes": 36,
+        "max_target_vms": 44
+      },
+      "penalty": 0.0
+    },
+    {
+      "split": "train",
+      "version": "v1",
+      "service_seconds": 1.0,
+      "family": "GBDT",
+      "parameters": {
+        "rho": 1.0,
+        "multiplier": 1.0
+      },
+      "summary": {
+        "total_cost_usd": 117.34926565333333,
+        "vm_cost_usd": 69.59833333333333,
+        "faas_cost_usd": 45.24533232,
+        "gateway_cost_usd": 2.5056,
+        "requests": 21309072,
+        "vm_requests": 16007920.0,
+        "faas_requests": 5301152.0,
+        "expected_violations": 0.0,
+        "vm_seconds": 2505540,
+        "starting_vm_seconds": 448980,
+        "cancelled_startup_vm_seconds": 137700,
+        "unfinished_startup_vm_seconds": 780,
+        "violation_rate": 0.0,
+        "episodes": 36,
+        "max_target_vms": 48
+      },
+      "penalty": 0.0
+    },
+    {
+      "split": "train",
+      "version": "v1",
+      "service_seconds": 1.0,
+      "family": "AUTO-adapted",
+      "parameters": {
+        "out": 0.8,
+        "in": 0.3,
+        "group": 10,
+        "window": 30,
+        "minimum": 5,
+        "rho": 0.8
+      },
+      "summary": {
+        "total_cost_usd": 155.25532157333333,
+        "vm_cost_usd": 117.23333333333333,
+        "faas_cost_usd": 35.516388240000005,
+        "gateway_cost_usd": 2.5056,
+        "requests": 21309072,
+        "vm_requests": 17147808.0,
+        "faas_requests": 4161264.0,
+        "expected_violations": 0.0,
+        "vm_seconds": 4220400,
+        "starting_vm_seconds": 56000,
+        "cancelled_startup_vm_seconds": 0,
+        "unfinished_startup_vm_seconds": 0,
+        "violation_rate": 0.0,
+        "episodes": 36,
+        "max_target_vms": 35
+      },
+      "penalty": 0.0
+    },
+    {
+      "split": "train",
+      "version": "v1",
+      "service_seconds": 1.0,
+      "family": "SPOCK-adapted",
+      "parameters": {
+        "out": 0.8,
+        "in": 0.3,
+        "group": 10,
+        "window": 30,
+        "minimum": 5,
+        "rho": 0.8
+      },
+      "summary": {
+        "total_cost_usd": 171.75278848000002,
+        "vm_cost_usd": 140.35,
+        "faas_cost_usd": 28.89718848,
+        "gateway_cost_usd": 2.5056,
+        "requests": 21309072,
+        "vm_requests": 17923344.0,
+        "faas_requests": 3385728.0,
+        "expected_violations": 0.0,
+        "vm_seconds": 5052600,
+        "starting_vm_seconds": 437200,
+        "cancelled_startup_vm_seconds": 33600,
+        "unfinished_startup_vm_seconds": 600,
+        "violation_rate": 0.0,
+        "episodes": 36,
+        "max_target_vms": 65
+      },
+      "penalty": 0.0
+    },
+    {
+      "split": "fixed",
+      "version": "v1",
+      "service_seconds": 1.0,
+      "family": "LIBRA",
+      "label": "LIBRA-paper",
+      "parameters": {
+        "rho": 0.8,
+        "phi": 1
+      },
+      "penalty": null
+    },
+    {
+      "split": "fixed",
+      "version": "v1",
+      "service_seconds": 1.0,
+      "family": "Quantile",
+      "label": "Quantile-reference",
+      "parameters": {
+        "rho": 1.0,
+        "window": 300
+      },
+      "penalty": null
+    },
+    {
+      "split": "fixed",
+      "version": "v1",
+      "service_seconds": 1.0,
+      "family": "FaaS",
+      "label": "FaaS",
+      "parameters": {},
+      "penalty": null
+    },
+    {
+      "split": "train",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "family": "LIBRA",
+      "parameters": {
+        "rho": 1.0,
+        "phi": 0
+      },
+      "summary": {
+        "total_cost_usd": 78.73621417166666,
+        "vm_cost_usd": 58.81666666666667,
+        "faas_cost_usd": 17.413947505,
+        "gateway_cost_usd": 2.5056,
+        "requests": 21309072,
+        "vm_requests": 17321906.0,
+        "faas_requests": 3987166.0,
+        "expected_violations": 824796.3005103163,
+        "vm_seconds": 2117400,
+        "starting_vm_seconds": 134200,
+        "cancelled_startup_vm_seconds": 0,
+        "unfinished_startup_vm_seconds": 0,
+        "violation_rate": 0.038706345377701866,
+        "episodes": 36,
+        "max_target_vms": 23
+      },
+      "penalty": 0.0
+    },
+    {
+      "split": "train",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "family": "LIBRA",
+      "parameters": {
+        "rho": 0.8,
+        "phi": 0
+      },
+      "summary": {
+        "total_cost_usd": 84.56624579416666,
+        "vm_cost_usd": 58.81666666666667,
+        "faas_cost_usd": 23.2439791275,
+        "gateway_cost_usd": 2.5056,
+        "requests": 21309072,
+        "vm_requests": 15987039.0,
+        "faas_requests": 5322033.0,
+        "expected_violations": 17096.084237310894,
+        "vm_seconds": 2117400,
+        "starting_vm_seconds": 134200,
+        "cancelled_startup_vm_seconds": 0,
+        "unfinished_startup_vm_seconds": 0,
+        "violation_rate": 0.0008022913544668155,
+        "episodes": 36,
+        "max_target_vms": 23
+      },
+      "penalty": 0.0001
+    },
+    {
+      "split": "train",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "family": "LIBRA",
+      "parameters": {
+        "rho": 0.6,
+        "phi": 0
+      },
+      "summary": {
+        "total_cost_usd": 94.12271576666667,
+        "vm_cost_usd": 58.81666666666667,
+        "faas_cost_usd": 32.8004491,
+        "gateway_cost_usd": 2.5056,
+        "requests": 21309072,
+        "vm_requests": 13798952.0,
+        "faas_requests": 7510120.0,
+        "expected_violations": 108.40534158420894,
+        "vm_seconds": 2117400,
+        "starting_vm_seconds": 134200,
+        "cancelled_startup_vm_seconds": 0,
+        "unfinished_startup_vm_seconds": 0,
+        "violation_rate": 5.087285902652586e-06,
+        "episodes": 36,
+        "max_target_vms": 23
+      },
+      "penalty": 0.01
+    },
+    {
+      "split": "train",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "family": "Quantile",
+      "parameters": {
+        "rho": 1.0,
+        "window": 300
+      },
+      "summary": {
+        "total_cost_usd": 56.98677214666667,
+        "vm_cost_usd": 33.24666666666667,
+        "faas_cost_usd": 21.23450548,
+        "gateway_cost_usd": 2.5056,
+        "requests": 21309072,
+        "vm_requests": 16447136.0,
+        "faas_requests": 4861936.0,
+        "expected_violations": 7470461.307986697,
+        "vm_seconds": 1196880,
+        "starting_vm_seconds": 105740,
+        "cancelled_startup_vm_seconds": 28980,
+        "unfinished_startup_vm_seconds": 60,
+        "violation_rate": 0.3505765670127116,
+        "episodes": 36,
+        "max_target_vms": 22
+      },
+      "penalty": 0.0
+    },
+    {
+      "split": "train",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "family": "Quantile",
+      "parameters": {
+        "rho": 0.7,
+        "window": 300
+      },
+      "summary": {
+        "total_cost_usd": 71.94764064,
+        "vm_cost_usd": 48.525000000000006,
+        "faas_cost_usd": 20.91704064,
+        "gateway_cost_usd": 2.5056,
+        "requests": 21309072,
+        "vm_requests": 16519824.0,
+        "faas_requests": 4789248.0,
+        "expected_violations": 5945.120560109856,
+        "vm_seconds": 1746900,
+        "starting_vm_seconds": 154220,
+        "cancelled_startup_vm_seconds": 40680,
+        "unfinished_startup_vm_seconds": 240,
+        "violation_rate": 0.0002789948131063547,
+        "episodes": 36,
+        "max_target_vms": 32
+      },
+      "penalty": 0.0001
+    },
+    {
+      "split": "train",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "family": "Quantile",
+      "parameters": {
+        "rho": 0.6,
+        "window": 300
+      },
+      "summary": {
+        "total_cost_usd": 78.26809970833334,
+        "vm_cost_usd": 53.60333333333334,
+        "faas_cost_usd": 22.159166375,
+        "gateway_cost_usd": 2.5056,
+        "requests": 21309072,
+        "vm_requests": 16235422.0,
+        "faas_requests": 5073650.0,
+        "expected_violations": 398.4921936541252,
+        "vm_seconds": 1929720,
+        "starting_vm_seconds": 177120,
+        "cancelled_startup_vm_seconds": 47580,
+        "unfinished_startup_vm_seconds": 240,
+        "violation_rate": 1.8700588822175135e-05,
+        "episodes": 36,
+        "max_target_vms": 37
+      },
+      "penalty": 0.01
+    },
+    {
+      "split": "train",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "family": "GBDT",
+      "parameters": {
+        "rho": 1.0,
+        "multiplier": 0.8
+      },
+      "summary": {
+        "total_cost_usd": 62.48563982666667,
+        "vm_cost_usd": 34.87166666666667,
+        "faas_cost_usd": 25.10837316,
+        "gateway_cost_usd": 2.5056,
+        "requests": 21309072,
+        "vm_requests": 15560160.0,
+        "faas_requests": 5748912.0,
+        "expected_violations": 9099786.652093478,
+        "vm_seconds": 1255380,
+        "starting_vm_seconds": 199880,
+        "cancelled_startup_vm_seconds": 61740,
+        "unfinished_startup_vm_seconds": 240,
+        "violation_rate": 0.4270381484512079,
+        "episodes": 36,
+        "max_target_vms": 19
+      },
+      "penalty": 0.0
+    },
+    {
+      "split": "train",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "family": "GBDT",
+      "parameters": {
+        "rho": 0.8,
+        "multiplier": 0.8
+      },
+      "summary": {
+        "total_cost_usd": 70.50382068916667,
+        "vm_cost_usd": 40.57666666666667,
+        "faas_cost_usd": 27.4215540225,
+        "gateway_cost_usd": 2.5056,
+        "requests": 21309072,
+        "vm_requests": 15030525.0,
+        "faas_requests": 6278547.0,
+        "expected_violations": 85205.23017680563,
+        "vm_seconds": 1460760,
+        "starting_vm_seconds": 239720,
+        "cancelled_startup_vm_seconds": 69000,
+        "unfinished_startup_vm_seconds": 120,
+        "violation_rate": 0.003998542507003855,
+        "episodes": 36,
+        "max_target_vms": 23
+      },
+      "penalty": 0.0001
+    },
+    {
+      "split": "train",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "family": "GBDT",
+      "parameters": {
+        "rho": 0.6,
+        "multiplier": 0.8
+      },
+      "summary": {
+        "total_cost_usd": 81.653913665,
+        "vm_cost_usd": 49.870000000000005,
+        "faas_cost_usd": 29.278313665000002,
+        "gateway_cost_usd": 2.5056,
+        "requests": 21309072,
+        "vm_requests": 14605394.0,
+        "faas_requests": 6703678.0,
+        "expected_violations": 484.22578300761285,
+        "vm_seconds": 1795320,
+        "starting_vm_seconds": 307680,
+        "cancelled_startup_vm_seconds": 95280,
+        "unfinished_startup_vm_seconds": 300,
+        "violation_rate": 2.2723926363739013e-05,
+        "episodes": 36,
+        "max_target_vms": 31
+      },
+      "penalty": 0.01
+    },
+    {
+      "split": "train",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "family": "AUTO-adapted",
+      "parameters": {
+        "out": 0.8,
+        "in": 0.3,
+        "group": 10,
+        "window": 30,
+        "minimum": 5,
+        "rho": 0.8
+      },
+      "summary": {
+        "total_cost_usd": 123.67226882666667,
+        "vm_cost_usd": 113.16666666666667,
+        "faas_cost_usd": 8.000002160000001,
+        "gateway_cost_usd": 2.5056,
+        "requests": 21309072,
+        "vm_requests": 19477360.0,
+        "faas_requests": 1831712.0,
+        "expected_violations": 35342.484210156865,
+        "vm_seconds": 4074000,
+        "starting_vm_seconds": 46600,
+        "cancelled_startup_vm_seconds": 600,
+        "unfinished_startup_vm_seconds": 0,
+        "violation_rate": 0.0016585651505685872,
+        "episodes": 36,
+        "max_target_vms": 25
+      },
+      "penalty": 0.0
+    },
+    {
+      "split": "train",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "family": "AUTO-adapted",
+      "parameters": {
+        "out": 0.8,
+        "in": 0.3,
+        "group": 10,
+        "window": 30,
+        "minimum": 5,
+        "rho": 0.8
+      },
+      "summary": {
+        "total_cost_usd": 123.67226882666667,
+        "vm_cost_usd": 113.16666666666667,
+        "faas_cost_usd": 8.000002160000001,
+        "gateway_cost_usd": 2.5056,
+        "requests": 21309072,
+        "vm_requests": 19477360.0,
+        "faas_requests": 1831712.0,
+        "expected_violations": 35342.484210156865,
+        "vm_seconds": 4074000,
+        "starting_vm_seconds": 46600,
+        "cancelled_startup_vm_seconds": 600,
+        "unfinished_startup_vm_seconds": 0,
+        "violation_rate": 0.0016585651505685872,
+        "episodes": 36,
+        "max_target_vms": 25
+      },
+      "penalty": 0.0001
+    },
+    {
+      "split": "train",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "family": "AUTO-adapted",
+      "parameters": {
+        "out": 0.6,
+        "in": 0.1,
+        "group": 5,
+        "window": 30,
+        "minimum": 5,
+        "rho": 0.6
+      },
+      "summary": {
+        "total_cost_usd": 129.41817508,
+        "vm_cost_usd": 116.55,
+        "faas_cost_usd": 10.362575080000001,
+        "gateway_cost_usd": 2.5056,
+        "requests": 21309072,
+        "vm_requests": 18936416.0,
+        "faas_requests": 2372656.0,
+        "expected_violations": 298.8994295330681,
+        "vm_seconds": 4195800,
+        "starting_vm_seconds": 33500,
+        "cancelled_startup_vm_seconds": 0,
+        "unfinished_startup_vm_seconds": 0,
+        "violation_rate": 1.4026862809092206e-05,
+        "episodes": 36,
+        "max_target_vms": 25
+      },
+      "penalty": 0.01
+    },
+    {
+      "split": "train",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "family": "SPOCK-adapted",
+      "parameters": {
+        "out": 0.8,
+        "in": 0.3,
+        "group": 10,
+        "window": 30,
+        "minimum": 5,
+        "rho": 0.8
+      },
+      "summary": {
+        "total_cost_usd": 126.73213394666666,
+        "vm_cost_usd": 116.91666666666667,
+        "faas_cost_usd": 7.309867280000001,
+        "gateway_cost_usd": 2.5056,
+        "requests": 21309072,
+        "vm_requests": 19635376.0,
+        "faas_requests": 1673696.0,
+        "expected_violations": 33081.26316956209,
+        "vm_seconds": 4209000,
+        "starting_vm_seconds": 127000,
+        "cancelled_startup_vm_seconds": 24000,
+        "unfinished_startup_vm_seconds": 0,
+        "violation_rate": 0.0015524497345338214,
+        "episodes": 36,
+        "max_target_vms": 45
+      },
+      "penalty": 0.0
+    },
+    {
+      "split": "train",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "family": "SPOCK-adapted",
+      "parameters": {
+        "out": 0.8,
+        "in": 0.3,
+        "group": 10,
+        "window": 30,
+        "minimum": 5,
+        "rho": 0.8
+      },
+      "summary": {
+        "total_cost_usd": 126.73213394666666,
+        "vm_cost_usd": 116.91666666666667,
+        "faas_cost_usd": 7.309867280000001,
+        "gateway_cost_usd": 2.5056,
+        "requests": 21309072,
+        "vm_requests": 19635376.0,
+        "faas_requests": 1673696.0,
+        "expected_violations": 33081.26316956209,
+        "vm_seconds": 4209000,
+        "starting_vm_seconds": 127000,
+        "cancelled_startup_vm_seconds": 24000,
+        "unfinished_startup_vm_seconds": 0,
+        "violation_rate": 0.0015524497345338214,
+        "episodes": 36,
+        "max_target_vms": 45
+      },
+      "penalty": 0.0001
+    },
+    {
+      "split": "train",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "family": "SPOCK-adapted",
+      "parameters": {
+        "out": 0.6,
+        "in": 0.1,
+        "group": 5,
+        "window": 30,
+        "minimum": 5,
+        "rho": 0.6
+      },
+      "summary": {
+        "total_cost_usd": 137.44290833333335,
+        "vm_cost_usd": 126.33333333333334,
+        "faas_cost_usd": 8.603975,
+        "gateway_cost_usd": 2.5056,
+        "requests": 21309072,
+        "vm_requests": 19339072.0,
+        "faas_requests": 1970000.0,
+        "expected_violations": 224.98262627088758,
+        "vm_seconds": 4548000,
+        "starting_vm_seconds": 95000,
+        "cancelled_startup_vm_seconds": 7500,
+        "unfinished_startup_vm_seconds": 0,
+        "violation_rate": 1.0558067769018171e-05,
+        "episodes": 36,
+        "max_target_vms": 40
+      },
+      "penalty": 0.01
+    },
+    {
+      "split": "fixed",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "family": "LIBRA",
+      "label": "LIBRA-paper",
+      "parameters": {
+        "rho": 0.8,
+        "phi": 1
+      },
+      "penalty": null
+    },
+    {
+      "split": "fixed",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "family": "Quantile",
+      "label": "Quantile-reference",
+      "parameters": {
+        "rho": 0.8,
+        "window": 300
+      },
+      "penalty": null
+    },
+    {
+      "split": "fixed",
+      "version": "v2",
+      "service_seconds": 0.5,
+      "family": "FaaS",
+      "label": "FaaS",
+      "parameters": {},
+      "penalty": null
+    },
+    {
+      "split": "train",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "family": "LIBRA",
+      "parameters": {
+        "rho": 1.0,
+        "phi": 0
+      },
+      "summary": {
+        "total_cost_usd": 104.477550097,
+        "vm_cost_usd": 77.8,
+        "faas_cost_usd": 24.171950096999996,
+        "gateway_cost_usd": 2.5056,
+        "requests": 21309072,
+        "vm_requests": 17303446.0,
+        "faas_requests": 4005626.0,
+        "expected_violations": 2052913.0834712852,
+        "vm_seconds": 2800800,
+        "starting_vm_seconds": 186300,
+        "cancelled_startup_vm_seconds": 0,
+        "unfinished_startup_vm_seconds": 0,
+        "violation_rate": 0.09633986329725129,
+        "episodes": 36,
+        "max_target_vms": 32
+      },
+      "penalty": 0.0
+    },
+    {
+      "split": "train",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "family": "LIBRA",
+      "parameters": {
+        "rho": 0.6,
+        "phi": 0
+      },
+      "summary": {
+        "total_cost_usd": 125.812211053,
+        "vm_cost_usd": 77.8,
+        "faas_cost_usd": 45.50661105299999,
+        "gateway_cost_usd": 2.5056,
+        "requests": 21309072,
+        "vm_requests": 13767998.0,
+        "faas_requests": 7541074.0,
+        "expected_violations": 7645.062388354752,
+        "vm_seconds": 2800800,
+        "starting_vm_seconds": 186300,
+        "cancelled_startup_vm_seconds": 0,
+        "unfinished_startup_vm_seconds": 0,
+        "violation_rate": 0.00035877031099030275,
+        "episodes": 36,
+        "max_target_vms": 32
+      },
+      "penalty": 0.0001
+    },
+    {
+      "split": "train",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "family": "LIBRA",
+      "parameters": {
+        "rho": 0.6,
+        "phi": 0
+      },
+      "summary": {
+        "total_cost_usd": 125.812211053,
+        "vm_cost_usd": 77.8,
+        "faas_cost_usd": 45.50661105299999,
+        "gateway_cost_usd": 2.5056,
+        "requests": 21309072,
+        "vm_requests": 13767998.0,
+        "faas_requests": 7541074.0,
+        "expected_violations": 7645.062388354752,
+        "vm_seconds": 2800800,
+        "starting_vm_seconds": 186300,
+        "cancelled_startup_vm_seconds": 0,
+        "unfinished_startup_vm_seconds": 0,
+        "violation_rate": 0.00035877031099030275,
+        "episodes": 36,
+        "max_target_vms": 32
+      },
+      "penalty": 0.01
+    },
+    {
+      "split": "train",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "family": "Quantile",
+      "parameters": {
+        "rho": 1.0,
+        "window": 300
+      },
+      "summary": {
+        "total_cost_usd": 79.2159863255,
+        "vm_cost_usd": 48.005,
+        "faas_cost_usd": 28.705386325499997,
+        "gateway_cost_usd": 2.5056,
+        "requests": 21309072,
+        "vm_requests": 16552193.0,
+        "faas_requests": 4756879.0,
+        "expected_violations": 5926333.4684382435,
+        "vm_seconds": 1728180,
+        "starting_vm_seconds": 150000,
+        "cancelled_startup_vm_seconds": 39660,
+        "unfinished_startup_vm_seconds": 240,
+        "violation_rate": 0.2781131655305423,
+        "episodes": 36,
+        "max_target_vms": 31
+      },
+      "penalty": 0.0
+    },
+    {
+      "split": "train",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "family": "Quantile",
+      "parameters": {
+        "rho": 0.7,
+        "window": 300
+      },
+      "summary": {
+        "total_cost_usd": 95.61832359733333,
+        "vm_cost_usd": 60.31333333333333,
+        "faas_cost_usd": 32.799390263999996,
+        "gateway_cost_usd": 2.5056,
+        "requests": 21309072,
+        "vm_requests": 15873760.0,
+        "faas_requests": 5435312.0,
+        "expected_violations": 134109.66584107032,
+        "vm_seconds": 2171280,
+        "starting_vm_seconds": 209640,
+        "cancelled_startup_vm_seconds": 58140,
+        "unfinished_startup_vm_seconds": 300,
+        "violation_rate": 0.006293547923676372,
+        "episodes": 36,
+        "max_target_vms": 45
+      },
+      "penalty": 0.0001
+    },
+    {
+      "split": "train",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "family": "Quantile",
+      "parameters": {
+        "rho": 0.6,
+        "window": 600
+      },
+      "summary": {
+        "total_cost_usd": 109.2992661255,
+        "vm_cost_usd": 76.71000000000001,
+        "faas_cost_usd": 30.0836661255,
+        "gateway_cost_usd": 2.5056,
+        "requests": 21309072,
+        "vm_requests": 16323793.0,
+        "faas_requests": 4985279.0,
+        "expected_violations": 17043.731871825512,
+        "vm_seconds": 2761560,
+        "starting_vm_seconds": 167360,
+        "cancelled_startup_vm_seconds": 56820,
+        "unfinished_startup_vm_seconds": 240,
+        "violation_rate": 0.0007998345433262186,
+        "episodes": 36,
+        "max_target_vms": 49
+      },
+      "penalty": 0.01
+    },
+    {
+      "split": "train",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "family": "GBDT",
+      "parameters": {
+        "rho": 1.0,
+        "multiplier": 1.0
+      },
+      "summary": {
+        "total_cost_usd": 84.954753586,
+        "vm_cost_usd": 51.625,
+        "faas_cost_usd": 30.824153585999998,
+        "gateway_cost_usd": 2.5056,
+        "requests": 21309072,
+        "vm_requests": 16201084.0,
+        "faas_requests": 5107988.0,
+        "expected_violations": 6955479.831543273,
+        "vm_seconds": 1858500,
+        "starting_vm_seconds": 298420,
+        "cancelled_startup_vm_seconds": 95040,
+        "unfinished_startup_vm_seconds": 480,
+        "violation_rate": 0.3264093261097092,
+        "episodes": 36,
+        "max_target_vms": 31
+      },
+      "penalty": 0.0
+    },
+    {
+      "split": "train",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "family": "GBDT",
+      "parameters": {
+        "rho": 0.6,
+        "multiplier": 0.8
+      },
+      "summary": {
+        "total_cost_usd": 111.13917438933333,
+        "vm_cost_usd": 65.29833333333333,
+        "faas_cost_usd": 43.335241055999994,
+        "gateway_cost_usd": 2.5056,
+        "requests": 21309072,
+        "vm_requests": 14127824.0,
+        "faas_requests": 7181248.0,
+        "expected_violations": 21136.608337075915,
+        "vm_seconds": 2350740,
+        "starting_vm_seconds": 411120,
+        "cancelled_startup_vm_seconds": 126180,
+        "unfinished_startup_vm_seconds": 540,
+        "violation_rate": 0.000991906561537542,
+        "episodes": 36,
+        "max_target_vms": 42
+      },
+      "penalty": 0.0001
+    },
+    {
+      "split": "train",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "family": "GBDT",
+      "parameters": {
+        "rho": 0.6,
+        "multiplier": 1.2
+      },
+      "summary": {
+        "total_cost_usd": 123.48037525266666,
+        "vm_cost_usd": 93.83166666666668,
+        "faas_cost_usd": 27.143108585999997,
+        "gateway_cost_usd": 2.5056,
+        "requests": 21309072,
+        "vm_requests": 16811084.0,
+        "faas_requests": 4497988.0,
+        "expected_violations": 17516.107138340045,
+        "vm_seconds": 3377940,
+        "starting_vm_seconds": 602980,
+        "cancelled_startup_vm_seconds": 188340,
+        "unfinished_startup_vm_seconds": 840,
+        "violation_rate": 0.0008220023442757172,
+        "episodes": 36,
+        "max_target_vms": 62
+      },
+      "penalty": 0.01
+    },
+    {
+      "split": "train",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "family": "AUTO-adapted",
+      "parameters": {
+        "out": 0.8,
+        "in": 0.3,
+        "group": 10,
+        "window": 30,
+        "minimum": 5,
+        "rho": 0.8
+      },
+      "summary": {
+        "total_cost_usd": 137.9342792295,
+        "vm_cost_usd": 108.0,
+        "faas_cost_usd": 27.4286792295,
+        "gateway_cost_usd": 2.5056,
+        "requests": 21309072,
+        "vm_requests": 16763761.0,
+        "faas_requests": 4545311.0,
+        "expected_violations": 380534.30299913906,
+        "vm_seconds": 3888000,
+        "starting_vm_seconds": 18000,
+        "cancelled_startup_vm_seconds": 0,
+        "unfinished_startup_vm_seconds": 0,
+        "violation_rate": 0.017857854297884914,
+        "episodes": 36,
+        "max_target_vms": 5
+      },
+      "penalty": 0.0
+    },
+    {
+      "split": "train",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "family": "AUTO-adapted",
+      "parameters": {
+        "out": 0.6,
+        "in": 0.1,
+        "group": 5,
+        "window": 30,
+        "minimum": 5,
+        "rho": 0.6
+      },
+      "summary": {
+        "total_cost_usd": 146.784603654,
+        "vm_cost_usd": 108.0,
+        "faas_cost_usd": 36.279003654,
+        "gateway_cost_usd": 2.5056,
+        "requests": 21309072,
+        "vm_requests": 15297140.0,
+        "faas_requests": 6011932.0,
+        "expected_violations": 15283.541676765844,
+        "vm_seconds": 3888000,
+        "starting_vm_seconds": 18000,
+        "cancelled_startup_vm_seconds": 0,
+        "unfinished_startup_vm_seconds": 0,
+        "violation_rate": 0.0007172316878353898,
+        "episodes": 36,
+        "max_target_vms": 5
+      },
+      "penalty": 0.0001
+    },
+    {
+      "split": "train",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "family": "AUTO-adapted",
+      "parameters": {
+        "out": 0.5,
+        "in": 0.1,
+        "group": 20,
+        "window": 120,
+        "minimum": 5,
+        "rho": 0.6
+      },
+      "summary": {
+        "total_cost_usd": 170.50703148833333,
+        "vm_cost_usd": 148.73333333333335,
+        "faas_cost_usd": 19.268098155,
+        "gateway_cost_usd": 2.5056,
+        "requests": 21309072,
+        "vm_requests": 18116082.0,
+        "faas_requests": 3192990.0,
+        "expected_violations": 11748.690150006427,
+        "vm_seconds": 5354400,
+        "starting_vm_seconds": 196000,
+        "cancelled_startup_vm_seconds": 0,
+        "unfinished_startup_vm_seconds": 0,
+        "violation_rate": 0.0005513468700094695,
+        "episodes": 36,
+        "max_target_vms": 105
+      },
+      "penalty": 0.01
+    },
+    {
+      "split": "train",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "family": "SPOCK-adapted",
+      "parameters": {
+        "out": 0.8,
+        "in": 0.3,
+        "group": 10,
+        "window": 30,
+        "minimum": 5,
+        "rho": 0.8
+      },
+      "summary": {
+        "total_cost_usd": 140.94200148483333,
+        "vm_cost_usd": 123.33333333333334,
+        "faas_cost_usd": 15.103068151499999,
+        "gateway_cost_usd": 2.5056,
+        "requests": 21309072,
+        "vm_requests": 18806285.0,
+        "faas_requests": 2502787.0,
+        "expected_violations": 306459.333954966,
+        "vm_seconds": 4440000,
+        "starting_vm_seconds": 209800,
+        "cancelled_startup_vm_seconds": 31800,
+        "unfinished_startup_vm_seconds": 0,
+        "violation_rate": 0.01438163679558481,
+        "episodes": 36,
+        "max_target_vms": 55
+      },
+      "penalty": 0.0
+    },
+    {
+      "split": "train",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "family": "SPOCK-adapted",
+      "parameters": {
+        "out": 0.6,
+        "in": 0.1,
+        "group": 5,
+        "window": 30,
+        "minimum": 5,
+        "rho": 0.6
+      },
+      "summary": {
+        "total_cost_usd": 160.17989621133333,
+        "vm_cost_usd": 142.90833333333333,
+        "faas_cost_usd": 14.765962878,
+        "gateway_cost_usd": 2.5056,
+        "requests": 21309072,
+        "vm_requests": 18862148.0,
+        "faas_requests": 2446924.0,
+        "expected_violations": 10218.987760066588,
+        "vm_seconds": 5144700,
+        "starting_vm_seconds": 120900,
+        "cancelled_startup_vm_seconds": 9900,
+        "unfinished_startup_vm_seconds": 0,
+        "violation_rate": 0.0004795604313536783,
+        "episodes": 36,
+        "max_target_vms": 50
+      },
+      "penalty": 0.0001
+    },
+    {
+      "split": "train",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "family": "SPOCK-adapted",
+      "parameters": {
+        "out": 0.6,
+        "in": 0.1,
+        "group": 5,
+        "window": 30,
+        "minimum": 5,
+        "rho": 0.6
+      },
+      "summary": {
+        "total_cost_usd": 160.17989621133333,
+        "vm_cost_usd": 142.90833333333333,
+        "faas_cost_usd": 14.765962878,
+        "gateway_cost_usd": 2.5056,
+        "requests": 21309072,
+        "vm_requests": 18862148.0,
+        "faas_requests": 2446924.0,
+        "expected_violations": 10218.987760066588,
+        "vm_seconds": 5144700,
+        "starting_vm_seconds": 120900,
+        "cancelled_startup_vm_seconds": 9900,
+        "unfinished_startup_vm_seconds": 0,
+        "violation_rate": 0.0004795604313536783,
+        "episodes": 36,
+        "max_target_vms": 50
+      },
+      "penalty": 0.01
+    },
+    {
+      "split": "fixed",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "family": "LIBRA",
+      "label": "LIBRA-paper",
+      "parameters": {
+        "rho": 0.8,
+        "phi": 1
+      },
+      "penalty": null
+    },
+    {
+      "split": "fixed",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "family": "Quantile",
+      "label": "Quantile-reference",
+      "parameters": {
+        "rho": 0.8,
+        "window": 300
+      },
+      "penalty": null
+    },
+    {
+      "split": "fixed",
+      "version": "v2",
+      "service_seconds": 0.7,
+      "family": "FaaS",
+      "label": "FaaS",
+      "parameters": {},
+      "penalty": null
+    }
+  ],
+  "budget_caveat": "PPO has 3 lambdas x 4 validation checkpoints per seed; static baselines have 12 train candidates per family. These caps do not equalize training FLOPs or validation queries."
+}

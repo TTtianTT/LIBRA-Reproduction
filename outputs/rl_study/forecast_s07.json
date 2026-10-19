@@ -1,0 +1,15 @@
+{
+  "train_rows": 77730,
+  "features": 21,
+  "tau": 0.7986116865062924,
+  "fit_seconds": 2.6605888750054874,
+  "parameters": {
+    "learning_rate": 0.05,
+    "max_iter": 300,
+    "max_leaf_nodes": 15,
+    "min_samples_leaf": 200,
+    "l2_regularization": 1.0
+  },
+  "sha256": "1ea515000eba125abdce9ca9bf62b005dff1b7312110f9f1e5a6bfd06536d953",
+  "training_split": "Azure days 1-9, 16x replication"
+}

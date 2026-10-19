@@ -8,6 +8,7 @@
 
 ## 直接看结果
 
+- [PPO 固定预算实验：RL-1–4](outputs/rl_study/REPORT.md)：85 次真实训练、5 种子、843 条测试与泛化/消融；当前结果不支持 PPO 稳定优于强分位数规则。
 - [RL-0：DP 成本下限与 Gymnasium 环境](outputs/rl0/REPORT.md)：v1 精确 DP、60 秒启动状态、一致性校验与 v2 排队敏感性；尚未训练 PPO。
 - [Azure Functions 2021 两周独立验证](outputs/ml_azure2021/REPORT.md)：前 7 天训练、后 7 天测试，原始/64 倍负载对照；本次 GBDT 未超过强规则。
 - [LIBRA-ML 改进报告](outputs/ml/REPORT.md)：用学到的 τ=0.797 需求分位数替代 avg+φ·std，跨 trace 与时间切分共 6 折评估。
@@ -95,6 +96,22 @@ python3 -m venv .venv
 ```
 
 Azure 对照保持固定服务时间，不重放实际 duration；64 倍场景是明确标注的调用量复制。日周期特征收益、原始负载低于 CIP 的影响及负结果都保留在报告中。`outputs/review/run_metadata.json` 保持旧 E1–E3 运行的历史指纹，本次没有仅重写该文件或用旧 CSV 冒充新代码实验。
+
+## PPO 扩展（RL-1–4）
+
+第 1 步的 v1/v2 环境与 DP 已完成，并继续运行了 PPO 主实验、基线调参、泛化和消融。主实验采用明确的 Azure 16 倍调用量复制；1–9 天训练、10–11 天验证、12–14 天冻结测试，另外评估原始 Azure、WITS、Berkeley 和 Sin。每个配置 5 个随机种子，所有实际样本数、训练耗时、checkpoint 选择和 95% 区间均保留。
+
+这是预先固定本地预算的一轮实验，不能声称已收敛或具有严格等计算调参预算。0.5 秒服务下 PPO 满足 SLA，但没有可靠超过强规则；0.7 秒下所选 PPO 的测试均值违约率超过 0.1%。完整方法、AUTO/SPOCK 适配边界与历史测试集暴露见 [运行说明](docs/rl_study.md)和[实际报告](outputs/rl_study/REPORT.md)。
+
+```bash
+.venv/bin/python -m pip install -r requirements-rl.txt
+.venv/bin/python -m pip install -e '.[test,rl]'
+.venv/bin/python scripts/rl_study.py --stage all
+.venv/bin/python scripts/summarize_rl_study.py
+.venv/bin/python scripts/verify_rl_study.py --require-models
+```
+
+本地可用 `scripts/rl_study_parallel.py --workers 3` 并行运行独立种子。模型权重由 Git 忽略；新 clone 应传 `--output outputs/rl_study_replay` 使用新目录重训，汇总和校验同样传该目录，避免覆盖已发布的历史记录。
 
 ## 作者代码重放
 

@@ -1,3 +1,4 @@
 # Install requirements-reproduce.txt first, then this file and -e '.[test,rl]'.
 -r requirements-ml.txt
 gymnasium==1.4.0
+stable-baselines3==2.9.0

@@ -9,3 +9,6 @@ references/*.txt
 references/paper-page-*.png
 references/published-*.png
 data/azure2021/raw/
+outputs/rl_*/models/
+outputs/rl_pilot/
+outputs/rl_study_attempt1/
